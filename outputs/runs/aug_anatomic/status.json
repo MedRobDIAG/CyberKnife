@@ -1,0 +1,57 @@
+{
+  "0": {
+    "done": true,
+    "epoch": 250,
+    "epochs": 250,
+    "best_score": 0.6233972936868667,
+    "best_epoch": 210,
+    "updated": "2026-09-05T20:07:21",
+    "last_val_dice": null,
+    "last_train_loss": null,
+    "secs_per_epoch": null
+  },
+  "1": {
+    "done": true,
+    "epoch": 250,
+    "epochs": 250,
+    "best_score": 0.5347862803783173,
+    "best_epoch": 250,
+    "updated": "2026-09-05T20:43:57",
+    "last_val_dice": null,
+    "last_train_loss": null,
+    "secs_per_epoch": null
+  },
+  "2": {
+    "done": true,
+    "epoch": 250,
+    "epochs": 250,
+    "best_score": 0.6554166414798834,
+    "best_epoch": 220,
+    "updated": "2026-09-05T21:20:38",
+    "last_val_dice": null,
+    "last_train_loss": null,
+    "secs_per_epoch": null
+  },
+  "3": {
+    "done": true,
+    "epoch": 250,
+    "epochs": 250,
+    "best_score": 0.5998577131165398,
+    "best_epoch": 250,
+    "updated": "2026-09-05T21:57:40",
+    "last_val_dice": null,
+    "last_train_loss": null,
+    "secs_per_epoch": null
+  },
+  "4": {
+    "done": true,
+    "epoch": 250,
+    "epochs": 250,
+    "best_score": 0.5657465368509292,
+    "best_epoch": 240,
+    "updated": "2026-09-05T22:32:17",
+    "last_val_dice": null,
+    "last_train_loss": null,
+    "secs_per_epoch": null
+  }
+}
