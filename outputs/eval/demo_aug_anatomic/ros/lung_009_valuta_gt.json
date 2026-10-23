@@ -1,0 +1,25 @@
+{
+ "case_id": "lung_009",
+ "fermo": {
+  "copertura_pct": 46.76,
+  "d95_pct": 9.13,
+  "d_min_pct": 1.8,
+  "paddick_ci": 0.3,
+  "polmone_dose_media_gy": 2.33,
+  "polmone_v20_pct": 3.35
+ },
+ "inseguimento": {
+  "copertura_pct": 46.19,
+  "d95_pct": 10.12,
+  "d_min_pct": 2.13,
+  "paddick_ci": 0.29,
+  "polmone_dose_media_gy": 2.33,
+  "polmone_v20_pct": 3.35
+ },
+ "oar_dmax_pct": {
+  "mediastinum": 103.3,
+  "airways": 28.9,
+  "bones": 61.3
+ },
+ "piv_cm3": 65.2
+}

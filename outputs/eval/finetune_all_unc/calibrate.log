@@ -1,0 +1,67 @@
+{
+  "criterio": "copertura geometrica mediana del GT >= 0.9",
+  "n_casi_accettati": 54,
+  "tau_per_fold": {
+    "0": 0.05,
+    "1": 0.1,
+    "2": 0.1,
+    "3": 0.1,
+    "4": 0.05
+  },
+  "tau_nuovo_paziente": 0.1,
+  "copertura_gt_ctv_tau0.5": {
+    "mediana": 0.7208352560542899,
+    "q1": 0.5357185167973632,
+    "q3": 0.861607543522535,
+    "n": 54
+  },
+  "copertura_gt_banda_annidata": {
+    "mediana": 0.9138427109974425,
+    "q1": 0.7495755712139568,
+    "q3": 0.9668720545913214,
+    "n": 54
+  },
+  "volume_banda_su_ctv": {
+    "mediana": 1.6026918268055126,
+    "q1": 1.4706879816460283,
+    "q3": 1.8041744431045839,
+    "n": 54
+  },
+  "curve_mediane": [
+    {
+      "tau": 0.5,
+      "copertura_gt": 0.7208352560542899,
+      "volume_su_ctv": 1.000303933599187
+    },
+    {
+      "tau": 0.4,
+      "copertura_gt": 0.7645877842226136,
+      "volume_su_ctv": 1.100796363360352
+    },
+    {
+      "tau": 0.3,
+      "copertura_gt": 0.8077967226033771,
+      "volume_su_ctv": 1.2120355161503045
+    },
+    {
+      "tau": 0.2,
+      "copertura_gt": 0.8477368799225569,
+      "volume_su_ctv": 1.3506954128191055
+    },
+    {
+      "tau": 0.15,
+      "copertura_gt": 0.8719639995571944,
+      "volume_su_ctv": 1.4326116605030341
+    },
+    {
+      "tau": 0.1,
+      "copertura_gt": 0.9000476361301885,
+      "volume_su_ctv": 1.552136586404067
+    },
+    {
+      "tau": 0.05,
+      "copertura_gt": 0.9285938530584932,
+      "volume_su_ctv": 1.7376318499429353
+    }
+  ]
+}

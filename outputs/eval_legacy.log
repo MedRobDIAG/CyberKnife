@@ -1,0 +1,18 @@
+﻿python.exe : C:\Users\ilgra\Documents\Progetto Medical\.venv\Lib\site-packages\monai\inferers\utils.py:223: 
+UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 
+2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, 
+x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at 
+C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\python_variable_indexing.cpp:353.)
+In riga:1 car:302
++ ... tch {} } }; & ".venv\Scripts\python.exe" evaluate.py --exp legacy_une ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (C:\Users\ilgra\...exing.cpp:353.):String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  win_data = torch.cat([inputs[win_slice] for win_slice in unravel_slice]).to(sw_device)
+C:\Users\ilgra\Documents\Progetto Medical\.venv\Lib\site-packages\monai\inferers\utils.py:361: UserWarning: Using a 
+non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] 
+instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result 
+either in an error or a different result (Triggered internally at 
+C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\python_variable_indexing.cpp:353.)
+  out[idx_zm] += p

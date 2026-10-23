@@ -1,0 +1,11 @@
+# CyberKnife Control Center - Target Fase 1
+# Sorgente: C:/Users/ilgra/Documents/Progetto Medical/Task06_Lung/Task06_Lung/imagesTr/lung_022.nii.gz
+# Coordinate world in mm (spazio fisico paziente, RAS)
+world_x_mm=65.7519
+world_y_mm=-86.7178
+world_z_mm=-71.4355
+voxel_i=174.8024
+voxel_j=165.5274
+voxel_k=244.1032
+volume_cm3=50.9353
+tumor_voxels=115007

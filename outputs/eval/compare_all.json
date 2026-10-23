@@ -1,0 +1,75 @@
+{
+  "a": "LIDC",
+  "b": "LIDC+NSCLC",
+  "n_paired": 63,
+  "detection_a": {
+    "lesions_gt": 65,
+    "tp": 57,
+    "fn": 8,
+    "fp": 44,
+    "sensitivity": 0.8769230769230769,
+    "fp_per_scan": 0.6984126984126984,
+    "isocenter_inside_gt_rate": 0.8253968253968254,
+    "cases_with_no_detection": 3
+  },
+  "detection_b": {
+    "lesions_gt": 65,
+    "tp": 57,
+    "fn": 8,
+    "fp": 47,
+    "sensitivity": 0.8769230769230769,
+    "fp_per_scan": 0.746031746031746,
+    "isocenter_inside_gt_rate": 0.8571428571428571,
+    "cases_with_no_detection": 4
+  },
+  "paired_tests": {
+    "dice": {
+      "n": 63,
+      "key": "dice",
+      "mean_a": 0.5858592139842939,
+      "mean_b": 0.6234175186639941,
+      "median_delta": 0.006322809752717595,
+      "n_better": 37,
+      "n_worse": 21,
+      "statistic": 554.0,
+      "p_value": 0.019579081135049345,
+      "significant_005": true
+    },
+    "centroid_dist_mm": {
+      "n": 58,
+      "key": "centroid_dist_mm",
+      "mean_a": 18.277501879732974,
+      "mean_b": 10.000792305161008,
+      "median_delta": -0.10647885543699759,
+      "n_better": 23,
+      "n_worse": 35,
+      "statistic": 568.0,
+      "p_value": 0.02601920233243822,
+      "significant_005": true
+    },
+    "nsd_2mm": {
+      "n": 58,
+      "key": "nsd_2mm",
+      "mean_a": 0.6057741079672143,
+      "mean_b": 0.6412831779954762,
+      "median_delta": 0.012102395296096802,
+      "n_better": 36,
+      "n_worse": 21,
+      "statistic": 503.0,
+      "p_value": 0.010161786691625641,
+      "significant_005": true
+    },
+    "hd95_mm": {
+      "n": 58,
+      "key": "hd95_mm",
+      "mean_a": 92.0301789744147,
+      "mean_b": 67.76017959158996,
+      "median_delta": -0.39890921115875244,
+      "n_better": 17,
+      "n_worse": 40,
+      "statistic": 496.0,
+      "p_value": 0.008642241794871278,
+      "significant_005": true
+    }
+  }
+}

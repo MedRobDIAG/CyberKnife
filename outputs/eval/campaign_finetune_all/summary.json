@@ -1,0 +1,330 @@
+{
+  "n_casi": 2,
+  "scenari": {
+    "ctv_statico": {
+      "copertura_pct": {
+        "mediana": 48.905,
+        "q1": 24.452,
+        "q3": 73.357
+      },
+      "d95_pct": {
+        "mediana": 41.024,
+        "q1": 20.512,
+        "q3": 61.535
+      },
+      "ptv_cm3": {
+        "mediana": 2.543,
+        "q1": 2.475,
+        "q3": 2.611
+      },
+      "paddick_ci": {
+        "mediana": 0.292,
+        "q1": 0.146,
+        "q3": 0.438
+      },
+      "polmone_dose_media_gy": {
+        "mediana": 0.511,
+        "q1": 0.5,
+        "q3": 0.521
+      },
+      "polmone_v20_pct": {
+        "mediana": 0.249,
+        "q1": 0.243,
+        "q3": 0.256
+      },
+      "casi_copertura_ge_95_pct": 50.0,
+      "casi_copertura_ge_90_pct": 50.0
+    },
+    "ctv_fascio_fermo": {
+      "copertura_pct": {
+        "mediana": 18.618,
+        "q1": 9.309,
+        "q3": 27.927
+      },
+      "d95_pct": {
+        "mediana": 28.702,
+        "q1": 14.351,
+        "q3": 43.053
+      },
+      "ptv_cm3": {
+        "mediana": 2.543,
+        "q1": 2.475,
+        "q3": 2.611
+      },
+      "paddick_ci": {
+        "mediana": 0.042,
+        "q1": 0.021,
+        "q3": 0.064
+      },
+      "polmone_dose_media_gy": {
+        "mediana": 0.511,
+        "q1": 0.5,
+        "q3": 0.521
+      },
+      "polmone_v20_pct": {
+        "mediana": 0.249,
+        "q1": 0.243,
+        "q3": 0.256
+      },
+      "casi_copertura_ge_95_pct": 0.0,
+      "casi_copertura_ge_90_pct": 0.0
+    },
+    "itv_5mm": {
+      "copertura_pct": {
+        "mediana": 50.0,
+        "q1": 25.0,
+        "q3": 75.0
+      },
+      "d95_pct": {
+        "mediana": 47.198,
+        "q1": 23.599,
+        "q3": 70.798
+      },
+      "ptv_cm3": {
+        "mediana": 20.148,
+        "q1": 19.836,
+        "q3": 20.459
+      },
+      "paddick_ci": {
+        "mediana": 0.034,
+        "q1": 0.017,
+        "q3": 0.052
+      },
+      "polmone_dose_media_gy": {
+        "mediana": 1.559,
+        "q1": 1.43,
+        "q3": 1.689
+      },
+      "polmone_v20_pct": {
+        "mediana": 1.33,
+        "q1": 1.237,
+        "q3": 1.423
+      },
+      "casi_copertura_ge_95_pct": 50.0,
+      "casi_copertura_ge_90_pct": 50.0
+    },
+    "inseguimento": {
+      "copertura_pct": {
+        "mediana": 49.849,
+        "q1": 24.924,
+        "q3": 74.773
+      },
+      "d95_pct": {
+        "mediana": 41.806,
+        "q1": 20.903,
+        "q3": 62.708
+      },
+      "ptv_cm3": {
+        "mediana": 3.484,
+        "q1": 3.4,
+        "q3": 3.568
+      },
+      "paddick_ci": {
+        "mediana": 0.209,
+        "q1": 0.104,
+        "q3": 0.313
+      },
+      "polmone_dose_media_gy": {
+        "mediana": 0.655,
+        "q1": 0.612,
+        "q3": 0.699
+      },
+      "polmone_v20_pct": {
+        "mediana": 0.361,
+        "q1": 0.349,
+        "q3": 0.373
+      },
+      "casi_copertura_ge_95_pct": 50.0,
+      "casi_copertura_ge_90_pct": 50.0
+    },
+    "adattivo": {
+      "copertura_pct": {
+        "mediana": 50.0,
+        "q1": 25.0,
+        "q3": 75.0
+      },
+      "d95_pct": {
+        "mediana": 45.1,
+        "q1": 22.55,
+        "q3": 67.65
+      },
+      "ptv_cm3": {
+        "mediana": 14.752,
+        "q1": 10.163,
+        "q3": 19.342
+      },
+      "paddick_ci": {
+        "mediana": 0.128,
+        "q1": 0.064,
+        "q3": 0.191
+      },
+      "polmone_dose_media_gy": {
+        "mediana": 1.123,
+        "q1": 0.967,
+        "q3": 1.28
+      },
+      "polmone_v20_pct": {
+        "mediana": 0.989,
+        "q1": 0.731,
+        "q3": 1.248
+      },
+      "casi_copertura_ge_95_pct": 50.0,
+      "casi_copertura_ge_90_pct": 50.0
+    },
+    "oracolo": {
+      "copertura_pct": {
+        "mediana": 96.968,
+        "q1": 96.698,
+        "q3": 97.238
+      },
+      "d95_pct": {
+        "mediana": 81.483,
+        "q1": 81.226,
+        "q3": 81.74
+      },
+      "ptv_cm3": {
+        "mediana": 2.711,
+        "q1": 2.458,
+        "q3": 2.965
+      },
+      "paddick_ci": {
+        "mediana": 0.543,
+        "q1": 0.54,
+        "q3": 0.546
+      },
+      "polmone_dose_media_gy": {
+        "mediana": 0.594,
+        "q1": 0.573,
+        "q3": 0.615
+      },
+      "polmone_v20_pct": {
+        "mediana": 0.284,
+        "q1": 0.275,
+        "q3": 0.292
+      },
+      "casi_copertura_ge_95_pct": 100.0,
+      "casi_copertura_ge_90_pct": 100.0
+    }
+  },
+  "test_appaiati": {
+    "ctv_fascio_fermo -> inseguimento: copertura_pct": {
+      "mediana_diff": 31.231,
+      "p_wilcoxon": 1.0
+    },
+    "ctv_fascio_fermo -> inseguimento: ptv_cm3": {
+      "mediana_diff": 0.941,
+      "p_wilcoxon": 0.5
+    },
+    "ctv_fascio_fermo -> inseguimento: polmone_v20_pct": {
+      "mediana_diff": 0.112,
+      "p_wilcoxon": 0.5
+    },
+    "itv_5mm -> adattivo: copertura_pct": {
+      "mediana_diff": 0.0,
+      "p_wilcoxon": 1.0
+    },
+    "itv_5mm -> adattivo: ptv_cm3": {
+      "mediana_diff": -5.395,
+      "p_wilcoxon": 1.0
+    },
+    "itv_5mm -> adattivo: polmone_v20_pct": {
+      "mediana_diff": -0.341,
+      "p_wilcoxon": 1.0
+    },
+    "inseguimento -> adattivo: copertura_pct": {
+      "mediana_diff": 0.151,
+      "p_wilcoxon": 1.0
+    },
+    "inseguimento -> adattivo: ptv_cm3": {
+      "mediana_diff": 11.268,
+      "p_wilcoxon": 0.5
+    },
+    "inseguimento -> adattivo: polmone_v20_pct": {
+      "mediana_diff": 0.628,
+      "p_wilcoxon": 0.5
+    }
+  },
+  "casi_isocentro_nel_tumore": 1,
+  "configurazione": {
+    "postproc": {
+      "prob_threshold": 0.5,
+      "min_lesion_mm3": 100.0,
+      "lung_roi_filter": false,
+      "lung_dilate_mm": 20.0
+    },
+    "gate": {
+      "min_volume_cm3": 1.0,
+      "min_prob_mean": 0.0
+    },
+    "moto": {
+      "fs_hz": 26.0,
+      "period_s": 4.0,
+      "period_cv": 0.12,
+      "amplitude_cv": 0.12,
+      "shape_n": 2,
+      "inhale_shift_mm": [
+        1.0,
+        2.5,
+        -12.0
+      ],
+      "hysteresis_s": [
+        0.2,
+        0.3,
+        0.0
+      ],
+      "drift_mm_per_min": [
+        0.0,
+        0.3,
+        0.8
+      ],
+      "surrogate_gain_mm": 8.0,
+      "surrogate_lead_s": 0.15,
+      "surrogate_curvature": 0.25,
+      "surrogate_noise_mm": 0.15,
+      "surrogate_drift_mm_per_min": -0.4,
+      "kv_period_s": 60.0,
+      "kv_noise_mm": 0.5,
+      "n_init_kv": 8,
+      "corr_window": 15,
+      "corr_ridge": 0.01,
+      "corr_time_term": false,
+      "corr_half_life_s": 0.0,
+      "kv_error_limit_mm": 5.0,
+      "latency_s": 0.115,
+      "predictor": "kalman",
+      "seed": 0
+    },
+    "scenari": [
+      [
+        "ctv_statico",
+        "CTV predetto",
+        "nessuno"
+      ],
+      [
+        "ctv_fascio_fermo",
+        "CTV predetto",
+        "completo"
+      ],
+      [
+        "itv_5mm",
+        "ITV del (CTV + 5 mm)",
+        "completo"
+      ],
+      [
+        "inseguimento",
+        "CTV + margine di moto",
+        "residuo"
+      ],
+      [
+        "adattivo",
+        "banda + margine combinato",
+        "residuo"
+      ],
+      [
+        "oracolo",
+        "CTV VERO + margine di moto",
+        "residuo"
+      ]
+    ]
+  }
+}

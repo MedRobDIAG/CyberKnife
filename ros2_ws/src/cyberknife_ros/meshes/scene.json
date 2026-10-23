@@ -1,0 +1,135 @@
+{
+ "unita": "m",
+ "unita_ostacoli": "mm",
+ "sorgente_ct": "C:/Users/ilgra/Documents/Progetto Medical/Task06_Lung/Task06_Lung/imagesTr/lung_003.nii.gz",
+ "sorgente_maschera": "C:\\Users\\ilgra\\Documents\\Progetto Medical\\outputs\\lung_003_seg.nii.gz",
+ "organi": [
+  {
+   "key": "airways",
+   "file": "airways.stl",
+   "color": [
+    0.6,
+    0.9,
+    0.9
+   ],
+   "alpha": 0.45,
+   "faces": 12000,
+   "volume_cm3": 43.5
+  },
+  {
+   "key": "mediastinum",
+   "file": "mediastinum.stl",
+   "color": [
+    0.9,
+    0.45,
+    0.45
+   ],
+   "alpha": 0.3,
+   "faces": 19998,
+   "volume_cm3": 2446.0
+  },
+  {
+   "key": "bones",
+   "file": "bones.stl",
+   "color": [
+    0.93,
+    0.92,
+    0.88
+   ],
+   "alpha": 0.55,
+   "faces": 88778,
+   "volume_cm3": 1400.6
+  },
+  {
+   "key": "lung_r",
+   "file": "lung_r.stl",
+   "color": [
+    0.55,
+    0.75,
+    0.95
+   ],
+   "alpha": 0.22,
+   "faces": 25000,
+   "volume_cm3": 3210.4
+  },
+  {
+   "key": "lung_l",
+   "file": "lung_l.stl",
+   "color": [
+    0.55,
+    0.75,
+    0.95
+   ],
+   "alpha": 0.22,
+   "faces": 25000,
+   "volume_cm3": 2789.8
+  },
+  {
+   "key": "body",
+   "file": "body.stl",
+   "color": [
+    0.85,
+    0.72,
+    0.62
+   ],
+   "alpha": 0.1,
+   "faces": 39960,
+   "volume_cm3": 35422.0
+  },
+  {
+   "key": "tumor",
+   "file": "tumor.stl",
+   "color": [
+    1.0,
+    0.15,
+    0.15
+   ],
+   "alpha": 0.95,
+   "faces": 2028,
+   "volume_cm3": 1.73
+  }
+ ],
+ "ostacoli": [
+  {
+   "nome": "lettino",
+   "centro_mm": [
+    14.899993896484375,
+    -575.8625030517578,
+    -199.75
+   ],
+   "dimensioni_mm": [
+    520.0,
+    850.0,
+    2200.0
+   ]
+  },
+  {
+   "nome": "paziente",
+   "centro_mm": [
+    14.899993896484375,
+    17.137496948242188,
+    -199.75
+   ],
+   "dimensioni_mm": [
+    510.0,
+    386.0,
+    2200.0
+   ]
+  }
+ ],
+ "lettino": {
+  "colonna_mm": [
+   14.9,
+   -1000.863,
+   -1499.75
+  ],
+  "piano_a_riposo_mm": [
+   14.9,
+   -185.863,
+   -199.75
+  ],
+  "l1_mm": 800.0,
+  "l2_mm": 700.0,
+  "pavimento_mm": -1000.9
+ }
+}

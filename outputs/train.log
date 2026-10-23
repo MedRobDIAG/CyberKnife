@@ -1,0 +1,491 @@
+[train] device: cuda
+[train] GPU: NVIDIA GeForce RTX 5070
+[dataset] Volumi totali: 63 | train: 51 | val: 12
+C:\Users\ilgra\Documents\Progetto Medical\.venv\Lib\site-packages\monai\utils\deprecate_utils.py:321: FutureWarning: monai.transforms.croppad.dictionary CropForegroundd.__init__:allow_smaller: Current default value of argument `allow_smaller=True` has been deprecated since version 1.2. It will be changed to `allow_smaller=False` in version 1.5.
+  warn_deprecated(argname, msg, warning_category)
+Loading dataset:   0%|          | 0/51 [00:00<?, ?it/s]Loading dataset:   2%|1         | 1/51 [00:06<05:05,  6.11s/it]Loading dataset:   4%|3         | 2/51 [00:06<02:28,  3.04s/it]Loading dataset:  10%|9         | 5/51 [00:07<00:42,  1.08it/s]Loading dataset:  12%|#1        | 6/51 [00:09<00:52,  1.17s/it]Loading dataset:  14%|#3        | 7/51 [00:09<00:43,  1.01it/s]Loading dataset:  16%|#5        | 8/51 [00:11<00:48,  1.13s/it]Loading dataset:  20%|#9        | 10/51 [00:13<00:51,  1.25s/it]Loading dataset:  27%|##7       | 14/51 [00:16<00:34,  1.07it/s]Loading dataset:  33%|###3      | 17/51 [00:17<00:25,  1.35it/s]Loading dataset:  35%|###5      | 18/51 [00:19<00:27,  1.21it/s]Loading dataset:  39%|###9      | 20/51 [00:25<00:47,  1.53s/it]Loading dataset:  49%|####9     | 25/51 [00:26<00:20,  1.27it/s]Loading dataset:  51%|#####     | 26/51 [00:26<00:19,  1.29it/s]Loading dataset:  53%|#####2    | 27/51 [00:27<00:16,  1.42it/s]Loading dataset:  55%|#####4    | 28/51 [00:29<00:21,  1.05it/s]Loading dataset:  59%|#####8    | 30/51 [00:29<00:15,  1.32it/s]Loading dataset:  61%|######    | 31/51 [00:30<00:14,  1.39it/s]Loading dataset:  63%|######2   | 32/51 [00:32<00:17,  1.09it/s]Loading dataset:  67%|######6   | 34/51 [00:33<00:13,  1.24it/s]Loading dataset:  69%|######8   | 35/51 [00:33<00:11,  1.35it/s]Loading dataset:  71%|#######   | 36/51 [00:34<00:10,  1.39it/s]Loading dataset:  73%|#######2  | 37/51 [00:35<00:11,  1.18it/s]Loading dataset:  75%|#######4  | 38/51 [00:39<00:20,  1.60s/it]Loading dataset:  78%|#######8  | 40/51 [00:40<00:11,  1.07s/it]Loading dataset:  82%|########2 | 42/51 [00:40<00:07,  1.24it/s]Loading dataset:  84%|########4 | 43/51 [00:43<00:10,  1.27s/it]Loading dataset:  90%|######### | 46/51 [00:44<00:03,  1.38it/s]Loading dataset:  92%|#########2| 47/51 [00:46<00:03,  1.04it/s]Loading dataset:  94%|#########4| 48/51 [00:47<00:02,  1.09it/s]Loading dataset:  98%|#########8| 50/51 [00:47<00:00,  1.54it/s]Loading dataset: 100%|##########| 51/51 [00:48<00:00,  1.23it/s]Loading dataset: 100%|##########| 51/51 [00:48<00:00,  1.04it/s]
+Loading dataset:   0%|          | 0/12 [00:00<?, ?it/s]Loading dataset:   8%|8         | 1/12 [00:03<00:43,  3.95s/it]Loading dataset:  17%|#6        | 2/12 [00:04<00:18,  1.82s/it]Loading dataset:  42%|####1     | 5/12 [00:11<00:16,  2.29s/it]Loading dataset:  83%|########3 | 10/12 [00:11<00:01,  1.14it/s]Loading dataset:  92%|#########1| 11/12 [00:14<00:01,  1.16s/it]Loading dataset: 100%|##########| 12/12 [00:14<00:00,  1.02it/s]Loading dataset: 100%|##########| 12/12 [00:14<00:00,  1.24s/it]
+[epoch 1/300] train_loss: 1.7152 | lr: 1.00e-04
+[epoch 2/300] train_loss: 1.4860 | lr: 1.00e-04
+C:\Users\ilgra\Documents\Progetto Medical\.venv\Lib\site-packages\monai\inferers\utils.py:223: UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\python_variable_indexing.cpp:353.)
+  win_data = torch.cat([inputs[win_slice] for win_slice in unravel_slice]).to(sw_device)
+C:\Users\ilgra\Documents\Progetto Medical\.venv\Lib\site-packages\monai\inferers\utils.py:361: UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\python_variable_indexing.cpp:353.)
+  out[idx_zm] += p
+    -> val_mean_dice: 0.0004
+    *** Nuovo best model salvato (dice=0.0004) -> C:\Users\ilgra\Documents\Progetto Medical\outputs\best_model_dice.pth
+[epoch 3/300] train_loss: 1.3644 | lr: 1.00e-04
+[epoch 4/300] train_loss: 1.2842 | lr: 1.00e-04
+    -> val_mean_dice: 0.0003
+[epoch 5/300] train_loss: 1.2298 | lr: 9.99e-05
+[epoch 6/300] train_loss: 1.1862 | lr: 9.99e-05
+    -> val_mean_dice: 0.0002
+[epoch 7/300] train_loss: 1.1505 | lr: 9.99e-05
+[epoch 8/300] train_loss: 1.1182 | lr: 9.98e-05
+    -> val_mean_dice: 0.0002
+[epoch 9/300] train_loss: 1.0884 | lr: 9.98e-05
+[epoch 10/300] train_loss: 1.0602 | lr: 9.97e-05
+    -> val_mean_dice: 0.0002
+[epoch 11/300] train_loss: 1.0343 | lr: 9.97e-05
+[epoch 12/300] train_loss: 1.0107 | lr: 9.96e-05
+    -> val_mean_dice: 0.0001
+[epoch 13/300] train_loss: 0.9865 | lr: 9.95e-05
+[epoch 14/300] train_loss: 0.9650 | lr: 9.95e-05
+    -> val_mean_dice: 0.0001
+[epoch 15/300] train_loss: 0.9449 | lr: 9.94e-05
+[epoch 16/300] train_loss: 0.9267 | lr: 9.93e-05
+    -> val_mean_dice: 0.0000
+[epoch 17/300] train_loss: 0.9081 | lr: 9.92e-05
+[epoch 18/300] train_loss: 0.8907 | lr: 9.91e-05
+    -> val_mean_dice: 0.0000
+[epoch 19/300] train_loss: 0.8743 | lr: 9.90e-05
+[epoch 20/300] train_loss: 0.8595 | lr: 9.89e-05
+    -> val_mean_dice: 0.0000
+[epoch 21/300] train_loss: 0.8434 | lr: 9.88e-05
+[epoch 22/300] train_loss: 0.8299 | lr: 9.87e-05
+    -> val_mean_dice: 0.0000
+[epoch 23/300] train_loss: 0.8184 | lr: 9.86e-05
+[epoch 24/300] train_loss: 0.8062 | lr: 9.84e-05
+    -> val_mean_dice: 0.0000
+[epoch 25/300] train_loss: 0.7926 | lr: 9.83e-05
+[epoch 26/300] train_loss: 0.7819 | lr: 9.82e-05
+    -> val_mean_dice: 0.0000
+[epoch 27/300] train_loss: 0.7707 | lr: 9.80e-05
+[epoch 28/300] train_loss: 0.7615 | lr: 9.79e-05
+    -> val_mean_dice: 0.0000
+[epoch 29/300] train_loss: 0.7512 | lr: 9.77e-05
+[epoch 30/300] train_loss: 0.7423 | lr: 9.76e-05
+    -> val_mean_dice: 0.0000
+[epoch 31/300] train_loss: 0.7333 | lr: 9.74e-05
+[epoch 32/300] train_loss: 0.7249 | lr: 9.72e-05
+    -> val_mean_dice: 0.0000
+[epoch 33/300] train_loss: 0.7162 | lr: 9.70e-05
+[epoch 34/300] train_loss: 0.7091 | lr: 9.69e-05
+    -> val_mean_dice: 0.0000
+[epoch 35/300] train_loss: 0.7015 | lr: 9.67e-05
+[epoch 36/300] train_loss: 0.6960 | lr: 9.65e-05
+    -> val_mean_dice: 0.0000
+[epoch 37/300] train_loss: 0.6899 | lr: 9.63e-05
+[epoch 38/300] train_loss: 0.6849 | lr: 9.61e-05
+    -> val_mean_dice: 0.0000
+[epoch 39/300] train_loss: 0.6754 | lr: 9.59e-05
+[epoch 40/300] train_loss: 0.6703 | lr: 9.57e-05
+    -> val_mean_dice: 0.0000
+[epoch 41/300] train_loss: 0.6657 | lr: 9.55e-05
+[epoch 42/300] train_loss: 0.6562 | lr: 9.52e-05
+    -> val_mean_dice: 0.0000
+[epoch 43/300] train_loss: 0.6537 | lr: 9.50e-05
+[epoch 44/300] train_loss: 0.6483 | lr: 9.48e-05
+    -> val_mean_dice: 0.0000
+[epoch 45/300] train_loss: 0.6428 | lr: 9.46e-05
+[epoch 46/300] train_loss: 0.6387 | lr: 9.43e-05
+    -> val_mean_dice: 0.0225
+    *** Nuovo best model salvato (dice=0.0225) -> C:\Users\ilgra\Documents\Progetto Medical\outputs\best_model_dice.pth
+[epoch 47/300] train_loss: 0.6341 | lr: 9.41e-05
+[epoch 48/300] train_loss: 0.6286 | lr: 9.38e-05
+    -> val_mean_dice: 0.0127
+[epoch 49/300] train_loss: 0.6245 | lr: 9.36e-05
+[epoch 50/300] train_loss: 0.6192 | lr: 9.33e-05
+    -> val_mean_dice: 0.0538
+    *** Nuovo best model salvato (dice=0.0538) -> C:\Users\ilgra\Documents\Progetto Medical\outputs\best_model_dice.pth
+[epoch 51/300] train_loss: 0.6147 | lr: 9.30e-05
+[epoch 52/300] train_loss: 0.6123 | lr: 9.28e-05
+    -> val_mean_dice: 0.0511
+[epoch 53/300] train_loss: 0.6048 | lr: 9.25e-05
+[epoch 54/300] train_loss: 0.6055 | lr: 9.22e-05
+    -> val_mean_dice: 0.0074
+[epoch 55/300] train_loss: 0.6008 | lr: 9.19e-05
+[epoch 56/300] train_loss: 0.5983 | lr: 9.16e-05
+    -> val_mean_dice: 0.0113
+[epoch 57/300] train_loss: 0.5919 | lr: 9.14e-05
+[epoch 58/300] train_loss: 0.5872 | lr: 9.11e-05
+    -> val_mean_dice: 0.0678
+    *** Nuovo best model salvato (dice=0.0678) -> C:\Users\ilgra\Documents\Progetto Medical\outputs\best_model_dice.pth
+[epoch 59/300] train_loss: 0.5848 | lr: 9.08e-05
+[epoch 60/300] train_loss: 0.5887 | lr: 9.05e-05
+    -> val_mean_dice: 0.0813
+    *** Nuovo best model salvato (dice=0.0813) -> C:\Users\ilgra\Documents\Progetto Medical\outputs\best_model_dice.pth
+[epoch 61/300] train_loss: 0.5793 | lr: 9.01e-05
+[epoch 62/300] train_loss: 0.5747 | lr: 8.98e-05
+    -> val_mean_dice: 0.0833
+    *** Nuovo best model salvato (dice=0.0833) -> C:\Users\ilgra\Documents\Progetto Medical\outputs\best_model_dice.pth
+[epoch 63/300] train_loss: 0.5762 | lr: 8.95e-05
+[epoch 64/300] train_loss: 0.5730 | lr: 8.92e-05
+    -> val_mean_dice: 0.0188
+[epoch 65/300] train_loss: 0.5674 | lr: 8.89e-05
+[epoch 66/300] train_loss: 0.5656 | lr: 8.85e-05
+    -> val_mean_dice: 0.0335
+[epoch 67/300] train_loss: 0.5646 | lr: 8.82e-05
+[epoch 68/300] train_loss: 0.5606 | lr: 8.78e-05
+    -> val_mean_dice: 0.0599
+[epoch 69/300] train_loss: 0.5528 | lr: 8.75e-05
+[epoch 70/300] train_loss: 0.5570 | lr: 8.72e-05
+    -> val_mean_dice: 0.0440
+[epoch 71/300] train_loss: 0.5560 | lr: 8.68e-05
+[epoch 72/300] train_loss: 0.5542 | lr: 8.64e-05
+    -> val_mean_dice: 0.0415
+[epoch 73/300] train_loss: 0.5496 | lr: 8.61e-05
+[epoch 74/300] train_loss: 0.5485 | lr: 8.57e-05
+    -> val_mean_dice: 0.0536
+[epoch 75/300] train_loss: 0.5474 | lr: 8.54e-05
+[epoch 76/300] train_loss: 0.5407 | lr: 8.50e-05
+    -> val_mean_dice: 0.0241
+[epoch 77/300] train_loss: 0.5439 | lr: 8.46e-05
+[epoch 78/300] train_loss: 0.5384 | lr: 8.42e-05
+    -> val_mean_dice: 0.1354
+    *** Nuovo best model salvato (dice=0.1354) -> C:\Users\ilgra\Documents\Progetto Medical\outputs\best_model_dice.pth
+[epoch 79/300] train_loss: 0.5387 | lr: 8.38e-05
+[epoch 80/300] train_loss: 0.5379 | lr: 8.35e-05
+    -> val_mean_dice: 0.0665
+[epoch 81/300] train_loss: 0.5327 | lr: 8.31e-05
+[epoch 82/300] train_loss: 0.5331 | lr: 8.27e-05
+    -> val_mean_dice: 0.0432
+[epoch 83/300] train_loss: 0.5312 | lr: 8.23e-05
+[epoch 84/300] train_loss: 0.5290 | lr: 8.19e-05
+    -> val_mean_dice: 0.1418
+    *** Nuovo best model salvato (dice=0.1418) -> C:\Users\ilgra\Documents\Progetto Medical\outputs\best_model_dice.pth
+[epoch 85/300] train_loss: 0.5273 | lr: 8.15e-05
+[epoch 86/300] train_loss: 0.5272 | lr: 8.11e-05
+    -> val_mean_dice: 0.1051
+[epoch 87/300] train_loss: 0.5212 | lr: 8.06e-05
+[epoch 88/300] train_loss: 0.5197 | lr: 8.02e-05
+    -> val_mean_dice: 0.0934
+[epoch 89/300] train_loss: 0.5231 | lr: 7.98e-05
+[epoch 90/300] train_loss: 0.5210 | lr: 7.94e-05
+    -> val_mean_dice: 0.2429
+    *** Nuovo best model salvato (dice=0.2429) -> C:\Users\ilgra\Documents\Progetto Medical\outputs\best_model_dice.pth
+[epoch 91/300] train_loss: 0.5203 | lr: 7.90e-05
+[epoch 92/300] train_loss: 0.5137 | lr: 7.85e-05
+    -> val_mean_dice: 0.1710
+[epoch 93/300] train_loss: 0.5176 | lr: 7.81e-05
+[epoch 94/300] train_loss: 0.5161 | lr: 7.77e-05
+    -> val_mean_dice: 0.1980
+[epoch 95/300] train_loss: 0.5112 | lr: 7.72e-05
+[epoch 96/300] train_loss: 0.5094 | lr: 7.68e-05
+    -> val_mean_dice: 0.2123
+[epoch 97/300] train_loss: 0.5131 | lr: 7.63e-05
+[epoch 98/300] train_loss: 0.5141 | lr: 7.59e-05
+    -> val_mean_dice: 0.1733
+[epoch 99/300] train_loss: 0.5119 | lr: 7.55e-05
+[epoch 100/300] train_loss: 0.5059 | lr: 7.50e-05
+    -> val_mean_dice: 0.1908
+[epoch 101/300] train_loss: 0.5043 | lr: 7.45e-05
+[epoch 102/300] train_loss: 0.5026 | lr: 7.41e-05
+    -> val_mean_dice: 0.1620
+[epoch 103/300] train_loss: 0.5009 | lr: 7.36e-05
+[epoch 104/300] train_loss: 0.4992 | lr: 7.32e-05
+    -> val_mean_dice: 0.1322
+[epoch 105/300] train_loss: 0.4989 | lr: 7.27e-05
+[epoch 106/300] train_loss: 0.4950 | lr: 7.22e-05
+    -> val_mean_dice: 0.2577
+    *** Nuovo best model salvato (dice=0.2577) -> C:\Users\ilgra\Documents\Progetto Medical\outputs\best_model_dice.pth
+[epoch 107/300] train_loss: 0.4902 | lr: 7.18e-05
+[epoch 108/300] train_loss: 0.4915 | lr: 7.13e-05
+    -> val_mean_dice: 0.3045
+    *** Nuovo best model salvato (dice=0.3045) -> C:\Users\ilgra\Documents\Progetto Medical\outputs\best_model_dice.pth
+[epoch 109/300] train_loss: 0.4872 | lr: 7.08e-05
+[epoch 110/300] train_loss: 0.4949 | lr: 7.03e-05
+    -> val_mean_dice: 0.2839
+[epoch 111/300] train_loss: 0.4921 | lr: 6.99e-05
+[epoch 112/300] train_loss: 0.4813 | lr: 6.94e-05
+    -> val_mean_dice: 0.3354
+    *** Nuovo best model salvato (dice=0.3354) -> C:\Users\ilgra\Documents\Progetto Medical\outputs\best_model_dice.pth
+[epoch 113/300] train_loss: 0.4798 | lr: 6.89e-05
+[epoch 114/300] train_loss: 0.4848 | lr: 6.84e-05
+    -> val_mean_dice: 0.2386
+[epoch 115/300] train_loss: 0.4908 | lr: 6.79e-05
+[epoch 116/300] train_loss: 0.4819 | lr: 6.74e-05
+    -> val_mean_dice: 0.2260
+[epoch 117/300] train_loss: 0.4776 | lr: 6.69e-05
+[epoch 118/300] train_loss: 0.4826 | lr: 6.64e-05
+    -> val_mean_dice: 0.2835
+[epoch 119/300] train_loss: 0.4793 | lr: 6.59e-05
+[epoch 120/300] train_loss: 0.4764 | lr: 6.55e-05
+    -> val_mean_dice: 0.3472
+    *** Nuovo best model salvato (dice=0.3472) -> C:\Users\ilgra\Documents\Progetto Medical\outputs\best_model_dice.pth
+[epoch 121/300] train_loss: 0.4729 | lr: 6.50e-05
+[epoch 122/300] train_loss: 0.4678 | lr: 6.45e-05
+    -> val_mean_dice: 0.3841
+    *** Nuovo best model salvato (dice=0.3841) -> C:\Users\ilgra\Documents\Progetto Medical\outputs\best_model_dice.pth
+[epoch 123/300] train_loss: 0.4706 | lr: 6.39e-05
+[epoch 124/300] train_loss: 0.4669 | lr: 6.34e-05
+    -> val_mean_dice: 0.3042
+[epoch 125/300] train_loss: 0.4583 | lr: 6.29e-05
+[epoch 126/300] train_loss: 0.4760 | lr: 6.24e-05
+    -> val_mean_dice: 0.4193
+    *** Nuovo best model salvato (dice=0.4193) -> C:\Users\ilgra\Documents\Progetto Medical\outputs\best_model_dice.pth
+[epoch 127/300] train_loss: 0.4614 | lr: 6.19e-05
+[epoch 128/300] train_loss: 0.4642 | lr: 6.14e-05
+    -> val_mean_dice: 0.3707
+[epoch 129/300] train_loss: 0.4600 | lr: 6.09e-05
+[epoch 130/300] train_loss: 0.4650 | lr: 6.04e-05
+    -> val_mean_dice: 0.2888
+[epoch 131/300] train_loss: 0.4573 | lr: 5.99e-05
+[epoch 132/300] train_loss: 0.4641 | lr: 5.94e-05
+    -> val_mean_dice: 0.4031
+[epoch 133/300] train_loss: 0.4596 | lr: 5.89e-05
+[epoch 134/300] train_loss: 0.4543 | lr: 5.83e-05
+    -> val_mean_dice: 0.3745
+[epoch 135/300] train_loss: 0.4540 | lr: 5.78e-05
+[epoch 136/300] train_loss: 0.4566 | lr: 5.73e-05
+    -> val_mean_dice: 0.4079
+[epoch 137/300] train_loss: 0.4548 | lr: 5.68e-05
+[epoch 138/300] train_loss: 0.4528 | lr: 5.63e-05
+    -> val_mean_dice: 0.3821
+[epoch 139/300] train_loss: 0.4474 | lr: 5.57e-05
+[epoch 140/300] train_loss: 0.4527 | lr: 5.52e-05
+    -> val_mean_dice: 0.3721
+[epoch 141/300] train_loss: 0.4439 | lr: 5.47e-05
+[epoch 142/300] train_loss: 0.4445 | lr: 5.42e-05
+    -> val_mean_dice: 0.3452
+[epoch 143/300] train_loss: 0.4454 | lr: 5.37e-05
+[epoch 144/300] train_loss: 0.4419 | lr: 5.31e-05
+    -> val_mean_dice: 0.4143
+[epoch 145/300] train_loss: 0.4489 | lr: 5.26e-05
+[epoch 146/300] train_loss: 0.4397 | lr: 5.21e-05
+    -> val_mean_dice: 0.3795
+[epoch 147/300] train_loss: 0.4441 | lr: 5.16e-05
+[epoch 148/300] train_loss: 0.4454 | lr: 5.10e-05
+    -> val_mean_dice: 0.3926
+[epoch 149/300] train_loss: 0.4448 | lr: 5.05e-05
+[epoch 150/300] train_loss: 0.4399 | lr: 5.00e-05
+    -> val_mean_dice: 0.4232
+    *** Nuovo best model salvato (dice=0.4232) -> C:\Users\ilgra\Documents\Progetto Medical\outputs\best_model_dice.pth
+[epoch 151/300] train_loss: 0.4269 | lr: 4.95e-05
+[epoch 152/300] train_loss: 0.4402 | lr: 4.90e-05
+    -> val_mean_dice: 0.3261
+[epoch 153/300] train_loss: 0.4377 | lr: 4.84e-05
+[epoch 154/300] train_loss: 0.4310 | lr: 4.79e-05
+    -> val_mean_dice: 0.3884
+[epoch 155/300] train_loss: 0.4313 | lr: 4.74e-05
+[epoch 156/300] train_loss: 0.4255 | lr: 4.69e-05
+    -> val_mean_dice: 0.4790
+    *** Nuovo best model salvato (dice=0.4790) -> C:\Users\ilgra\Documents\Progetto Medical\outputs\best_model_dice.pth
+[epoch 157/300] train_loss: 0.4262 | lr: 4.63e-05
+[epoch 158/300] train_loss: 0.4294 | lr: 4.58e-05
+    -> val_mean_dice: 0.4088
+[epoch 159/300] train_loss: 0.4336 | lr: 4.53e-05
+[epoch 160/300] train_loss: 0.4156 | lr: 4.48e-05
+    -> val_mean_dice: 0.4905
+    *** Nuovo best model salvato (dice=0.4905) -> C:\Users\ilgra\Documents\Progetto Medical\outputs\best_model_dice.pth
+[epoch 161/300] train_loss: 0.4282 | lr: 4.43e-05
+[epoch 162/300] train_loss: 0.4299 | lr: 4.37e-05
+    -> val_mean_dice: 0.4645
+[epoch 163/300] train_loss: 0.4354 | lr: 4.32e-05
+[epoch 164/300] train_loss: 0.4159 | lr: 4.27e-05
+    -> val_mean_dice: 0.4626
+[epoch 165/300] train_loss: 0.4393 | lr: 4.22e-05
+[epoch 166/300] train_loss: 0.4213 | lr: 4.17e-05
+    -> val_mean_dice: 0.4500
+[epoch 167/300] train_loss: 0.4173 | lr: 4.11e-05
+[epoch 168/300] train_loss: 0.4178 | lr: 4.06e-05
+    -> val_mean_dice: 0.4531
+[epoch 169/300] train_loss: 0.4117 | lr: 4.01e-05
+[epoch 170/300] train_loss: 0.4054 | lr: 3.96e-05
+    -> val_mean_dice: 0.4194
+[epoch 171/300] train_loss: 0.4236 | lr: 3.91e-05
+[epoch 172/300] train_loss: 0.4131 | lr: 3.86e-05
+    -> val_mean_dice: 0.5087
+    *** Nuovo best model salvato (dice=0.5087) -> C:\Users\ilgra\Documents\Progetto Medical\outputs\best_model_dice.pth
+[epoch 173/300] train_loss: 0.4152 | lr: 3.81e-05
+[epoch 174/300] train_loss: 0.4189 | lr: 3.76e-05
+    -> val_mean_dice: 0.4782
+[epoch 175/300] train_loss: 0.4091 | lr: 3.71e-05
+[epoch 176/300] train_loss: 0.4186 | lr: 3.66e-05
+    -> val_mean_dice: 0.4010
+[epoch 177/300] train_loss: 0.4060 | lr: 3.61e-05
+[epoch 178/300] train_loss: 0.3925 | lr: 3.55e-05
+    -> val_mean_dice: 0.4824
+[epoch 179/300] train_loss: 0.4117 | lr: 3.50e-05
+[epoch 180/300] train_loss: 0.4060 | lr: 3.45e-05
+    -> val_mean_dice: 0.4523
+[epoch 181/300] train_loss: 0.3897 | lr: 3.41e-05
+[epoch 182/300] train_loss: 0.3911 | lr: 3.36e-05
+    -> val_mean_dice: 0.4755
+[epoch 183/300] train_loss: 0.4092 | lr: 3.31e-05
+[epoch 184/300] train_loss: 0.4119 | lr: 3.26e-05
+    -> val_mean_dice: 0.5075
+[epoch 185/300] train_loss: 0.3990 | lr: 3.21e-05
+[epoch 186/300] train_loss: 0.4002 | lr: 3.16e-05
+    -> val_mean_dice: 0.4208
+[epoch 187/300] train_loss: 0.4021 | lr: 3.11e-05
+[epoch 188/300] train_loss: 0.3984 | lr: 3.06e-05
+    -> val_mean_dice: 0.5193
+    *** Nuovo best model salvato (dice=0.5193) -> C:\Users\ilgra\Documents\Progetto Medical\outputs\best_model_dice.pth
+[epoch 189/300] train_loss: 0.4031 | lr: 3.01e-05
+[epoch 190/300] train_loss: 0.4053 | lr: 2.97e-05
+    -> val_mean_dice: 0.5041
+[epoch 191/300] train_loss: 0.3902 | lr: 2.92e-05
+[epoch 192/300] train_loss: 0.3929 | lr: 2.87e-05
+    -> val_mean_dice: 0.5309
+    *** Nuovo best model salvato (dice=0.5309) -> C:\Users\ilgra\Documents\Progetto Medical\outputs\best_model_dice.pth
+[epoch 193/300] train_loss: 0.3768 | lr: 2.82e-05
+[epoch 194/300] train_loss: 0.3943 | lr: 2.78e-05
+    -> val_mean_dice: 0.5267
+[epoch 195/300] train_loss: 0.3917 | lr: 2.73e-05
+[epoch 196/300] train_loss: 0.4103 | lr: 2.68e-05
+    -> val_mean_dice: 0.4913
+[epoch 197/300] train_loss: 0.3903 | lr: 2.64e-05
+[epoch 198/300] train_loss: 0.3885 | lr: 2.59e-05
+    -> val_mean_dice: 0.5383
+    *** Nuovo best model salvato (dice=0.5383) -> C:\Users\ilgra\Documents\Progetto Medical\outputs\best_model_dice.pth
+[epoch 199/300] train_loss: 0.3827 | lr: 2.55e-05
+[epoch 200/300] train_loss: 0.3864 | lr: 2.50e-05
+    -> val_mean_dice: 0.5245
+[epoch 201/300] train_loss: 0.3936 | lr: 2.45e-05
+[epoch 202/300] train_loss: 0.3748 | lr: 2.41e-05
+    -> val_mean_dice: 0.4969
+[epoch 203/300] train_loss: 0.3797 | lr: 2.37e-05
+[epoch 204/300] train_loss: 0.3777 | lr: 2.32e-05
+    -> val_mean_dice: 0.5462
+    *** Nuovo best model salvato (dice=0.5462) -> C:\Users\ilgra\Documents\Progetto Medical\outputs\best_model_dice.pth
+[epoch 205/300] train_loss: 0.3859 | lr: 2.28e-05
+[epoch 206/300] train_loss: 0.3743 | lr: 2.23e-05
+    -> val_mean_dice: 0.5316
+[epoch 207/300] train_loss: 0.3938 | lr: 2.19e-05
+[epoch 208/300] train_loss: 0.3907 | lr: 2.15e-05
+    -> val_mean_dice: 0.5249
+[epoch 209/300] train_loss: 0.3878 | lr: 2.10e-05
+[epoch 210/300] train_loss: 0.3826 | lr: 2.06e-05
+    -> val_mean_dice: 0.5613
+    *** Nuovo best model salvato (dice=0.5613) -> C:\Users\ilgra\Documents\Progetto Medical\outputs\best_model_dice.pth
+[epoch 211/300] train_loss: 0.3885 | lr: 2.02e-05
+[epoch 212/300] train_loss: 0.3696 | lr: 1.98e-05
+    -> val_mean_dice: 0.5566
+[epoch 213/300] train_loss: 0.3739 | lr: 1.94e-05
+[epoch 214/300] train_loss: 0.3805 | lr: 1.89e-05
+    -> val_mean_dice: 0.4857
+[epoch 215/300] train_loss: 0.3836 | lr: 1.85e-05
+[epoch 216/300] train_loss: 0.3820 | lr: 1.81e-05
+    -> val_mean_dice: 0.5281
+[epoch 217/300] train_loss: 0.3881 | lr: 1.77e-05
+[epoch 218/300] train_loss: 0.3732 | lr: 1.73e-05
+    -> val_mean_dice: 0.5464
+[epoch 219/300] train_loss: 0.3782 | lr: 1.69e-05
+[epoch 220/300] train_loss: 0.3812 | lr: 1.65e-05
+    -> val_mean_dice: 0.5167
+[epoch 221/300] train_loss: 0.3804 | lr: 1.62e-05
+[epoch 222/300] train_loss: 0.3717 | lr: 1.58e-05
+    -> val_mean_dice: 0.5646
+    *** Nuovo best model salvato (dice=0.5646) -> C:\Users\ilgra\Documents\Progetto Medical\outputs\best_model_dice.pth
+[epoch 223/300] train_loss: 0.3628 | lr: 1.54e-05
+[epoch 224/300] train_loss: 0.3718 | lr: 1.50e-05
+    -> val_mean_dice: 0.5407
+[epoch 225/300] train_loss: 0.3686 | lr: 1.46e-05
+[epoch 226/300] train_loss: 0.3706 | lr: 1.43e-05
+    -> val_mean_dice: 0.5550
+[epoch 227/300] train_loss: 0.3703 | lr: 1.39e-05
+[epoch 228/300] train_loss: 0.3634 | lr: 1.36e-05
+    -> val_mean_dice: 0.5523
+[epoch 229/300] train_loss: 0.3729 | lr: 1.32e-05
+[epoch 230/300] train_loss: 0.3591 | lr: 1.28e-05
+    -> val_mean_dice: 0.5564
+[epoch 231/300] train_loss: 0.3831 | lr: 1.25e-05
+[epoch 232/300] train_loss: 0.3757 | lr: 1.22e-05
+    -> val_mean_dice: 0.5318
+[epoch 233/300] train_loss: 0.3620 | lr: 1.18e-05
+[epoch 234/300] train_loss: 0.3733 | lr: 1.15e-05
+    -> val_mean_dice: 0.5482
+[epoch 235/300] train_loss: 0.3832 | lr: 1.11e-05
+[epoch 236/300] train_loss: 0.3793 | lr: 1.08e-05
+    -> val_mean_dice: 0.5641
+[epoch 237/300] train_loss: 0.3650 | lr: 1.05e-05
+[epoch 238/300] train_loss: 0.3664 | lr: 1.02e-05
+    -> val_mean_dice: 0.5604
+[epoch 239/300] train_loss: 0.3675 | lr: 9.86e-06
+[epoch 240/300] train_loss: 0.3697 | lr: 9.55e-06
+    -> val_mean_dice: 0.5694
+    *** Nuovo best model salvato (dice=0.5694) -> C:\Users\ilgra\Documents\Progetto Medical\outputs\best_model_dice.pth
+[epoch 241/300] train_loss: 0.3681 | lr: 9.24e-06
+[epoch 242/300] train_loss: 0.3551 | lr: 8.94e-06
+    -> val_mean_dice: 0.5719
+    *** Nuovo best model salvato (dice=0.5719) -> C:\Users\ilgra\Documents\Progetto Medical\outputs\best_model_dice.pth
+[epoch 243/300] train_loss: 0.3656 | lr: 8.65e-06
+[epoch 244/300] train_loss: 0.3662 | lr: 8.35e-06
+    -> val_mean_dice: 0.5423
+[epoch 245/300] train_loss: 0.3762 | lr: 8.07e-06
+[epoch 246/300] train_loss: 0.3643 | lr: 7.78e-06
+    -> val_mean_dice: 0.5693
+[epoch 247/300] train_loss: 0.3636 | lr: 7.51e-06
+[epoch 248/300] train_loss: 0.3513 | lr: 7.23e-06
+    -> val_mean_dice: 0.5692
+[epoch 249/300] train_loss: 0.3625 | lr: 6.96e-06
+[epoch 250/300] train_loss: 0.3758 | lr: 6.70e-06
+    -> val_mean_dice: 0.5862
+    *** Nuovo best model salvato (dice=0.5862) -> C:\Users\ilgra\Documents\Progetto Medical\outputs\best_model_dice.pth
+[epoch 251/300] train_loss: 0.3487 | lr: 6.44e-06
+[epoch 252/300] train_loss: 0.3511 | lr: 6.18e-06
+    -> val_mean_dice: 0.5559
+[epoch 253/300] train_loss: 0.3655 | lr: 5.93e-06
+[epoch 254/300] train_loss: 0.3758 | lr: 5.69e-06
+    -> val_mean_dice: 0.5694
+[epoch 255/300] train_loss: 0.3709 | lr: 5.45e-06
+[epoch 256/300] train_loss: 0.3584 | lr: 5.21e-06
+    -> val_mean_dice: 0.5703
+[epoch 257/300] train_loss: 0.3687 | lr: 4.98e-06
+[epoch 258/300] train_loss: 0.3520 | lr: 4.76e-06
+    -> val_mean_dice: 0.5697
+[epoch 259/300] train_loss: 0.3628 | lr: 4.54e-06
+[epoch 260/300] train_loss: 0.3871 | lr: 4.32e-06
+    -> val_mean_dice: 0.5681
+[epoch 261/300] train_loss: 0.3661 | lr: 4.11e-06
+[epoch 262/300] train_loss: 0.3833 | lr: 3.91e-06
+    -> val_mean_dice: 0.5624
+[epoch 263/300] train_loss: 0.3509 | lr: 3.71e-06
+[epoch 264/300] train_loss: 0.3542 | lr: 3.51e-06
+    -> val_mean_dice: 0.5595
+[epoch 265/300] train_loss: 0.3632 | lr: 3.32e-06
+[epoch 266/300] train_loss: 0.3775 | lr: 3.14e-06
+    -> val_mean_dice: 0.5640
+[epoch 267/300] train_loss: 0.3822 | lr: 2.96e-06
+[epoch 268/300] train_loss: 0.3559 | lr: 2.78e-06
+    -> val_mean_dice: 0.5686
+[epoch 269/300] train_loss: 0.3573 | lr: 2.61e-06
+[epoch 270/300] train_loss: 0.3687 | lr: 2.45e-06
+    -> val_mean_dice: 0.5612
+[epoch 271/300] train_loss: 0.3617 | lr: 2.29e-06
+[epoch 272/300] train_loss: 0.3645 | lr: 2.13e-06
+    -> val_mean_dice: 0.5689
+[epoch 273/300] train_loss: 0.3724 | lr: 1.99e-06
+[epoch 274/300] train_loss: 0.3602 | lr: 1.84e-06
+    -> val_mean_dice: 0.5646
+[epoch 275/300] train_loss: 0.3599 | lr: 1.70e-06
+[epoch 276/300] train_loss: 0.3667 | lr: 1.57e-06
+    -> val_mean_dice: 0.5667
+[epoch 277/300] train_loss: 0.3717 | lr: 1.44e-06
+[epoch 278/300] train_loss: 0.3591 | lr: 1.32e-06
+    -> val_mean_dice: 0.5678
+[epoch 279/300] train_loss: 0.3579 | lr: 1.20e-06
+[epoch 280/300] train_loss: 0.3562 | lr: 1.09e-06
+    -> val_mean_dice: 0.5689
+[epoch 281/300] train_loss: 0.3708 | lr: 9.86e-07
+[epoch 282/300] train_loss: 0.3498 | lr: 8.86e-07
+    -> val_mean_dice: 0.5665
+[epoch 283/300] train_loss: 0.3641 | lr: 7.90e-07
+[epoch 284/300] train_loss: 0.3650 | lr: 7.00e-07
+    -> val_mean_dice: 0.5670
+[epoch 285/300] train_loss: 0.3552 | lr: 6.16e-07
+[epoch 286/300] train_loss: 0.3658 | lr: 5.36e-07
+    -> val_mean_dice: 0.5653
+[epoch 287/300] train_loss: 0.3785 | lr: 4.63e-07
+[epoch 288/300] train_loss: 0.3655 | lr: 3.94e-07
+    -> val_mean_dice: 0.5647
+[epoch 289/300] train_loss: 0.3574 | lr: 3.31e-07
+[epoch 290/300] train_loss: 0.3484 | lr: 2.74e-07
+    -> val_mean_dice: 0.5645
+[epoch 291/300] train_loss: 0.3673 | lr: 2.22e-07
+[epoch 292/300] train_loss: 0.3517 | lr: 1.75e-07
+    -> val_mean_dice: 0.5642
+[epoch 293/300] train_loss: 0.3577 | lr: 1.34e-07
+[epoch 294/300] train_loss: 0.3473 | lr: 9.87e-08
+    -> val_mean_dice: 0.5643
+[epoch 295/300] train_loss: 0.3683 | lr: 6.85e-08
+[epoch 296/300] train_loss: 0.3587 | lr: 4.39e-08
+    -> val_mean_dice: 0.5646
+[epoch 297/300] train_loss: 0.3538 | lr: 2.47e-08
+[epoch 298/300] train_loss: 0.3727 | lr: 1.10e-08
+    -> val_mean_dice: 0.5644
+[epoch 299/300] train_loss: 0.3555 | lr: 2.74e-09
+[epoch 300/300] train_loss: 0.3565 | lr: 0.00e+00
+    -> val_mean_dice: 0.5645
+
+[train] Completato. Best Dice: 0.5862 @ epoch 250

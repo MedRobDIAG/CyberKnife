@@ -1,0 +1,8 @@
+Starting >>> cyberknife_ros
+Finished <<< cyberknife_ros [1.36s]
+
+Summary: 1 package finished [1.73s]
+
+Compilato in /home/nikke/ck_ws. Per usarlo:
+  source /home/nikke/ck_ws/install/setup.bash
+  ros2 launch cyberknife_ros cyberknife.launch.py

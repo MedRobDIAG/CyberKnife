@@ -1,0 +1,277 @@
+[lidc] serie selezionate: 271  (noduli: 347)
+[lidc] filtri: malignita' media >= 3.5, >= 3 radiologi su 4
+  [1/271] lidc_0001: gia' convertito
+  [2/271] lidc_0003: gia' convertito
+  [3/271] lidc_0007: gia' convertito
+  [4/271] lidc_0011: (512, 512, 128) px 0.74 slice 2.50 -> 1 noduli, 1.03 cm3
+  [5/271] lidc_0012: (512, 512, 128) px 0.74 slice 2.50 -> 1 noduli, 1.08 cm3
+  [6/271] lidc_0013: (512, 512, 125) px 0.59 slice 2.50 -> 1 noduli, 2.27 cm3
+  [7/271] lidc_0014: (512, 512, 114) px 0.66 slice 2.50 -> 1 noduli, 1.83 cm3
+  [8/271] lidc_0015: (512, 512, 209) px 0.69 slice 1.25 -> 1 noduli, 3.87 cm3
+  [9/271] lidc_0016: (512, 512, 141) px 0.59 slice 2.50 -> 3 noduli, 3.97 cm3
+  [10/271] lidc_0018: (512, 512, 127) px 0.66 slice 2.50 -> 1 noduli, 3.37 cm3
+  [11/271] lidc_0023: (512, 512, 137) px 0.74 slice 2.50 -> 1 noduli, 8.49 cm3
+  [12/271] lidc_0031: (512, 512, 133) px 0.86 slice 2.50 -> 2 noduli, 3.13 cm3
+  [13/271] lidc_0036: (512, 512, 273) px 0.74 slice 1.25 -> 1 noduli, 0.42 cm3
+  [14/271] lidc_0037: (512, 512, 141) px 0.62 slice 2.50 -> 2 noduli, 1.98 cm3
+  [15/271] lidc_0041: (512, 512, 149) px 0.82 slice 2.50 -> 1 noduli, 3.44 cm3
+  [16/271] lidc_0043: (512, 512, 113) px 0.74 slice 2.50 -> 1 noduli, 2.90 cm3
+  [17/271] lidc_0044: (512, 512, 147) px 0.70 slice 2.50 -> 1 noduli, 9.85 cm3
+  [18/271] lidc_0045: (512, 512, 133) px 0.66 slice 2.50 -> 3 noduli, 3.11 cm3
+  [19/271] lidc_0047: (512, 512, 133) px 0.78 slice 2.50 -> 1 noduli, 1.30 cm3
+  [20/271] lidc_0048: (512, 512, 297) px 0.95 slice 1.25 -> 1 noduli, 0.79 cm3
+  [21/271] lidc_0049: (512, 512, 133) px 0.64 slice 2.50 -> 1 noduli, 0.38 cm3
+  [22/271] lidc_0050: (512, 512, 139) px 0.78 slice 2.50 -> 1 noduli, 8.93 cm3
+  [23/271] lidc_0051: (512, 512, 133) px 0.94 slice 2.50 -> 2 noduli, 3.38 cm3
+  [24/271] lidc_0052: (512, 512, 272) px 0.74 slice 1.25 -> 1 noduli, 1.38 cm3
+  [25/271] lidc_0053: (512, 512, 111) px 0.70 slice 2.50 -> 1 noduli, 6.97 cm3
+  [26/271] lidc_0054: (512, 512, 133) px 0.78 slice 2.50 -> 1 noduli, 2.67 cm3
+  [27/271] lidc_0055: (512, 512, 139) px 0.70 slice 2.50 -> 2 noduli, 1.33 cm3
+  [28/271] lidc_0057: (512, 512, 245) px 0.73 slice 1.25 -> 1 noduli, 5.22 cm3
+  [29/271] lidc_0058: (512, 512, 133) px 0.70 slice 2.50 -> 2 noduli, 11.05 cm3
+  [30/271] lidc_0059: (512, 512, 133) px 0.70 slice 2.50 -> 1 noduli, 0.79 cm3
+  [31/271] lidc_0060: (512, 512, 115) px 0.70 slice 2.50 -> 2 noduli, 2.14 cm3
+  [32/271] lidc_0061: (512, 512, 123) px 0.82 slice 2.50 -> 2 noduli, 24.10 cm3
+  [33/271] lidc_0064: (512, 512, 133) px 0.78 slice 2.50 -> 1 noduli, 4.15 cm3
+  [34/271] lidc_0066: (512, 512, 733) px 0.64 slice 0.50 -> 3 noduli, 1.90 cm3
+  [35/271] lidc_0067: (512, 512, 244) px 0.78 slice 1.25 -> 1 noduli, 0.66 cm3
+  [36/271] lidc_0069: (512, 512, 136) px 0.74 slice 2.00 -> 1 noduli, 2.31 cm3
+  [37/271] lidc_0073: (512, 512, 131) px 0.70 slice 2.50 -> 1 noduli, 2.26 cm3
+  [38/271] lidc_0074: (512, 512, 109) px 0.70 slice 2.50 -> 1 noduli, 2.79 cm3
+  [39/271] lidc_0075: (512, 512, 257) px 0.92 slice 1.25 -> 1 noduli, 10.61 cm3
+  [40/271] lidc_0077: (512, 512, 130) px 0.66 slice 2.50 -> 1 noduli, 5.90 cm3
+  [41/271] lidc_0078: SALTATO (spessore di strato 3.00 mm > 2.5)
+  [42/271] lidc_0080: (512, 512, 257) px 0.78 slice 1.25 -> 2 noduli, 11.55 cm3
+  [43/271] lidc_0081: (512, 512, 126) px 0.86 slice 2.50 -> 2 noduli, 5.13 cm3
+  [44/271] lidc_0082: (512, 512, 242) px 0.70 slice 1.25 -> 1 noduli, 3.42 cm3
+  [45/271] lidc_0087: (512, 512, 130) px 0.70 slice 2.50 -> 1 noduli, 4.89 cm3
+  [46/271] lidc_0089: (512, 512, 147) px 0.82 slice 2.50 -> 1 noduli, 10.03 cm3
+  [47/271] lidc_0093: (512, 512, 125) px 0.66 slice 2.50 -> 1 noduli, 0.39 cm3
+  [48/271] lidc_0094: (512, 512, 385) px 0.74 slice 1.00 -> 1 noduli, 4.62 cm3
+  [49/271] lidc_0095: (512, 512, 343) px 0.60 slice 1.00 -> 2 noduli, 4.49 cm3
+  [50/271] lidc_0104: SALTATO (spessore di strato 3.00 mm > 2.5)
+  [51/271] lidc_0106: (512, 512, 158) px 0.70 slice 2.00 -> 1 noduli, 0.38 cm3
+  [52/271] lidc_0108: (512, 512, 143) px 0.70 slice 2.50 -> 1 noduli, 2.38 cm3
+  [53/271] lidc_0111: (512, 512, 133) px 0.70 slice 2.50 -> 2 noduli, 5.97 cm3
+  [54/271] lidc_0112: (512, 512, 123) px 0.70 slice 2.50 -> 1 noduli, 1.54 cm3
+  [55/271] lidc_0114: (512, 512, 214) px 0.88 slice 1.25 -> 1 noduli, 0.79 cm3
+  [56/271] lidc_0115: SALTATO (spessore di strato 3.00 mm > 2.5)
+  [57/271] lidc_0116: (512, 512, 133) px 0.98 slice 2.50 -> 1 noduli, 4.63 cm3
+  [58/271] lidc_0120: (512, 512, 183) px 0.95 slice 2.00 -> 1 noduli, 1.44 cm3
+  [59/271] lidc_0121: (512, 512, 277) px 0.92 slice 1.25 -> 1 noduli, 2.35 cm3
+  [60/271] lidc_0128: (512, 512, 257) px 0.85 slice 1.25 -> 1 noduli, 0.92 cm3
+  [61/271] lidc_0129: (512, 512, 253) px 0.74 slice 1.25 -> 2 noduli, 2.22 cm3
+  [62/271] lidc_0130: (512, 512, 324) px 0.72 slice 1.00 -> 1 noduli, 1.42 cm3
+  [63/271] lidc_0132: SALTATO (spessore di strato 3.00 mm > 2.5)
+  [64/271] lidc_0132: SALTATO (spessore di strato 3.00 mm > 2.5)
+  [65/271] lidc_0134: SALTATO (spessore di strato 3.00 mm > 2.5)
+  [66/271] lidc_0139: (512, 512, 114) px 0.70 slice 2.50 -> 2 noduli, 14.37 cm3
+  [67/271] lidc_0144: (512, 512, 133) px 0.74 slice 2.50 -> 1 noduli, 1.08 cm3
+  [68/271] lidc_0145: (512, 512, 139) px 0.78 slice 2.50 -> 1 noduli, 0.50 cm3
+  [69/271] lidc_0151: SALTATO (spessore di strato 3.00 mm > 2.5)
+  [70/271] lidc_0151: SALTATO (spessore di strato 3.00 mm > 2.5)
+  [71/271] lidc_0153: (512, 512, 139) px 0.90 slice 2.50 -> 2 noduli, 5.28 cm3
+  [72/271] lidc_0154: SALTATO (spessore di strato 3.00 mm > 2.5)
+  [73/271] lidc_0156: SALTATO (spessore di strato 3.00 mm > 2.5)
+  [74/271] lidc_0164: (512, 512, 258) px 0.86 slice 1.25 -> 2 noduli, 2.00 cm3
+  [75/271] lidc_0169: (512, 512, 238) px 0.62 slice 1.25 -> 1 noduli, 0.43 cm3
+  [76/271] lidc_0170: (512, 512, 206) px 0.90 slice 1.25 -> 2 noduli, 9.97 cm3
+  [77/271] lidc_0172: (512, 512, 127) px 0.70 slice 2.50 -> 1 noduli, 4.85 cm3
+  [78/271] lidc_0179: (512, 512, 123) px 0.70 slice 2.50 -> 1 noduli, 2.52 cm3
+  [79/271] lidc_0187: (512, 512, 143) px 0.86 slice 2.50 -> 1 noduli, 6.14 cm3
+  [80/271] lidc_0194: (512, 512, 149) px 0.78 slice 2.50 -> 2 noduli, 4.88 cm3
+  [81/271] lidc_0195: (512, 512, 133) px 0.66 slice 2.50 -> 6 noduli, 7.78 cm3
+  [82/271] lidc_0196: (512, 512, 133) px 0.62 slice 2.50 -> 1 noduli, 0.60 cm3
+  [83/271] lidc_0204: (512, 512, 133) px 0.70 slice 2.50 -> 1 noduli, 3.18 cm3
+  [84/271] lidc_0206: (512, 512, 301) px 0.75 slice 1.25 -> 1 noduli, 0.83 cm3
+  [85/271] lidc_0208: (512, 512, 109) px 0.66 slice 2.50 -> 1 noduli, 0.37 cm3
+  [86/271] lidc_0209: (512, 512, 141) px 0.82 slice 2.50 -> 1 noduli, 3.75 cm3
+  [87/271] lidc_0211: (512, 512, 230) px 0.74 slice 1.25 -> 1 noduli, 4.98 cm3
+  [88/271] lidc_0219: (512, 512, 133) px 0.70 slice 2.50 -> 1 noduli, 0.85 cm3
+  [89/271] lidc_0220: (512, 512, 232) px 0.78 slice 1.25 -> 1 noduli, 2.21 cm3
+  [90/271] lidc_0221: (512, 512, 138) px 0.78 slice 2.50 -> 1 noduli, 6.66 cm3
+  [91/271] lidc_0223: (512, 512, 238) px 0.78 slice 1.25 -> 2 noduli, 4.31 cm3
+  [92/271] lidc_0228: (512, 512, 127) px 0.70 slice 2.50 -> 1 noduli, 0.80 cm3
+  [93/271] lidc_0229: (512, 512, 141) px 0.76 slice 2.50 -> 4 noduli, 7.30 cm3
+  [94/271] lidc_0237: (512, 512, 142) px 0.82 slice 2.50 -> 1 noduli, 0.93 cm3
+  [95/271] lidc_0240: (512, 512, 125) px 0.70 slice 2.50 -> 1 noduli, 3.61 cm3
+  [96/271] lidc_0242: (512, 512, 152) px 0.78 slice 2.50 -> 1 noduli, 6.12 cm3
+  [97/271] lidc_0244: (512, 512, 144) px 0.78 slice 2.50 -> 1 noduli, 1.95 cm3
+  [98/271] lidc_0250: (512, 512, 133) px 0.82 slice 2.50 -> 2 noduli, 2.38 cm3
+  [99/271] lidc_0252: (512, 512, 148) px 0.86 slice 2.50 -> 1 noduli, 3.30 cm3
+  [100/271] lidc_0259: (512, 512, 149) px 0.74 slice 2.50 -> 1 noduli, 0.91 cm3
+  [101/271] lidc_0260: (512, 512, 144) px 0.66 slice 2.50 -> 2 noduli, 3.71 cm3
+  [102/271] lidc_0262: (512, 512, 197) px 0.63 slice 1.25 -> 1 noduli, 0.52 cm3
+  [103/271] lidc_0265: (512, 512, 133) px 0.78 slice 2.50 -> 1 noduli, 5.56 cm3
+  [104/271] lidc_0294: (512, 512, 175) px 0.51 slice 1.80 -> 1 noduli, 2.56 cm3
+  [105/271] lidc_0296: SALTATO (spessore di strato 3.00 mm > 2.5)
+  [106/271] lidc_0303: SALTATO (spessore di strato 3.00 mm > 2.5)
+  [107/271] lidc_0304: (512, 512, 206) px 0.70 slice 1.80 -> 1 noduli, 1.12 cm3
+  [108/271] lidc_0305: (512, 512, 253) px 0.62 slice 1.25 -> 1 noduli, 0.63 cm3
+  [109/271] lidc_0309: (512, 512, 225) px 0.64 slice 1.80 -> 1 noduli, 0.40 cm3
+  [110/271] lidc_0311: (512, 512, 225) px 0.78 slice 1.25 -> 1 noduli, 0.68 cm3
+  [111/271] lidc_0312: (512, 512, 250) px 0.59 slice 1.25 -> 3 noduli, 0.64 cm3
+  [112/271] lidc_0313: (512, 512, 244) px 0.70 slice 1.25 -> 1 noduli, 7.38 cm3
+  [113/271] lidc_0315: SALTATO (spessore di strato 3.00 mm > 2.5)
+  [114/271] lidc_0315: SALTATO (spessore di strato 3.00 mm > 2.5)
+  [115/271] lidc_0325: (512, 512, 278) px 0.81 slice 1.00 -> 1 noduli, 4.71 cm3
+  [116/271] lidc_0332: (512, 512, 292) px 0.64 slice 1.25 -> 1 noduli, 0.96 cm3
+  [117/271] lidc_0332: gia' convertito
+  [118/271] lidc_0334: SALTATO (spessore di strato 3.00 mm > 2.5)
+  [119/271] lidc_0337: SALTATO (spessore di strato 3.00 mm > 2.5)
+  [120/271] lidc_0347: SALTATO (spessore di strato 3.00 mm > 2.5)
+  [121/271] lidc_0348: (512, 512, 158) px 0.72 slice 2.00 -> 1 noduli, 2.59 cm3
+  [122/271] lidc_0353: (512, 512, 260) px 0.70 slice 1.25 -> 1 noduli, 0.46 cm3
+  [123/271] lidc_0362: (512, 512, 187) px 0.70 slice 1.80 -> 1 noduli, 1.27 cm3
+  [124/271] lidc_0365: SALTATO (spessore di strato 3.00 mm > 2.5)
+  [125/271] lidc_0366: SALTATO (spessore di strato 3.00 mm > 2.5)
+  [126/271] lidc_0368: SALTATO (spessore di strato 3.00 mm > 2.5)
+  [127/271] lidc_0377: (512, 512, 258) px 0.66 slice 1.25 -> 1 noduli, 1.86 cm3
+  [128/271] lidc_0387: SALTATO (spessore di strato 3.00 mm > 2.5)
+  [129/271] lidc_0394: (512, 512, 244) px 0.53 slice 1.25 -> 2 noduli, 0.45 cm3
+  [130/271] lidc_0395: SALTATO (spessore di strato 3.00 mm > 2.5)
+  [131/271] lidc_0398: (512, 512, 245) px 0.78 slice 1.00 -> 1 noduli, 0.94 cm3
+  [132/271] lidc_0400: (512, 512, 215) px 0.74 slice 1.80 -> 1 noduli, 0.17 cm3
+  [133/271] lidc_0402: (512, 512, 268) px 0.74 slice 1.25 -> 1 noduli, 6.89 cm3
+  [134/271] lidc_0404: (512, 512, 235) px 0.80 slice 1.00 -> 2 noduli, 6.01 cm3
+  [135/271] lidc_0407: (512, 512, 183) px 0.66 slice 1.80 -> 1 noduli, 1.22 cm3
+  [136/271] lidc_0415: (512, 512, 205) px 0.61 slice 1.25 -> 3 noduli, 1.06 cm3
+  [137/271] lidc_0420: (512, 512, 185) px 0.66 slice 1.80 -> 1 noduli, 0.33 cm3
+  [138/271] lidc_0423: (512, 512, 283) px 0.76 slice 1.25 -> 1 noduli, 4.22 cm3
+  [139/271] lidc_0436: SALTATO (spessore di strato 3.00 mm > 2.5)
+  [140/271] lidc_0439: SALTATO (spessore di strato 3.00 mm > 2.5)
+  [141/271] lidc_0447: (512, 512, 161) px 0.55 slice 1.25 -> 1 noduli, 1.69 cm3
+  [142/271] lidc_0450: (512, 512, 235) px 0.54 slice 1.25 -> 1 noduli, 0.54 cm3
+  [143/271] lidc_0453: (512, 512, 159) px 0.64 slice 1.80 -> 1 noduli, 0.47 cm3
+  [144/271] lidc_0454: (512, 512, 275) px 0.72 slice 1.00 -> 2 noduli, 5.32 cm3
+  [145/271] lidc_0458: (512, 512, 220) px 0.60 slice 1.25 -> 1 noduli, 0.10 cm3
+  [146/271] lidc_0464: (512, 512, 241) px 0.59 slice 1.25 -> 1 noduli, 3.13 cm3
+  [147/271] lidc_0466: (512, 512, 209) px 0.62 slice 1.25 -> 2 noduli, 5.75 cm3
+  [148/271] lidc_0470: (512, 512, 248) px 0.70 slice 1.25 -> 1 noduli, 6.36 cm3
+  [149/271] lidc_0476: (512, 512, 246) px 0.76 slice 1.25 -> 2 noduli, 1.40 cm3
+  [150/271] lidc_0481: (512, 512, 259) px 0.61 slice 1.00 -> 1 noduli, 0.55 cm3
+  [151/271] lidc_0484: SALTATO (spessore di strato 3.00 mm > 2.5)
+  [152/271] lidc_0489: (512, 512, 141) px 0.70 slice 2.50 -> 3 noduli, 7.72 cm3
+  [153/271] lidc_0490: (512, 512, 590) px 0.63 slice 0.45 -> 1 noduli, 1.36 cm3
+  [154/271] lidc_0493: (512, 512, 285) px 0.59 slice 1.25 -> 1 noduli, 8.29 cm3
+  [155/271] lidc_0497: (512, 512, 236) px 0.70 slice 1.25 -> 1 noduli, 0.93 cm3
+  [156/271] lidc_0507: (512, 512, 318) px 0.70 slice 1.00 -> 2 noduli, 3.20 cm3
+  [157/271] lidc_0508: (512, 512, 250) px 0.83 slice 1.00 -> 1 noduli, 3.66 cm3
+  [158/271] lidc_0515: (512, 512, 289) px 0.76 slice 1.25 -> 1 noduli, 2.84 cm3
+  [159/271] lidc_0521: (512, 512, 308) px 0.70 slice 1.00 -> 1 noduli, 2.48 cm3
+  [160/271] lidc_0525: (512, 512, 429) px 0.54 slice 0.70 -> 1 noduli, 0.42 cm3
+  [161/271] lidc_0526: SALTATO (spessore di strato 3.00 mm > 2.5)
+  [162/271] lidc_0527: SALTATO (spessore di strato 3.00 mm > 2.5)
+  [163/271] lidc_0539: (512, 512, 253) px 0.60 slice 1.25 -> 1 noduli, 0.19 cm3
+  [164/271] lidc_0543: (512, 512, 525) px 0.65 slice 0.75 -> 1 noduli, 1.66 cm3
+  [165/271] lidc_0546: (512, 512, 348) px 0.63 slice 1.00 -> 1 noduli, 4.27 cm3
+  [166/271] lidc_0552: (512, 512, 135) px 0.56 slice 2.50 -> 1 noduli, 0.31 cm3
+  [167/271] lidc_0556: (512, 512, 280) px 0.80 slice 1.00 -> 1 noduli, 0.38 cm3
+  [168/271] lidc_0557: (512, 512, 483) px 0.62 slice 0.70 -> 1 noduli, 0.22 cm3
+  [169/271] lidc_0562: (512, 512, 280) px 0.61 slice 1.00 -> 1 noduli, 1.08 cm3
+  [170/271] lidc_0565: (512, 512, 191) px 0.68 slice 1.80 -> 1 noduli, 2.50 cm3
+  [171/271] lidc_0576: (512, 512, 280) px 0.56 slice 1.00 -> 1 noduli, 0.61 cm3
+  [172/271] lidc_0583: (512, 512, 290) px 0.64 slice 1.00 -> 1 noduli, 1.33 cm3
+  [173/271] lidc_0587: (512, 512, 276) px 0.62 slice 1.00 -> 1 noduli, 1.69 cm3
+  [174/271] lidc_0590: (512, 512, 500) px 0.70 slice 0.62 -> 1 noduli, 0.17 cm3
+  [175/271] lidc_0595: SALTATO (spessore di strato 3.00 mm > 2.5)
+  [176/271] lidc_0597: SALTATO (spessore di strato 3.00 mm > 2.5)
+  [177/271] lidc_0601: (512, 512, 286) px 0.67 slice 1.00 -> 1 noduli, 1.80 cm3
+  [178/271] lidc_0606: (512, 512, 633) px 0.54 slice 0.50 -> 1 noduli, 1.70 cm3
+  [179/271] lidc_0608: (512, 512, 280) px 0.68 slice 1.00 -> 2 noduli, 1.73 cm3
+  [180/271] lidc_0610: (512, 512, 163) px 0.70 slice 2.00 -> 1 noduli, 0.69 cm3
+  [181/271] lidc_0617: (512, 512, 320) px 0.66 slice 1.00 -> 2 noduli, 1.38 cm3
+  [182/271] lidc_0619: (512, 512, 208) px 0.72 slice 1.25 -> 1 noduli, 5.74 cm3
+  [183/271] lidc_0620: (512, 512, 240) px 0.60 slice 1.25 -> 1 noduli, 0.39 cm3
+  [184/271] lidc_0624: (512, 512, 290) px 0.65 slice 1.00 -> 1 noduli, 2.21 cm3
+  [185/271] lidc_0625: (512, 512, 525) px 0.66 slice 0.70 -> 1 noduli, 0.37 cm3
+  [186/271] lidc_0628: (512, 512, 285) px 0.78 slice 1.25 -> 2 noduli, 0.31 cm3
+  [187/271] lidc_0635: SALTATO (spessore di strato 3.00 mm > 2.5)
+  [188/271] lidc_0639: (512, 512, 413) px 0.70 slice 0.62 -> 1 noduli, 0.18 cm3
+  [189/271] lidc_0645: (512, 512, 240) px 0.59 slice 1.25 -> 1 noduli, 0.28 cm3
+  [190/271] lidc_0655: (512, 512, 558) px 0.65 slice 0.70 -> 1 noduli, 1.45 cm3
+  [191/271] lidc_0660: (512, 512, 241) px 0.59 slice 1.25 -> 1 noduli, 0.36 cm3
+  [192/271] lidc_0663: (512, 512, 474) px 0.64 slice 0.62 -> 1 noduli, 0.19 cm3
+  [193/271] lidc_0671: (512, 512, 251) px 0.68 slice 1.25 -> 2 noduli, 2.68 cm3
+  [194/271] lidc_0678: (512, 512, 164) px 0.53 slice 2.00 -> 1 noduli, 0.55 cm3
+  [195/271] lidc_0686: (512, 512, 238) px 0.70 slice 1.25 -> 2 noduli, 0.42 cm3
+  [196/271] lidc_0697: (512, 512, 210) px 0.88 slice 1.25 -> 1 noduli, 13.98 cm3
+  [197/271] lidc_0701: (512, 512, 268) px 0.57 slice 1.25 -> 1 noduli, 2.09 cm3
+  [198/271] lidc_0702: (512, 512, 445) px 0.70 slice 0.62 -> 1 noduli, 8.21 cm3
+  [199/271] lidc_0705: (512, 512, 481) px 0.61 slice 0.62 -> 1 noduli, 0.87 cm3
+  [200/271] lidc_0706: SALTATO (spessore di strato 5.00 mm > 2.5)
+  [201/271] lidc_0708: (512, 512, 133) px 0.74 slice 2.50 -> 1 noduli, 5.99 cm3
+  [202/271] lidc_0709: SALTATO (spessore di strato 3.00 mm > 2.5)
+  [203/271] lidc_0713: SALTATO (spessore di strato 3.00 mm > 2.5)
+  [204/271] lidc_0715: (512, 512, 501) px 0.70 slice 0.62 -> 1 noduli, 3.71 cm3
+  [205/271] lidc_0719: SALTATO (spessore di strato 3.00 mm > 2.5)
+  [206/271] lidc_0720: (512, 512, 281) px 0.63 slice 1.00 -> 1 noduli, 0.59 cm3
+  [207/271] lidc_0730: (512, 512, 237) px 0.56 slice 1.25 -> 1 noduli, 0.09 cm3
+  [208/271] lidc_0732: (512, 512, 167) px 0.66 slice 1.80 -> 1 noduli, 1.25 cm3
+  [209/271] lidc_0734: (512, 512, 481) px 0.59 slice 0.62 -> 1 noduli, 0.53 cm3
+  [210/271] lidc_0740: (512, 512, 199) px 0.57 slice 1.80 -> 1 noduli, 0.37 cm3
+  [211/271] lidc_0741: (512, 512, 319) px 0.73 slice 2.00 -> 1 noduli, 1.30 cm3
+  [212/271] lidc_0749: SALTATO (spessore di strato 3.00 mm > 2.5)
+  [213/271] lidc_0751: SALTATO (spessore di strato 3.00 mm > 2.5)
+  [214/271] lidc_0752: (512, 512, 247) px 0.70 slice 1.25 -> 1 noduli, 0.63 cm3
+  [215/271] lidc_0756: (512, 512, 516) px 0.82 slice 0.62 -> 1 noduli, 1.16 cm3
+  [216/271] lidc_0759: (512, 512, 136) px 0.65 slice 2.50 -> 1 noduli, 0.43 cm3
+  [217/271] lidc_0768: (512, 512, 195) px 0.74 slice 1.80 -> 1 noduli, 0.67 cm3
+  [218/271] lidc_0770: (512, 512, 347) px 0.62 slice 1.00 -> 1 noduli, 0.40 cm3
+  [219/271] lidc_0772: (512, 512, 149) px 0.78 slice 2.50 -> 2 noduli, 20.22 cm3
+  [220/271] lidc_0773: SALTATO (spessore di strato 3.00 mm > 2.5)
+  [221/271] lidc_0775: (512, 512, 334) px 0.59 slice 1.00 -> 4 noduli, 7.83 cm3
+  [222/271] lidc_0776: (512, 512, 327) px 0.66 slice 1.00 -> 1 noduli, 1.39 cm3
+  [223/271] lidc_0785: (512, 512, 220) px 0.70 slice 1.25 -> 1 noduli, 7.97 cm3
+  [224/271] lidc_0788: (512, 512, 202) px 0.57 slice 1.80 -> 1 noduli, 0.75 cm3
+  [225/271] lidc_0796: (512, 512, 262) px 0.70 slice 1.25 -> 1 noduli, 3.53 cm3
+  [226/271] lidc_0798: SALTATO (spessore di strato 3.00 mm > 2.5)
+  [227/271] lidc_0799: (512, 512, 246) px 0.59 slice 1.25 -> 1 noduli, 0.19 cm3
+  [228/271] lidc_0811: (512, 512, 371) px 0.67 slice 1.00 -> 1 noduli, 8.58 cm3
+  [229/271] lidc_0820: (512, 512, 236) px 0.70 slice 1.25 -> 1 noduli, 0.15 cm3
+  [230/271] lidc_0826: (512, 512, 493) px 0.74 slice 0.62 -> 1 noduli, 0.17 cm3
+  [231/271] lidc_0828: (512, 512, 255) px 0.62 slice 1.25 -> 1 noduli, 0.10 cm3
+  [232/271] lidc_0829: (512, 512, 244) px 0.73 slice 1.25 -> 1 noduli, 7.62 cm3
+  [233/271] lidc_0838: (512, 512, 484) px 0.59 slice 0.62 -> 1 noduli, 1.41 cm3
+  [234/271] lidc_0844: (512, 512, 481) px 0.74 slice 0.62 -> 1 noduli, 0.92 cm3
+  [235/271] lidc_0850: (512, 512, 240) px 0.63 slice 1.25 -> 1 noduli, 2.77 cm3
+  [236/271] lidc_0861: SALTATO (spessore di strato 3.00 mm > 2.5)
+  [237/271] lidc_0865: (512, 512, 141) px 0.70 slice 2.50 -> 1 noduli, 8.01 cm3
+  [238/271] lidc_0869: (512, 512, 280) px 0.67 slice 1.00 -> 1 noduli, 5.67 cm3
+  [239/271] lidc_0875: (512, 512, 266) px 0.67 slice 1.00 -> 1 noduli, 1.65 cm3
+  [240/271] lidc_0884: (512, 512, 245) px 0.66 slice 1.25 -> 1 noduli, 3.62 cm3
+  [241/271] lidc_0886: SALTATO (spessore di strato 3.00 mm > 2.5)
+  [242/271] lidc_0888: (512, 512, 270) px 0.67 slice 1.00 -> 1 noduli, 0.59 cm3
+  [243/271] lidc_0890: (512, 512, 230) px 0.73 slice 1.25 -> 1 noduli, 3.95 cm3
+  [244/271] lidc_0892: SALTATO (spessore di strato 3.00 mm > 2.5)
+  [245/271] lidc_0893: (512, 512, 290) px 0.66 slice 1.00 -> 1 noduli, 3.33 cm3
+  [246/271] lidc_0895: (512, 512, 513) px 0.74 slice 0.62 -> 1 noduli, 0.19 cm3
+  [247/271] lidc_0896: (512, 512, 166) px 0.57 slice 1.80 -> 1 noduli, 0.72 cm3
+  [248/271] lidc_0898: (512, 512, 272) px 0.68 slice 1.00 -> 1 noduli, 0.12 cm3
+  [249/271] lidc_0904: SALTATO (spessore di strato 3.00 mm > 2.5)
+  [250/271] lidc_0905: (512, 512, 245) px 0.55 slice 1.25 -> 1 noduli, 0.92 cm3
+  [251/271] lidc_0910: SALTATO (spessore di strato 3.00 mm > 2.5)
+  [252/271] lidc_0912: (512, 512, 315) px 0.83 slice 1.00 -> 2 noduli, 1.48 cm3
+  [253/271] lidc_0913: (512, 512, 400) px 0.53 slice 0.75 -> 1 noduli, 1.20 cm3
+  [254/271] lidc_0919: (512, 512, 246) px 0.57 slice 1.25 -> 1 noduli, 1.20 cm3
+  [255/271] lidc_0921: (512, 512, 350) px 0.68 slice 1.00 -> 2 noduli, 5.95 cm3
+  [256/271] lidc_0925: (512, 512, 308) px 0.59 slice 1.00 -> 1 noduli, 1.04 cm3
+  [257/271] lidc_0936: (512, 512, 227) px 0.59 slice 1.25 -> 2 noduli, 2.05 cm3
+  [258/271] lidc_0938: (512, 512, 244) px 0.76 slice 1.25 -> 1 noduli, 0.83 cm3
+  [259/271] lidc_0940: (512, 512, 474) px 0.62 slice 0.62 -> 1 noduli, 0.64 cm3
+  [260/271] lidc_0942: (512, 512, 246) px 0.74 slice 1.00 -> 3 noduli, 6.53 cm3
+  [261/271] lidc_0965: (512, 512, 328) px 0.74 slice 1.00 -> 1 noduli, 1.98 cm3
+  [262/271] lidc_0966: (512, 512, 154) px 0.68 slice 2.00 -> 1 noduli, 0.26 cm3
+  [263/271] lidc_0968: (512, 512, 337) px 0.68 slice 1.00 -> 1 noduli, 5.11 cm3
+  [264/271] lidc_0973: (512, 512, 193) px 0.70 slice 1.80 -> 1 noduli, 0.76 cm3
+  [265/271] lidc_0976: (512, 512, 255) px 0.66 slice 1.25 -> 1 noduli, 6.09 cm3
+  [266/271] lidc_0978: (512, 512, 350) px 0.72 slice 0.75 -> 1 noduli, 0.55 cm3
+  [267/271] lidc_0980: SALTATO (spessore di strato 3.00 mm > 2.5)
+  [268/271] lidc_0998: SALTATO (spessore di strato 3.00 mm > 2.5)
+  [269/271] lidc_1000: SALTATO (spessore di strato 3.00 mm > 2.5)
+  [270/271] lidc_1002: (512, 512, 321) px 0.56 slice 1.00 -> 4 noduli, 11.56 cm3
+  [271/271] lidc_1007: (512, 512, 186) px 0.64 slice 1.80 -> 1 noduli, 5.67 cm3
+
+[lidc] convertite 221 serie, 46 scartate
+[lidc] manifest: C:\Users\ilgra\Documents\Progetto Medical\LIDC_nifti\manifest.json
+[lidc] volume lesionale: mediana 1.80 cm3, min 0.09, max 24.10

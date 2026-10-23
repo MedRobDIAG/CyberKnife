@@ -1,0 +1,33 @@
+    lung_003: piano 'ctv'
+    lung_003: piano 'itv_5mm'
+    lung_003: piano 'inseguimento'
+    lung_003: piano 'adattivo'
+    lung_003: piano 'oracolo'
+[1/2] lung_003  copertura GT: ctv_statico 98  ctv_fascio_fermo 37  itv_5mm 100  inseguimento 100  adattivo 100  oracolo 98  (10 min, ~10 alla fine)
+    lung_070: piano 'ctv'
+    lung_070: piano 'itv_5mm'
+    lung_070: piano 'inseguimento'
+    lung_070: piano 'adattivo'
+    lung_070: piano 'oracolo'
+[2/2] lung_070  copertura GT: ctv_statico 0  ctv_fascio_fermo 0  itv_5mm 0  inseguimento 0  adattivo 0  oracolo 96  (19 min, ~0 alla fine)
+
+2 casi (1 con isocentro dentro il tumore vero)
+
+scenario                 copertura GT %  >=95%            PTV cm3            V20 %           MLD Gy
+ctv_statico            48.9 [24.5-73.4]    50%      2.5 [2.5-2.6]    0.2 [0.2-0.3]    0.5 [0.5-0.5]
+ctv_fascio_fermo        18.6 [9.3-27.9]     0%      2.5 [2.5-2.6]    0.2 [0.2-0.3]    0.5 [0.5-0.5]
+itv_5mm                50.0 [25.0-75.0]    50%   20.1 [19.8-20.5]    1.3 [1.2-1.4]    1.6 [1.4-1.7]
+inseguimento           49.8 [24.9-74.8]    50%      3.5 [3.4-3.6]    0.4 [0.3-0.4]    0.7 [0.6-0.7]
+adattivo               50.0 [25.0-75.0]    50%   14.8 [10.2-19.3]    1.0 [0.7-1.2]    1.1 [1.0-1.3]
+oracolo                97.0 [96.7-97.2]   100%      2.7 [2.5-3.0]    0.3 [0.3-0.3]    0.6 [0.6-0.6]
+
+test appaiati (Wilcoxon); differenza mediana = secondo - primo
+  ctv_fascio_fermo -> inseguimento: copertura_pct       +31.23   p = 1.0
+  ctv_fascio_fermo -> inseguimento: ptv_cm3              +0.94   p = 0.5
+  ctv_fascio_fermo -> inseguimento: polmone_v20_pct      +0.11   p = 0.5
+  itv_5mm -> adattivo: copertura_pct                     +0.00   p = 1.0
+  itv_5mm -> adattivo: ptv_cm3                           -5.39   p = 1.0
+  itv_5mm -> adattivo: polmone_v20_pct                   -0.34   p = 1.0
+  inseguimento -> adattivo: copertura_pct                +0.15   p = 1.0
+  inseguimento -> adattivo: ptv_cm3                     +11.27   p = 0.5
+  inseguimento -> adattivo: polmone_v20_pct              +0.63   p = 0.5

@@ -1,0 +1,100 @@
+[eval] esperimento 'finetune_all_oof' | 63 casi | selettore 'splits:all'
+[eval] post-processing: soglia=0.5 min_volume=100.0 mm3
+[infer] Pesi da 'final.pth' (arch=unet, epoca=250, best=0.7385918892346895)
+[infer] Pesi da 'final.pth' (arch=unet, epoca=250, best=0.7182651852950072)
+[infer] Pesi da 'final.pth' (arch=unet, epoca=250, best=0.7681082453483189)
+[infer] Pesi da 'final.pth' (arch=unet, epoca=250, best=0.7547752479712168)
+[infer] Pesi da 'final.pth' (arch=unet, epoca=250, best=0.6752414491441515)
+[eval] OOF su 'finetune_all' (final.pth): 5 fold, 63 casi
+C:\Users\ilgra\Documents\Progetto Medical\.venv\Lib\site-packages\monai\inferers\utils.py:223: UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\python_variable_indexing.cpp:353.)
+  win_data = torch.cat([inputs[win_slice] for win_slice in unravel_slice]).to(sw_device)
+C:\Users\ilgra\Documents\Progetto Medical\.venv\Lib\site-packages\monai\inferers\utils.py:361: UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\python_variable_indexing.cpp:353.)
+  out[idx_zm] += p
+  [ 1/63] lung_001  dice=0.419 sens=1.00 fp=1 iso_in=si d_cent=0.6mm
+  [ 2/63] lung_003  dice=0.571 sens=1.00 fp=2 iso_in=si d_cent=0.8mm
+  [ 3/63] lung_004  dice=0.000 sens=0.00 fp=0 iso_in=NO d_cent=nanmm
+  [ 4/63] lung_005  dice=0.829 sens=1.00 fp=0 iso_in=si d_cent=1.2mm
+  [ 5/63] lung_006  dice=0.724 sens=1.00 fp=0 iso_in=si d_cent=1.9mm
+  [ 6/63] lung_009  dice=0.755 sens=1.00 fp=0 iso_in=si d_cent=6.2mm
+  [ 7/63] lung_010  dice=0.841 sens=1.00 fp=0 iso_in=si d_cent=1.2mm
+  [ 8/63] lung_014  dice=0.723 sens=1.00 fp=5 iso_in=si d_cent=1.6mm
+  [ 9/63] lung_015  dice=0.215 sens=1.00 fp=0 iso_in=si d_cent=2.3mm
+  [10/63] lung_016  dice=0.540 sens=1.00 fp=0 iso_in=si d_cent=3.1mm
+  [11/63] lung_018  dice=0.803 sens=1.00 fp=0 iso_in=si d_cent=2.4mm
+  [12/63] lung_020  dice=0.727 sens=1.00 fp=1 iso_in=si d_cent=3.1mm
+  [13/63] lung_022  dice=0.393 sens=1.00 fp=2 iso_in=si d_cent=12.0mm
+  [14/63] lung_023  dice=0.605 sens=1.00 fp=0 iso_in=si d_cent=6.9mm
+  [15/63] lung_025  dice=0.835 sens=1.00 fp=0 iso_in=si d_cent=0.4mm
+  [16/63] lung_026  dice=0.702 sens=1.00 fp=2 iso_in=si d_cent=4.8mm
+  [17/63] lung_027  dice=0.881 sens=1.00 fp=1 iso_in=si d_cent=1.8mm
+  [18/63] lung_028  dice=0.437 sens=1.00 fp=1 iso_in=si d_cent=12.7mm
+  [19/63] lung_029  dice=0.768 sens=1.00 fp=0 iso_in=si d_cent=0.8mm
+  [20/63] lung_031  dice=0.502 sens=1.00 fp=3 iso_in=si d_cent=5.3mm
+  [21/63] lung_033  dice=0.554 sens=1.00 fp=0 iso_in=si d_cent=5.6mm
+  [22/63] lung_034  dice=0.854 sens=1.00 fp=1 iso_in=si d_cent=1.3mm
+  [23/63] lung_036  dice=0.000 sens=0.00 fp=0 iso_in=NO d_cent=nanmm
+  [24/63] lung_037  dice=0.000 sens=0.00 fp=0 iso_in=NO d_cent=nanmm
+  [25/63] lung_038  dice=0.724 sens=1.00 fp=1 iso_in=si d_cent=1.1mm
+  [26/63] lung_041  dice=0.871 sens=1.00 fp=0 iso_in=si d_cent=1.7mm
+  [27/63] lung_042  dice=0.414 sens=1.00 fp=1 iso_in=NO d_cent=82.9mm
+  [28/63] lung_043  dice=0.635 sens=1.00 fp=0 iso_in=si d_cent=0.9mm
+  [29/63] lung_044  dice=0.521 sens=1.00 fp=2 iso_in=si d_cent=2.0mm
+  [30/63] lung_045  dice=0.838 sens=1.00 fp=0 iso_in=si d_cent=1.3mm
+  [31/63] lung_046  dice=0.857 sens=1.00 fp=0 iso_in=si d_cent=1.3mm
+  [32/63] lung_047  dice=0.858 sens=1.00 fp=1 iso_in=si d_cent=0.7mm
+  [33/63] lung_048  dice=0.776 sens=1.00 fp=0 iso_in=si d_cent=0.5mm
+  [34/63] lung_049  dice=0.810 sens=1.00 fp=0 iso_in=si d_cent=1.2mm
+  [35/63] lung_051  dice=0.814 sens=1.00 fp=1 iso_in=si d_cent=1.6mm
+  [36/63] lung_053  dice=0.661 sens=1.00 fp=0 iso_in=si d_cent=9.4mm
+  [37/63] lung_054  dice=0.799 sens=1.00 fp=0 iso_in=si d_cent=0.4mm
+  [38/63] lung_055  dice=0.696 sens=1.00 fp=0 iso_in=si d_cent=4.0mm
+  [39/63] lung_057  dice=0.722 sens=1.00 fp=1 iso_in=si d_cent=1.1mm
+  [40/63] lung_058  dice=0.770 sens=1.00 fp=0 iso_in=si d_cent=0.7mm
+  [41/63] lung_059  dice=0.727 sens=1.00 fp=1 iso_in=si d_cent=1.5mm
+  [42/63] lung_061  dice=0.627 sens=1.00 fp=0 iso_in=si d_cent=1.4mm
+  [43/63] lung_062  dice=0.883 sens=1.00 fp=0 iso_in=si d_cent=0.2mm
+  [44/63] lung_064  dice=0.779 sens=1.00 fp=1 iso_in=si d_cent=4.7mm
+  [45/63] lung_065  dice=0.847 sens=1.00 fp=1 iso_in=si d_cent=3.6mm
+  [46/63] lung_066  dice=0.629 sens=1.00 fp=0 iso_in=si d_cent=2.6mm
+  [47/63] lung_069  dice=0.000 sens=0.00 fp=1 iso_in=NO d_cent=151.2mm
+  [48/63] lung_070  dice=0.385 sens=1.00 fp=4 iso_in=NO d_cent=217.1mm
+  [49/63] lung_071  dice=0.693 sens=1.00 fp=0 iso_in=si d_cent=1.7mm
+  [50/63] lung_073  dice=0.668 sens=1.00 fp=1 iso_in=si d_cent=2.0mm
+  [51/63] lung_074  dice=0.777 sens=1.00 fp=4 iso_in=si d_cent=5.9mm
+  [52/63] lung_075  dice=0.734 sens=1.00 fp=0 iso_in=si d_cent=1.4mm
+  [53/63] lung_078  dice=0.827 sens=1.00 fp=0 iso_in=si d_cent=1.1mm
+  [54/63] lung_079  dice=0.746 sens=1.00 fp=1 iso_in=si d_cent=0.8mm
+  [55/63] lung_080  dice=0.317 sens=1.00 fp=1 iso_in=NO d_cent=71.2mm
+  [56/63] lung_081  dice=0.758 sens=1.00 fp=1 iso_in=si d_cent=1.2mm
+  [57/63] lung_083  dice=0.750 sens=1.00 fp=0 iso_in=si d_cent=0.4mm
+  [58/63] lung_084  dice=0.460 sens=0.33 fp=1 iso_in=si d_cent=7.0mm
+  [59/63] lung_086  dice=0.665 sens=1.00 fp=2 iso_in=si d_cent=0.9mm
+  [60/63] lung_092  dice=0.763 sens=1.00 fp=1 iso_in=si d_cent=1.4mm
+  [61/63] lung_093  dice=0.797 sens=1.00 fp=0 iso_in=si d_cent=0.5mm
+  [62/63] lung_095  dice=0.000 sens=0.00 fp=0 iso_in=NO d_cent=nanmm
+  [63/63] lung_096  dice=0.000 sens=0.00 fp=1 iso_in=NO d_cent=66.6mm
+
+====================================================================
+  finetune_all_oof   (63 casi, splits:all)
+====================================================================
+  Dice                     0.6234 +- 0.2513   mediana 0.7235
+  Sensibilita' (lesioni)   0.877   (57/65)
+  Falsi positivi / scan    0.75   (totale 47)
+  Isocentro dentro il GT   0.857
+  Casi senza rilevamento   4
+  Distanza centroide (mm)  mediana 1.61   media 12.39
+  NSD @2mm                 0.6304
+  HD95 (mm)                mediana 19.81
+
+  Per terzile di volume tumorale:
+    terzile      n         range cm3     dice    sens  iso_in
+    piccole     21         0.74-3.49   0.5086   0.810   0.714
+    medie       21        3.51-10.09   0.6727   0.905   0.857
+    grandi      21      11.37-370.38   0.6889   0.913   1.000
+
+  DIAGNOSTICA - probabilita' massima sulle 8 lesioni mancate:
+    mediana 0.015 | sotto 0.1: 62% | fra 0.1 e 0.5: 12%
+    -> la rete non produce massa di probabilita' li': il collo di
+       bottiglia e' la loss/risoluzione, non la soglia (E6/E7 giustificate).
+====================================================================
+

@@ -1,0 +1,133 @@
+{
+  "n_casi": 63,
+  "n_falliti": 11,
+  "segnali": {
+    "volume_cm3": {
+      "auroc_fallimento": 0.9020979020979021,
+      "mediana_riusciti": 4.523605913350437,
+      "mediana_falliti": 2.10301639239722
+    },
+    "prob_mean": {
+      "auroc_fallimento": 0.9038461538461539,
+      "mediana_riusciti": 0.8039351150118428,
+      "mediana_falliti": 0.6794751893877726
+    },
+    "std_lesione": {
+      "auroc_fallimento": 0.8898601398601399,
+      "mediana_riusciti": 0.1385408118367195,
+      "mediana_falliti": 0.19401638209819794
+    },
+    "mi_lesione": {
+      "auroc_fallimento": 0.8793706293706294,
+      "mediana_riusciti": 0.0790267139673233,
+      "mediana_falliti": 0.10932383313775063
+    },
+    "frac_ambigua": {
+      "auroc_fallimento": 0.9055944055944056,
+      "mediana_riusciti": 0.9637663114903064,
+      "mediana_falliti": 1.9057042396662431
+    },
+    "centroide_disp_mm": {
+      "auroc_fallimento": 0.8513986013986014,
+      "mediana_riusciti": 0.8469439956226352,
+      "mediana_falliti": 1.3096422232586984
+    },
+    "centroide_disp_max_mm": {
+      "auroc_fallimento": 0.9335664335664335,
+      "mediana_riusciti": 1.9907024132191737,
+      "mediana_falliti": 90.53638870842533
+    },
+    "volume_cv": {
+      "auroc_fallimento": 0.8741258741258742,
+      "mediana_riusciti": 0.1960059160066748,
+      "mediana_falliti": 0.40918099720728185
+    },
+    "frac_campioni_con_lesione": {
+      "auroc_fallimento": 0.8505244755244755,
+      "mediana_riusciti": 1.0,
+      "mediana_falliti": 0.25
+    }
+  },
+  "cancello_annidato": {
+    "centroide_disp_mm": {
+      "segnale": "centroide_disp_mm",
+      "solo_volume_accettati": "53/63",
+      "solo_volume_corretti": 0.943,
+      "con_dispersione_accettati": "43/63",
+      "con_dispersione_corretti": 0.953,
+      "soglie_scelte_mm": [
+        1.5,
+        1.5,
+        1.5,
+        100.0,
+        1.5
+      ]
+    },
+    "centroide_disp_max_mm": {
+      "segnale": "centroide_disp_max_mm",
+      "solo_volume_accettati": "53/63",
+      "solo_volume_corretti": 0.943,
+      "con_dispersione_accettati": "43/63",
+      "con_dispersione_corretti": 0.953,
+      "soglie_scelte_mm": [
+        50.0,
+        50.0,
+        50.0,
+        100.0,
+        50.0
+      ]
+    }
+  },
+  "calibrazione": {
+    "ece": 0.10522409170956297,
+    "bins": [
+      0.0,
+      0.1,
+      0.2,
+      0.30000000000000004,
+      0.4,
+      0.5,
+      0.6000000000000001,
+      0.7000000000000001,
+      0.8,
+      0.9,
+      1.0
+    ],
+    "count": [
+      443522.0,
+      415611.0,
+      248272.0,
+      182323.0,
+      148451.0,
+      118497.0,
+      113275.0,
+      108320.0,
+      128888.0,
+      341417.0
+    ],
+    "confidence": [
+      0.07128928354117607,
+      0.14318110178835308,
+      0.24574886621909633,
+      0.3472347862565609,
+      0.4469362537326187,
+      0.5476216015648173,
+      0.6489411627754316,
+      0.7490863459429633,
+      0.8513111030972764,
+      0.9678510806987868
+    ],
+    "accuracy": [
+      0.20095733695284562,
+      0.3049269629533386,
+      0.35443787458916026,
+      0.4327649281769168,
+      0.5041528854638905,
+      0.5463007502299636,
+      0.5897152946369455,
+      0.6428268094534711,
+      0.7086695425485693,
+      0.897445059853493
+    ]
+  }
+}

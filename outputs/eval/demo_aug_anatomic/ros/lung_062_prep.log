@@ -1,0 +1,3 @@
+respiro: spostamento in inspirazione [ 0.7  1.8 -8.6] mm, margine [1.4 1.6 2.5] mm
+piano: 147 fasci, copertura PTV 95.0%, D95 80.0%
+{"case_id": "lung_062", "fasci": 147, "copertura_ptv_pct": 94.99289772727273, "d95_ptv_pct": 80.0, "margine_mm": [1.392963376081731, 1.5812521506664592, 2.507819276942378], "respiro_mm": [0.7143938779753064, 1.785984694938266, -8.572726535703676], "angoli_lettino": 3, "tempo_s": 265.4}

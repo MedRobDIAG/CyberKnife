@@ -1,0 +1,42 @@
+[1/20] lung_001 adattivo: copertura 100%, PTV 8.3 cm3
+[2/20] lung_005 adattivo: copertura 100%, PTV 22.0 cm3
+[3/20] lung_006 adattivo: copertura 98%, PTV 11.9 cm3
+[4/20] lung_009 adattivo: copertura 91%, PTV 321.6 cm3
+[5/20] lung_026 adattivo: copertura 78%, PTV 37.4 cm3
+[6/20] lung_027 adattivo: copertura 98%, PTV 109.7 cm3
+[7/20] lung_029 adattivo: copertura 82%, PTV 4.4 cm3
+[8/20] lung_033 adattivo: copertura 66%, PTV 32.9 cm3
+[9/20] lung_034 adattivo: copertura 99%, PTV 30.3 cm3
+[10/20] lung_038 adattivo: copertura 62%, PTV 4.4 cm3
+[11/20] lung_041 adattivo: copertura 99%, PTV 113.4 cm3
+[12/20] lung_043 adattivo: copertura 83%, PTV 5.1 cm3
+[13/20] lung_045 adattivo: copertura 98%, PTV 17.2 cm3
+[14/20] lung_051 adattivo: copertura 83%, PTV 13.0 cm3
+[15/20] lung_053 adattivo: copertura 68%, PTV 514.2 cm3
+[16/20] lung_057 adattivo: copertura 98%, PTV 9.2 cm3
+[17/20] lung_059 adattivo: copertura 0%, PTV 180.0 cm3
+[18/20] lung_062 adattivo: copertura 100%, PTV 15.4 cm3
+[19/20] lung_070 adattivo: copertura 0%, PTV 22.8 cm3
+[20/20] lung_073 adattivo: copertura 92%, PTV 19.6 cm3
+
+20 casi (18 con isocentro dentro il tumore vero)
+
+scenario                 copertura GT %  >=95%            PTV cm3            V20 %           MLD Gy
+ctv_statico            43.2 [21.3-73.6]    10%      5.8 [2.6-8.9]    0.5 [0.3-1.0]    0.8 [0.5-1.4]
+ctv_fascio_fermo       28.9 [14.9-47.1]     0%      5.8 [2.6-8.9]    0.5 [0.3-1.0]    0.8 [0.5-1.4]
+itv_5mm                92.8 [64.6-99.2]    40%   29.3 [15.9-39.2]    2.3 [1.4-3.7]    2.1 [1.4-3.1]
+inseguimento           46.4 [28.4-79.4]    15%     7.1 [3.4-12.8]    0.6 [0.4-1.3]    0.9 [0.6-1.7]
+adattivo               91.9 [75.8-98.5]    45%   20.8 [11.2-55.5]    1.3 [0.9-3.8]    1.4 [1.0-3.0]
+oracolo                97.8 [96.6-98.1]    95%    11.0 [5.4-30.3]    1.1 [0.6-1.8]    1.3 [0.8-2.1]
+
+test appaiati (Wilcoxon); differenza mediana = secondo - primo
+  ctv_fascio_fermo -> inseguimento: copertura_pct       +16.24   p = 0.0002
+  ctv_fascio_fermo -> inseguimento: ptv_cm3              +1.34   p = 0.0
+  ctv_fascio_fermo -> inseguimento: polmone_v20_pct      +0.08   p = 0.0013
+  itv_5mm -> adattivo: copertura_pct                     -0.01   p = 0.8767
+  itv_5mm -> adattivo: ptv_cm3                           -6.69   p = 0.4304
+  itv_5mm -> adattivo: polmone_v20_pct                   -0.57   p = 0.2954
+  inseguimento -> adattivo: copertura_pct               +29.58   p = 0.0002
+  inseguimento -> adattivo: ptv_cm3                     +11.12   p = 0.0
+  inseguimento -> adattivo: polmone_v20_pct              +0.71   p = 0.0001
+FINE

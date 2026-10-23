@@ -1,0 +1,148 @@
+[campagna] 53 casi accettati dal cancello, selezionati 20: lung_001, lung_059, lung_070, lung_043, lung_029, lung_006, lung_057, lung_062, lung_038, lung_045, lung_005, lung_073, lung_051, lung_034, lung_026, lung_027, lung_033, lung_041, lung_009, lung_053
+    lung_001: piano 'ctv'
+    lung_001: piano 'itv_5mm'
+    lung_001: piano 'inseguimento'
+    lung_001: piano 'adattivo'
+    lung_001: piano 'oracolo'
+[1/20] lung_001  copertura GT: ctv_statico 96  ctv_fascio_fermo 81  itv_5mm 100  inseguimento 98  adattivo 100  oracolo 98  (9 min, ~172 alla fine)
+    lung_059: piano 'ctv'
+    lung_059: piano 'itv_5mm'
+    lung_059: piano 'inseguimento'
+    lung_059: piano 'adattivo'
+    lung_059: piano 'oracolo'
+[2/20] lung_059  copertura GT: ctv_statico 0  ctv_fascio_fermo 0  itv_5mm 0  inseguimento 0  adattivo 0  oracolo 98  (25 min, ~222 alla fine)
+    lung_070: piano 'ctv'
+    lung_070: piano 'itv_5mm'
+    lung_070: piano 'inseguimento'
+    lung_070: piano 'adattivo'
+    lung_070: piano 'oracolo'
+[3/20] lung_070  copertura GT: ctv_statico 0  ctv_fascio_fermo 0  itv_5mm 0  inseguimento 0  adattivo 0  oracolo 96  (33 min, ~187 alla fine)
+    lung_043: piano 'ctv'
+    lung_043: piano 'itv_5mm'
+    lung_043: piano 'inseguimento'
+    lung_043: piano 'adattivo'
+    lung_043: piano 'oracolo'
+[4/20] lung_043  copertura GT: ctv_statico 55  ctv_fascio_fermo 39  itv_5mm 95  inseguimento 59  adattivo 83  oracolo 94  (39 min, ~158 alla fine)
+    lung_029: piano 'ctv'
+    lung_029: piano 'itv_5mm'
+    lung_029: piano 'inseguimento'
+    lung_029: piano 'adattivo'
+    lung_029: piano 'oracolo'
+[5/20] lung_029  copertura GT: ctv_statico 21  ctv_fascio_fermo 15  itv_5mm 90  inseguimento 25  adattivo 100  oracolo 97  (51 min, ~154 alla fine)
+    lung_006: piano 'ctv'
+    lung_006: piano 'itv_5mm'
+    lung_006: piano 'inseguimento'
+    lung_006: piano 'adattivo'
+    lung_006: piano 'oracolo'
+[6/20] lung_006  copertura GT: ctv_statico 27  ctv_fascio_fermo 20  itv_5mm 92  inseguimento 36  adattivo 98  oracolo 96  (61 min, ~141 alla fine)
+    lung_057: piano 'ctv'
+    lung_057: piano 'itv_5mm'
+    lung_057: piano 'inseguimento'
+    lung_057: piano 'adattivo'
+    lung_057: piano 'oracolo'
+[7/20] lung_057  copertura GT: ctv_statico 58  ctv_fascio_fermo 32  itv_5mm 99  inseguimento 64  adattivo 98  oracolo 97  (67 min, ~124 alla fine)
+    lung_062: piano 'ctv'
+    lung_062: piano 'itv_5mm'
+    lung_062: piano 'inseguimento'
+    lung_062: piano 'adattivo'
+    lung_062: piano 'oracolo'
+[8/20] lung_062  copertura GT: ctv_statico 96  ctv_fascio_fermo 76  itv_5mm 100  inseguimento 97  adattivo 100  oracolo 98  (75 min, ~112 alla fine)
+    lung_038: piano 'ctv'
+    lung_038: piano 'itv_5mm'
+    lung_038: piano 'inseguimento'
+    lung_038: piano 'adattivo'
+    lung_038: piano 'oracolo'
+[9/20] lung_038  copertura GT: ctv_statico 15  ctv_fascio_fermo 8  itv_5mm 64  inseguimento 16  adattivo 62  oracolo 96  (81 min, ~99 alla fine)
+    lung_045: piano 'ctv'
+    lung_045: piano 'itv_5mm'
+    lung_045: piano 'inseguimento'
+    lung_045: piano 'adattivo'
+    lung_045: piano 'oracolo'
+[10/20] lung_045  copertura GT: ctv_statico 56  ctv_fascio_fermo 25  itv_5mm 98  inseguimento 62  adattivo 98  oracolo 97  (90 min, ~90 alla fine)
+    lung_005: piano 'ctv'
+    lung_005: piano 'itv_5mm'
+    lung_005: piano 'inseguimento'
+    lung_005: piano 'adattivo'
+    lung_005: piano 'oracolo'
+[11/20] lung_005  copertura GT: ctv_statico 86  ctv_fascio_fermo 45  itv_5mm 100  inseguimento 97  adattivo 100  oracolo 100  (97 min, ~79 alla fine)
+    lung_073: piano 'ctv'
+    lung_073: piano 'itv_5mm'
+    lung_073: piano 'inseguimento'
+    lung_073: piano 'adattivo'
+    lung_073: piano 'oracolo'
+[12/20] lung_073  copertura GT: ctv_statico 70  ctv_fascio_fermo 55  itv_5mm 95  inseguimento 75  adattivo 92  oracolo 99  (106 min, ~71 alla fine)
+    lung_051: piano 'ctv'
+    lung_051: piano 'itv_5mm'
+    lung_051: piano 'inseguimento'
+    lung_051: piano 'adattivo'
+    lung_051: piano 'oracolo'
+[13/20] lung_051  copertura GT: ctv_statico 46  ctv_fascio_fermo 29  itv_5mm 94  inseguimento 50  adattivo 83  oracolo 98  (114 min, ~61 alla fine)
+    lung_034: piano 'ctv'
+    lung_034: piano 'itv_5mm'
+    lung_034: piano 'inseguimento'
+    lung_034: piano 'adattivo'
+    lung_034: piano 'oracolo'
+[14/20] lung_034  copertura GT: ctv_statico 84  ctv_fascio_fermo 70  itv_5mm 100  inseguimento 91  adattivo 99  oracolo 98  (124 min, ~53 alla fine)
+    lung_026: piano 'ctv'
+    lung_026: piano 'itv_5mm'
+    lung_026: piano 'inseguimento'
+    lung_026: piano 'adattivo'
+[campagna] 53 casi accettati dal cancello, selezionati 20: lung_001, lung_059, lung_070, lung_043, lung_029, lung_006, lung_057, lung_062, lung_038, lung_045, lung_005, lung_073, lung_051, lung_034, lung_026, lung_027, lung_033, lung_041, lung_009, lung_053
+    lung_026: piano 'ctv'
+    lung_026: piano 'itv_5mm'
+    lung_026: piano 'inseguimento'
+    lung_026: piano 'adattivo'
+    lung_026: piano 'oracolo'
+[1/6] lung_026  copertura GT: ctv_statico 31  ctv_fascio_fermo 26  itv_5mm 62  inseguimento 35  adattivo 78  oracolo 97  (8 min, ~39 alla fine)
+    lung_027: piano 'ctv'
+    lung_027: piano 'itv_5mm'
+    lung_027: piano 'inseguimento'
+    lung_027: piano 'adattivo'
+    lung_027: piano 'oracolo'
+[2/6] lung_027  copertura GT: ctv_statico 21  ctv_fascio_fermo 10  itv_5mm 65  inseguimento 30  adattivo 98  oracolo 99  (18 min, ~35 alla fine)
+    lung_033: piano 'ctv'
+    lung_033: piano 'itv_5mm'
+    lung_033: piano 'inseguimento'
+    lung_033: piano 'adattivo'
+    lung_033: piano 'oracolo'
+[3/6] lung_033  copertura GT: ctv_statico 35  ctv_fascio_fermo 29  itv_5mm 69  inseguimento 40  adattivo 66  oracolo 98  (27 min, ~27 alla fine)
+    lung_041: piano 'ctv'
+    lung_041: piano 'itv_5mm'
+    lung_041: piano 'inseguimento'
+    lung_041: piano 'adattivo'
+    lung_041: piano 'oracolo'
+[4/6] lung_041  copertura GT: ctv_statico 86  ctv_fascio_fermo 80  itv_5mm 99  inseguimento 92  adattivo 99  oracolo 98  (38 min, ~19 alla fine)
+    lung_009: piano 'ctv'
+    lung_009: piano 'itv_5mm'
+    lung_009: piano 'inseguimento'
+    lung_009: piano 'adattivo'
+    lung_009: piano 'oracolo'
+[5/6] lung_009  copertura GT: ctv_statico 41  ctv_fascio_fermo 39  itv_5mm 67  inseguimento 43  adattivo 91  oracolo 98  (52 min, ~10 alla fine)
+    lung_053: piano 'ctv'
+    lung_053: piano 'itv_5mm'
+    lung_053: piano 'inseguimento'
+    lung_053: piano 'adattivo'
+    lung_053: piano 'oracolo'
+[6/6] lung_053  copertura GT: ctv_statico 15  ctv_fascio_fermo 14  itv_5mm 24  inseguimento 16  adattivo 68  oracolo 97  (71 min, ~0 alla fine)
+
+20 casi (18 con isocentro dentro il tumore vero)
+
+scenario                 copertura GT %  >=95%            PTV cm3            V20 %           MLD Gy
+ctv_statico            43.2 [21.3-73.6]    10%      5.8 [2.6-8.9]    0.5 [0.3-1.0]    0.8 [0.5-1.4]
+ctv_fascio_fermo       28.9 [14.9-47.1]     0%      5.8 [2.6-8.9]    0.5 [0.3-1.0]    0.8 [0.5-1.4]
+itv_5mm                92.8 [64.6-99.2]    40%   29.3 [15.9-39.2]    2.3 [1.4-3.7]    2.1 [1.4-3.1]
+inseguimento           46.4 [28.4-79.4]    15%     7.1 [3.4-12.8]    0.6 [0.4-1.3]    0.9 [0.6-1.7]
+adattivo               95.0 [75.8-99.1]    50%  22.4 [12.7-110.6]    2.1 [0.9-5.6]    2.2 [1.3-4.5]
+oracolo                97.8 [96.6-98.1]    95%    11.0 [5.4-30.3]    1.1 [0.6-1.8]    1.3 [0.8-2.1]
+
+test appaiati (Wilcoxon); differenza mediana = secondo - primo
+  ctv_fascio_fermo -> inseguimento: copertura_pct       +16.24   p = 0.0002
+  ctv_fascio_fermo -> inseguimento: ptv_cm3              +1.34   p = 0.0
+  ctv_fascio_fermo -> inseguimento: polmone_v20_pct      +0.08   p = 0.0013
+  itv_5mm -> adattivo: copertura_pct                     +0.00   p = 0.5014
+  itv_5mm -> adattivo: ptv_cm3                           -6.69   p = 0.8124
+  itv_5mm -> adattivo: polmone_v20_pct                   -0.57   p = 0.9854
+  inseguimento -> adattivo: copertura_pct               +29.58   p = 0.0002
+  inseguimento -> adattivo: ptv_cm3                     +13.11   p = 0.0
+  inseguimento -> adattivo: polmone_v20_pct              +1.00   p = 0.0
+FINE

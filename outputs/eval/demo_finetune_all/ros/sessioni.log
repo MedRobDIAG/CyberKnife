@@ -1,0 +1,36 @@
+=== lung_070: preparazione 13:45:31 ===
+prep exit=0
+respiro: spostamento in inspirazione [ 0.8  2.  -9.5] mm, margine [1.4 1.6 2.6] mm
+piano: 147 fasci, copertura PTV 95.0%, D95 80.0%
+{"case_id": "lung_070", "fasci": 147, "copertura_ptv_pct": 94.9820788530466, "d95_ptv_pct": 80.0, "margine_mm": [1.3975634241155648, 1.6081273277949384, 2.590475858516739], "respiro_mm": [0.7887939708042015, 1.9719849270105039, -9.465527649650419], "angoli_lettino": 3, "tempo_s": 321.2}
+=== lung_070: simulazione ROS 13:50:58 ===
+bash: C:/Program Files/Git/mnt/c/Users/ilgra/Documents/Progetto Medical/outputs/eval/demo_finetune_all/ros/run_case.sh: No such file or directory
+ros exit=127
+Traceback (most recent call last):
+  File "C:\Users\ilgra\Documents\Progetto Medical\outputs\eval\demo_finetune_all\ros\summ.py", line 3, in <module>
+    d=json.load(open(f"{c}_resoconto.json",encoding="utf-8"));s=d["sintesi"];f=s["finale"]
+                ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'lung_070_resoconto.json'
+=== lung_070: valutazione sul tumore vero ===
+valuta exit=0
+piano: 147 fasci, copertura PTV 95.0%, D95 80.0%
+{"case_id": "lung_070", "fermo": {"copertura_pct": 0.0, "d95_pct": -0.0, "d_min_pct": -0.0, "paddick_ci": 0.0, "polmone_dose_media_gy": 0.7, "polmone_v20_pct": 0.44}, "inseguimento": {"copertura_pct": 0.0, "d95_pct": -0.0, "d_min_pct": -0.0, "paddick_ci": 0.0, "polmone_dose_media_gy": 0.7, "polmone_v20_pct": 0.44}, "oar_dmax_pct": {"mediastinum": 10.5, "airways": 8.0, "bones": 28.6}, "piv_cm3": 5.2}
+=== lung_003: preparazione 13:54:46 ===
+prep exit=0
+respiro: spostamento in inspirazione [  1.1   2.7 -13.1] mm, margine [1.4 1.7 3. ] mm
+piano: 139 fasci, copertura PTV 94.9%, D95 80.0%
+{"case_id": "lung_003", "fasci": 139, "copertura_ptv_pct": 94.94047619047619, "d95_ptv_pct": 80.0, "margine_mm": [1.418705816277352, 1.729143927751644, 2.997351299118429], "respiro_mm": [1.0947715763265702, 2.7369289408164255, -13.137258915918842], "angoli_lettino": 3, "tempo_s": 419.1}
+=== lung_003: simulazione ROS 14:01:52 ===
+bash: C:/Program Files/Git/mnt/c/Users/ilgra/Documents/Progetto Medical/outputs/eval/demo_finetune_all/ros/run_case.sh: No such file or directory
+ros exit=127
+Traceback (most recent call last):
+  File "C:\Users\ilgra\Documents\Progetto Medical\outputs\eval\demo_finetune_all\ros\summ.py", line 3, in <module>
+    d=json.load(open(f"{c}_resoconto.json",encoding="utf-8"));s=d["sintesi"];f=s["finale"]
+                ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'lung_003_resoconto.json'
+=== lung_003: valutazione sul tumore vero ===
+valuta exit=0
+piano: 139 fasci, copertura PTV 94.9%, D95 80.0%
+{"case_id": "lung_003", "fermo": {"copertura_pct": 100.0, "d95_pct": 88.32, "d_min_pct": 83.4, "paddick_ci": 0.31, "polmone_dose_media_gy": 0.77, "polmone_v20_pct": 0.43}, "inseguimento": {"copertura_pct": 100.0, "d95_pct": 88.09, "d_min_pct": 80.21, "paddick_ci": 0.31, "polmone_dose_media_gy": 0.77, "polmone_v20_pct": 0.43}, "oar_dmax_pct": {"mediastinum": 16.1, "airways": 0.0, "bones": 26.9}, "piv_cm3": 4.7}
+=== ripristino del pacchetto ROS originale 14:06:53 ===
+ripristinato

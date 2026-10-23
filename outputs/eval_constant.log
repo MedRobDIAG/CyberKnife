@@ -1,0 +1,105 @@
+[eval] esperimento 'legacy_unet_constant' | 12 casi | selettore 'legacy_val12'
+[eval] post-processing: soglia=0.5 min_volume=100.0 mm3
+[infer] Pesi caricati da 'outputs/best_model_dice.pth' (best_dice=0.5861796736717224)
+[eval] 1 modello/i su cuda
+C:\Users\ilgra\Documents\Progetto Medical\.venv\Lib\site-packages\monai\inferers\utils.py:223: UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\python_variable_indexing.cpp:353.)
+  win_data = torch.cat([inputs[win_slice] for win_slice in unravel_slice]).to(sw_device)
+C:\Users\ilgra\Documents\Progetto Medical\.venv\Lib\site-packages\monai\inferers\utils.py:361: UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\python_variable_indexing.cpp:353.)
+  out[idx_zm] += p
+  [ 1/12] lung_001  dice=0.656 sens=1.00 fp=1 iso_in=si d_cent=1.4mm
+  [ 2/12] lung_003  dice=0.786 sens=1.00 fp=1 iso_in=si d_cent=0.7mm
+  [ 3/12] lung_004  dice=0.000 sens=0.00 fp=0 iso_in=NO d_cent=nanmm
+  [ 4/12] lung_005  dice=0.641 sens=1.00 fp=1 iso_in=si d_cent=1.0mm
+  [ 5/12] lung_006  dice=0.390 sens=1.00 fp=0 iso_in=si d_cent=1.0mm
+  [ 6/12] lung_009  dice=0.647 sens=1.00 fp=1 iso_in=si d_cent=12.3mm
+  [ 7/12] lung_010  dice=0.821 sens=1.00 fp=0 iso_in=si d_cent=1.0mm
+  [ 8/12] lung_014  dice=0.835 sens=1.00 fp=0 iso_in=si d_cent=3.1mm
+  [ 9/12] lung_015  dice=0.253 sens=1.00 fp=0 iso_in=si d_cent=0.8mm
+  [10/12] lung_016  dice=0.422 sens=1.00 fp=1 iso_in=si d_cent=2.9mm
+  [11/12] lung_018  dice=0.807 sens=1.00 fp=0 iso_in=si d_cent=1.4mm
+  [12/12] lung_020  dice=0.699 sens=1.00 fp=0 iso_in=si d_cent=2.8mm
+
+====================================================================
+  legacy_unet_constant   (12 casi, legacy_val12)
+====================================================================
+  Dice                     0.5797 +- 0.2498   mediana 0.6515
+  Sensibilita' (lesioni)   0.917   (11/12)
+  Falsi positivi / scan    0.42   (totale 5)
+  Isocentro dentro il GT   0.917
+  Casi senza rilevamento   1
+  Distanza centroide (mm)  mediana 1.41   media 2.59
+  NSD @2mm                 0.5378
+  HD95 (mm)                mediana 8.60
+
+  Per terzile di volume tumorale:
+    terzile      n         range cm3     dice    sens  iso_in
+    piccole      4         1.12-1.45   0.4236   0.750   0.750
+    medie        4         2.80-7.12   0.5381   1.000   1.000
+    grandi       4        8.53-89.48   0.7774   1.000   1.000
+
+  DIAGNOSTICA - probabilita' massima sulle 1 lesioni mancate:
+    mediana 0.112 | sotto 0.1: 0% | fra 0.1 e 0.5: 100%
+    -> c'e' massa di probabilita' sotto 0.5: il collo di bottiglia e'
+       la SOGLIA. Muoverla costa zero; E6 sarebbe ridondante.
+====================================================================
+
+
+[eval] sweep del punto di lavoro (nessuna GPU)
+  (12 casi ritagliati a 326.0M voxel totali)
+  th=0.10 minvol=      0  dice=0.4485 sens=0.917 fp/scan=4.00 iso_in=0.833
+  th=0.10 minvol=     50  dice=0.4501 sens=0.917 fp/scan=4.75 iso_in=0.833
+  th=0.10 minvol=    100  dice=0.4514 sens=0.917 fp/scan=4.00 iso_in=0.833
+  th=0.10 minvol=    250  dice=0.4560 sens=0.917 fp/scan=3.25 iso_in=0.833
+  th=0.10 minvol=    500  dice=0.4674 sens=0.917 fp/scan=2.17 iso_in=0.833
+  th=0.10 minvol=   1000  dice=0.4503 sens=0.833 fp/scan=1.42 iso_in=0.833
+  th=0.20 minvol=      0  dice=0.5355 sens=0.917 fp/scan=2.25 iso_in=0.917
+  th=0.20 minvol=     50  dice=0.5394 sens=0.917 fp/scan=2.58 iso_in=0.917
+  th=0.20 minvol=    100  dice=0.5402 sens=0.917 fp/scan=2.25 iso_in=0.917
+  th=0.20 minvol=    250  dice=0.5455 sens=0.917 fp/scan=1.67 iso_in=0.917
+  th=0.20 minvol=    500  dice=0.5525 sens=0.917 fp/scan=1.17 iso_in=0.917
+  th=0.20 minvol=   1000  dice=0.5427 sens=0.833 fp/scan=0.33 iso_in=0.833
+  th=0.30 minvol=      0  dice=0.5670 sens=0.917 fp/scan=1.67 iso_in=0.917
+  th=0.30 minvol=     50  dice=0.5676 sens=0.917 fp/scan=1.92 iso_in=0.917
+  th=0.30 minvol=    100  dice=0.5694 sens=0.917 fp/scan=1.67 iso_in=0.917
+  th=0.30 minvol=    250  dice=0.5761 sens=0.917 fp/scan=0.92 iso_in=0.917
+  th=0.30 minvol=    500  dice=0.5525 sens=0.833 fp/scan=0.33 iso_in=0.833
+  th=0.30 minvol=   1000  dice=0.5600 sens=0.833 fp/scan=0.25 iso_in=0.833
+  th=0.40 minvol=      0  dice=0.5771 sens=0.917 fp/scan=0.92 iso_in=0.917
+  th=0.40 minvol=     50  dice=0.5783 sens=0.917 fp/scan=1.25 iso_in=0.917
+  th=0.40 minvol=    100  dice=0.5800 sens=0.917 fp/scan=0.92 iso_in=0.917
+  th=0.40 minvol=    250  dice=0.5842 sens=0.917 fp/scan=0.42 iso_in=0.917
+  th=0.40 minvol=    500  dice=0.5661 sens=0.833 fp/scan=0.25 iso_in=0.833
+  th=0.40 minvol=   1000  dice=0.5661 sens=0.833 fp/scan=0.25 iso_in=0.833
+  th=0.50 minvol=      0  dice=0.5773 sens=0.917 fp/scan=0.42 iso_in=0.917
+  th=0.50 minvol=     50  dice=0.5788 sens=0.917 fp/scan=0.67 iso_in=0.917
+  th=0.50 minvol=    100  dice=0.5797 sens=0.917 fp/scan=0.42 iso_in=0.917
+  th=0.50 minvol=    250  dice=0.5633 sens=0.833 fp/scan=0.33 iso_in=0.833
+  th=0.50 minvol=    500  dice=0.5689 sens=0.833 fp/scan=0.25 iso_in=0.833
+  th=0.50 minvol=   1000  dice=0.5753 sens=0.833 fp/scan=0.00 iso_in=0.833
+  th=0.60 minvol=      0  dice=0.5700 sens=0.833 fp/scan=0.42 iso_in=0.833
+  th=0.60 minvol=     50  dice=0.5703 sens=0.917 fp/scan=0.42 iso_in=0.917
+  th=0.60 minvol=    100  dice=0.5593 sens=0.833 fp/scan=0.42 iso_in=0.833
+  th=0.60 minvol=    250  dice=0.5672 sens=0.833 fp/scan=0.25 iso_in=0.833
+  th=0.60 minvol=    500  dice=0.5672 sens=0.833 fp/scan=0.25 iso_in=0.833
+  th=0.60 minvol=   1000  dice=0.5445 sens=0.750 fp/scan=0.00 iso_in=0.750
+  th=0.70 minvol=      0  dice=0.5591 sens=0.833 fp/scan=0.33 iso_in=0.833
+  th=0.70 minvol=     50  dice=0.5557 sens=0.833 fp/scan=0.42 iso_in=0.833
+  th=0.70 minvol=    100  dice=0.5574 sens=0.833 fp/scan=0.33 iso_in=0.833
+  th=0.70 minvol=    250  dice=0.5607 sens=0.833 fp/scan=0.25 iso_in=0.833
+  th=0.70 minvol=    500  dice=0.5637 sens=0.833 fp/scan=0.00 iso_in=0.833
+  th=0.70 minvol=   1000  dice=0.5414 sens=0.750 fp/scan=0.00 iso_in=0.750
+  th=0.80 minvol=      0  dice=0.5415 sens=0.833 fp/scan=0.25 iso_in=0.833
+  th=0.80 minvol=     50  dice=0.5420 sens=0.833 fp/scan=0.33 iso_in=0.833
+  th=0.80 minvol=    100  dice=0.5437 sens=0.833 fp/scan=0.25 iso_in=0.833
+  th=0.80 minvol=    250  dice=0.5451 sens=0.833 fp/scan=0.00 iso_in=0.833
+  th=0.80 minvol=    500  dice=0.5291 sens=0.750 fp/scan=0.00 iso_in=0.750
+  th=0.80 minvol=   1000  dice=0.4377 sens=0.583 fp/scan=0.00 iso_in=0.583
+  th=0.90 minvol=      0  dice=0.5061 sens=0.833 fp/scan=0.00 iso_in=0.833
+  th=0.90 minvol=     50  dice=0.5063 sens=0.833 fp/scan=0.08 iso_in=0.833
+  th=0.90 minvol=    100  dice=0.5065 sens=0.833 fp/scan=0.00 iso_in=0.833
+  th=0.90 minvol=    250  dice=0.4992 sens=0.750 fp/scan=0.00 iso_in=0.750
+  th=0.90 minvol=    500  dice=0.4992 sens=0.750 fp/scan=0.00 iso_in=0.750
+  th=0.90 minvol=   1000  dice=0.3783 sens=0.500 fp/scan=0.00 iso_in=0.500
+
+[eval] punto di lavoro migliore a <= 1.0 FP/scan:
+       soglia=0.40 min_volume=250 mm3 -> sens=0.917 fp/scan=0.42 dice=0.5842 iso_in=0.917

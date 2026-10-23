@@ -1,0 +1,110 @@
+[11:11:30] lung_004...
+    {"case_id": "lung_004", "semaforo": "rosso", "motivi": "lesione sotto il volume minimo | lesione trovata solo in 12% delle predizioni perturbate", "accettato": false, "gt_cm3": 1.32, "pred_cm3": 0.0, "errore": "nessuna lesione predetta"}
+[11:11:31] lung_010...
+    {"case_id": "lung_010", "semaforo": "verde", "motivi": "", "accettato": true, "gt_cm3": 12.18, "pred_cm3": 11.16, "dice": 0.827, "centroide_err_mm": 1.3, "iso_nel_tumore": true, "dist_mediastino_mm": 33.8, "dist_vie_aeree_mm": 87.8, "dist_ossa_mm": 2.3, "profondita_mm": 26.7, "angoli_lettino": 3, "fasci_candidati": 142, "fasci_erogabili": 142, "fasci_scartati": 0, "copertura_piano_pct": 95.0, "d95_piano_pct": 80.0, "conformita": 0.879, "copertura_gt_pct": 79.0, "d95_gt_pct": 66.9, "dmin_gt_pct": 39.7, "paddick_gt": 0.668, "polmone_dmedia_gy": 1.81, "polmone_v20_pct": 1.35, "mediastino_dmax_pct": 14.8, "vie_aeree_dmax_pct": 4.2, "ossa_dmax_pct": 75.5, "tempo_s": 299.8}
+[11:16:31] lung_018...
+    {"case_id": "lung_018", "semaforo": "verde", "motivi": "", "accettato": true, "gt_cm3": 8.53, "pred_cm3": 5.45, "dice": 0.702, "centroide_err_mm": 3.0, "iso_nel_tumore": true, "dist_mediastino_mm": 32.5, "dist_vie_aeree_mm": 59.6, "dist_ossa_mm": 1.5, "profondita_mm": 47.9, "angoli_lettino": 3, "fasci_candidati": 142, "fasci_erogabili": 142, "fasci_scartati": 0, "copertura_piano_pct": 95.0, "d95_piano_pct": 80.0, "conformita": 0.878, "copertura_gt_pct": 57.0, "d95_gt_pct": 27.4, "dmin_gt_pct": 4.4, "paddick_gt": 0.495, "polmone_dmedia_gy": 0.85, "polmone_v20_pct": 0.64, "mediastino_dmax_pct": 6.4, "vie_aeree_dmax_pct": 3.1, "ossa_dmax_pct": 32.3, "tempo_s": 348.5}
+[11:22:20] lung_025...
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from multiprocessing.spawn import spawn_main; spawn_main(parent_pid=12948, pipe_handle=3008)
+                                                  ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ilgra\AppData\Local\Python\pythoncore-3.14-64\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "C:\Users\ilgra\AppData\Local\Python\pythoncore-3.14-64\Lib\multiprocessing\spawn.py", line 132, in _main
+    self = reduction.pickle.load(from_parent)
+_pickle.UnpicklingError: pickle data was truncated
+Traceback (most recent call last):
+  File "C:\Users\ilgra\Documents\Progetto Medical\demo_screening.py", line 196, in main
+    row = run_case(cid)
+  File "C:\Users\ilgra\Documents\Progetto Medical\demo_screening.py", line 127, in run_case
+    res = compute_plan(case["ct"], pred, aff, iso, mode="conformal",
+                       bone_mask=masks["bones"], bone_affine=oaff,
+    ...<2 lines>...
+                       robot_couch_poses=couch_poses,
+                       beam_filter=_deliverable)
+  File "C:\Users\ilgra\Documents\Progetto Medical\dosimetry.py", line 648, in compute_plan
+    beams, opt_info = optimize_plan(
+                      ~~~~~~~~~~~~~^
+        red_grid, grid_affine, mask, affine, tumor_grid, kernel,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+        couch_poses=robot_couch_poses,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        progress_cb=progress_cb, status_cb=status_cb)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ilgra\Documents\Progetto Medical\planner.py", line 758, in optimize_plan
+    A_t, A_r, scale = influence_matrix(beams, red_grid, grid_affine, kernel,
+                      ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                                       lo, roi_shape, t_coords, ir, spacing_mm,
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+                                       progress_cb=progress_cb,
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^
+                                       status_cb=status_cb)
+                                       ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ilgra\Documents\Progetto Medical\planner.py", line 403, in influence_matrix
+    for start, a_t, a_r in ex.map(_beam_columns, tasks):
+                           ~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ilgra\AppData\Local\Python\pythoncore-3.14-64\Lib\concurrent\futures\process.py", line 850, in map
+    results = super().map(partial(_process_chunk, fn),
+                          itertools.batched(zip(*iterables), chunksize),
+                          timeout=timeout,
+                          buffersize=buffersize)
+  File "C:\Users\ilgra\AppData\Local\Python\pythoncore-3.14-64\Lib\concurrent\futures\_base.py", line 618, in map
+    fs = [self.submit(fn, *args) for args in zipped_iterables]
+          ~~~~~~~~~~~^^^^^^^^^^^
+  File "C:\Users\ilgra\AppData\Local\Python\pythoncore-3.14-64\Lib\concurrent\futures\process.py", line 816, in submit
+    self._adjust_process_count()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\ilgra\AppData\Local\Python\pythoncore-3.14-64\Lib\concurrent\futures\process.py", line 775, in _adjust_process_count
+    self._spawn_process()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\ilgra\AppData\Local\Python\pythoncore-3.14-64\Lib\concurrent\futures\process.py", line 793, in _spawn_process
+    p.start()
+    ~~~~~~~^^
+  File "C:\Users\ilgra\AppData\Local\Python\pythoncore-3.14-64\Lib\multiprocessing\process.py", line 121, in start
+    self._popen = self._Popen(self)
+                  ~~~~~~~~~~~^^^^^^
+  File "C:\Users\ilgra\AppData\Local\Python\pythoncore-3.14-64\Lib\multiprocessing\context.py", line 337, in _Popen
+    return Popen(process_obj)
+  File "C:\Users\ilgra\AppData\Local\Python\pythoncore-3.14-64\Lib\multiprocessing\popen_spawn_win32.py", line 97, in __init__
+    reduction.dump(process_obj, to_child)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ilgra\AppData\Local\Python\pythoncore-3.14-64\Lib\multiprocessing\reduction.py", line 60, in dump
+    ForkingPickler(file, protocol).dump(obj)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+OSError: [Errno 22] Invalid argument
+when serializing tuple item 0
+when serializing numpy.ndarray reconstructor arguments
+when serializing numpy.ndarray object
+when serializing tuple item 0
+when serializing tuple item 3
+when serializing dict item '_args'
+when serializing multiprocessing.context.SpawnProcess state
+when serializing multiprocessing.context.SpawnProcess object
+    {"case_id": "lung_025", "errore": "OSError(22, 'Invalid argument')"}
+[11:25:41] lung_029...
+    {"case_id": "lung_029", "semaforo": "giallo", "motivi": "in almeno una predizione perturbata il bersaglio salta di 227 mm: esiste un candidato alternativo (soglia 50 mm)", "accettato": true, "gt_cm3": 3.49, "pred_cm3": 0.71, "dice": 0.336, "centroide_err_mm": 1.9, "iso_nel_tumore": true, "dist_mediastino_mm": 33.4, "dist_vie_aeree_mm": 71.8, "dist_ossa_mm": 4.0, "profondita_mm": 57.4, "angoli_lettino": 3, "fasci_candidati": 130, "fasci_erogabili": 130, "fasci_scartati": 0, "copertura_piano_pct": 95.0, "d95_piano_pct": 80.0, "conformita": 0.756, "copertura_gt_pct": 23.8, "d95_gt_pct": 27.9, "dmin_gt_pct": 15.7, "paddick_gt": 0.225, "polmone_dmedia_gy": 0.3, "polmone_v20_pct": 0.09, "mediastino_dmax_pct": 7.9, "vie_aeree_dmax_pct": 0.0, "ossa_dmax_pct": 24.6, "tempo_s": 195.7}
+[11:28:57] lung_036...
+    {"case_id": "lung_036", "semaforo": "rosso", "motivi": "lesione sotto il volume minimo | lesione trovata solo in 12% delle predizioni perturbate", "accettato": false, "gt_cm3": 8.13, "pred_cm3": 0.0, "errore": "nessuna lesione predetta"}
+[11:28:58] lung_042...
+    {"case_id": "lung_042", "semaforo": "giallo", "motivi": "in almeno una predizione perturbata il bersaglio salta di 81 mm: esiste un candidato alternativo (soglia 50 mm)", "accettato": true, "gt_cm3": 6.02, "pred_cm3": 2.66, "dice": 0.0, "centroide_err_mm": 82.5, "iso_nel_tumore": false, "dist_mediastino_mm": 5.1, "dist_vie_aeree_mm": 42.1, "dist_ossa_mm": 14.5, "profondita_mm": 50.8, "angoli_lettino": 3, "fasci_candidati": 143, "fasci_erogabili": 143, "fasci_scartati": 0, "copertura_piano_pct": 95.0, "d95_piano_pct": 80.0, "conformita": 0.866, "copertura_gt_pct": 0.0, "d95_gt_pct": 0.7, "dmin_gt_pct": 0.5, "paddick_gt": 0.0, "polmone_dmedia_gy": 0.82, "polmone_v20_pct": 0.57, "mediastino_dmax_pct": 8.1, "vie_aeree_dmax_pct": 4.9, "ossa_dmax_pct": 46.1, "tempo_s": 224.5}
+[11:32:42] lung_046...
+    {"case_id": "lung_046", "semaforo": "verde", "motivi": "", "accettato": true, "gt_cm3": 10.09, "pred_cm3": 9.79, "dice": 0.841, "centroide_err_mm": 1.9, "iso_nel_tumore": true, "dist_mediastino_mm": 36.6, "dist_vie_aeree_mm": 56.9, "dist_ossa_mm": 0.0, "profondita_mm": 61.7, "angoli_lettino": 3, "fasci_candidati": 144, "fasci_erogabili": 144, "fasci_scartati": 0, "copertura_piano_pct": 95.0, "d95_piano_pct": 80.0, "conformita": 0.895, "copertura_gt_pct": 80.4, "d95_gt_pct": 65.0, "dmin_gt_pct": 29.2, "paddick_gt": 0.679, "polmone_dmedia_gy": 1.27, "polmone_v20_pct": 1.03, "mediastino_dmax_pct": 16.6, "vie_aeree_dmax_pct": 9.0, "ossa_dmax_pct": 96.0, "tempo_s": 270.6}
+[11:37:13] lung_051...
+    {"case_id": "lung_051", "semaforo": "verde", "motivi": "", "accettato": true, "gt_cm3": 12.17, "pred_cm3": 5.68, "dice": 0.618, "centroide_err_mm": 3.0, "iso_nel_tumore": true, "dist_mediastino_mm": 26.1, "dist_vie_aeree_mm": 76.3, "dist_ossa_mm": 0.4, "profondita_mm": 49.2, "angoli_lettino": 3, "fasci_candidati": 144, "fasci_erogabili": 137, "fasci_scartati": 7, "copertura_piano_pct": 95.0, "d95_piano_pct": 80.0, "conformita": 0.864, "copertura_gt_pct": 46.2, "d95_gt_pct": 35.2, "dmin_gt_pct": 12.2, "paddick_gt": 0.437, "polmone_dmedia_gy": 0.79, "polmone_v20_pct": 0.59, "mediastino_dmax_pct": 9.0, "vie_aeree_dmax_pct": 1.6, "ossa_dmax_pct": 47.9, "tempo_s": 303.9}
+[11:42:17] lung_057...
+    {"case_id": "lung_057", "semaforo": "verde", "motivi": "", "accettato": true, "gt_cm3": 4.77, "pred_cm3": 2.95, "dice": 0.727, "centroide_err_mm": 1.0, "iso_nel_tumore": true, "dist_mediastino_mm": 27.6, "dist_vie_aeree_mm": 97.3, "dist_ossa_mm": 5.8, "profondita_mm": 48.5, "angoli_lettino": 3, "fasci_candidati": 138, "fasci_erogabili": 138, "fasci_scartati": 0, "copertura_piano_pct": 95.0, "d95_piano_pct": 80.0, "conformita": 0.843, "copertura_gt_pct": 57.9, "d95_gt_pct": 59.6, "dmin_gt_pct": 32.2, "paddick_gt": 0.539, "polmone_dmedia_gy": 0.81, "polmone_v20_pct": 0.49, "mediastino_dmax_pct": 7.3, "vie_aeree_dmax_pct": 0.0, "ossa_dmax_pct": 37.6, "tempo_s": 267.3}
+[11:46:44] lung_062...
+    {"case_id": "lung_062", "semaforo": "verde", "motivi": "", "accettato": true, "gt_cm3": 5.0, "pred_cm3": 6.25, "dice": 0.859, "centroide_err_mm": 0.4, "iso_nel_tumore": true, "dist_mediastino_mm": 48.9, "dist_vie_aeree_mm": 103.6, "dist_ossa_mm": 3.3, "profondita_mm": 48.9, "angoli_lettino": 3, "fasci_candidati": 150, "fasci_erogabili": 142, "fasci_scartati": 8, "copertura_piano_pct": 95.0, "d95_piano_pct": 80.0, "conformita": 0.882, "copertura_gt_pct": 95.1, "d95_gt_pct": 80.0, "dmin_gt_pct": 56.2, "paddick_gt": 0.696, "polmone_dmedia_gy": 0.72, "polmone_v20_pct": 0.48, "mediastino_dmax_pct": 2.9, "vie_aeree_dmax_pct": 0.7, "ossa_dmax_pct": 45.6, "tempo_s": 309.1}
+[11:51:54] lung_069...
+    {"case_id": "lung_069", "semaforo": "rosso", "motivi": "lesione sotto il volume minimo | lesione trovata solo in 62% delle predizioni perturbate", "accettato": false, "gt_cm3": 0.83, "pred_cm3": 0.0, "errore": "nessuna lesione predetta"}
+[11:51:55] lung_074...
+    {"case_id": "lung_074", "semaforo": "verde", "motivi": "", "accettato": true, "gt_cm3": 27.75, "pred_cm3": 21.42, "dice": 0.767, "centroide_err_mm": 6.2, "iso_nel_tumore": true, "dist_mediastino_mm": 7.5, "dist_vie_aeree_mm": 59.5, "dist_ossa_mm": 2.6, "profondita_mm": 27.0, "angoli_lettino": 3, "fasci_candidati": 146, "fasci_erogabili": 146, "fasci_scartati": 0, "copertura_piano_pct": 95.0, "d95_piano_pct": 80.0, "conformita": 0.895, "copertura_gt_pct": 66.1, "d95_gt_pct": 15.2, "dmin_gt_pct": 3.6, "paddick_gt": 0.559, "polmone_dmedia_gy": 1.34, "polmone_v20_pct": 1.32, "mediastino_dmax_pct": 20.9, "vie_aeree_dmax_pct": 4.7, "ossa_dmax_pct": 43.2, "tempo_s": 308.6}
+[11:57:03] lung_080...
+    {"case_id": "lung_080", "semaforo": "rosso", "motivi": "lesione sotto il volume minimo | lesione trovata solo in 0% delle predizioni perturbate", "accettato": false, "gt_cm3": 1.16, "pred_cm3": 0.0, "errore": "nessuna lesione predetta"}
+[11:57:05] lung_086...
+    {"case_id": "lung_086", "semaforo": "verde", "motivi": "", "accettato": true, "gt_cm3": 31.27, "pred_cm3": 20.09, "dice": 0.763, "centroide_err_mm": 0.4, "iso_nel_tumore": true, "dist_mediastino_mm": 22.5, "dist_vie_aeree_mm": 82.6, "dist_ossa_mm": 0.0, "profondita_mm": 57.0, "angoli_lettino": 3, "fasci_candidati": 141, "fasci_erogabili": 141, "fasci_scartati": 0, "copertura_piano_pct": 95.0, "d95_piano_pct": 80.0, "conformita": 0.826, "copertura_gt_pct": 64.7, "d95_gt_pct": 32.3, "dmin_gt_pct": 2.8, "paddick_gt": 0.597, "polmone_dmedia_gy": 1.39, "polmone_v20_pct": 1.69, "mediastino_dmax_pct": 5.1, "vie_aeree_dmax_pct": 1.8, "ossa_dmax_pct": 35.4, "tempo_s": 293.7}
+[12:01:58] lung_096...
+    {"case_id": "lung_096", "semaforo": "rosso", "motivi": "lesione sotto il volume minimo | in almeno una predizione perturbata il bersaglio salta di 100 mm: esiste un candidato alternativo (soglia 50 mm)", "accettato": false, "gt_cm3": 0.74, "pred_cm3": 0.12, "dice": 0.0, "centroide_err_mm": 66.8, "iso_nel_tumore": false, "dist_mediastino_mm": 36.8, "dist_vie_aeree_mm": 117.8, "dist_ossa_mm": 26.0, "profondita_mm": 68.6, "angoli_lettino": 3, "fasci_candidati": 41, "fasci_erogabili": 41, "fasci_scartati": 0, "copertura_piano_pct": 93.9, "d95_piano_pct": 80.0, "conformita": 0.549, "copertura_gt_pct": 0.0, "d95_gt_pct": 0.0, "dmin_gt_pct": 0.0, "paddick_gt": 0.0, "polmone_dmedia_gy": 0.19, "polmone_v20_pct": 0.06, "mediastino_dmax_pct": 2.3, "vie_aeree_dmax_pct": 0.0, "ossa_dmax_pct": 20.2, "tempo_s": 119.1}

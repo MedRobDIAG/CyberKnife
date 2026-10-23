@@ -1,0 +1,17 @@
+case_id,semaforo,motivi,accettato,gt_cm3,pred_cm3,dice,centroide_err_mm,iso_nel_tumore,dist_mediastino_mm,dist_vie_aeree_mm,dist_ossa_mm,profondita_mm,fasci_candidati,fasci_erogabili,fasci_scartati,angoli_lettino,copertura_piano_pct,d95_piano_pct,conformita,copertura_gt_pct,d95_gt_pct,dmin_gt_pct,paddick_gt,polmone_dmedia_gy,polmone_v20_pct,mediastino_dmax_pct,vie_aeree_dmax_pct,ossa_dmax_pct,tempo_s,errore
+lung_004,rosso,lesione sotto il volume minimo | lesione trovata solo in 25% delle predizioni perturbate,False,1.32,0.0,,,,,,,,,,,,,,,,,,,,,,,,,nessuna lesione predetta
+lung_010,verde,,True,12.18,16.57,0.809,1.7,True,33.8,87.8,2.3,26.7,143,143,0,3,95.0,80.0,0.82,94.1,79.2,45.3,0.591,2.22,1.91,23.7,0.0,85.9,315.9,
+lung_018,verde,,True,8.53,6.93,0.809,2.4,True,32.5,59.6,1.5,47.9,144,144,0,3,95.0,80.0,0.8,72.2,27.5,3.8,0.583,0.92,0.81,8.4,4.6,48.4,317.5,
+lung_025,verde,,True,3.91,4.81,0.851,0.4,True,34.1,89.6,16.9,38.3,147,147,0,3,95.0,80.0,0.86,94.9,79.9,48.8,0.698,0.64,0.4,10.0,1.1,26.1,383.2,
+lung_029,verde,,True,3.49,2.93,0.782,0.5,True,33.4,71.8,4.0,57.4,141,141,0,3,94.9,80.0,0.865,72.2,68.4,30.3,0.586,0.51,0.29,9.1,1.6,54.2,312.7,
+lung_036,rosso,lesione sotto il volume minimo | lesione trovata solo in 38% delle predizioni perturbate,False,8.13,0.0,,,,,,,,,,,,,,,,,,,,,,,,,nessuna lesione predetta
+lung_042,giallo,in almeno una predizione perturbata il bersaglio salta di 83 mm: esiste un candidato alternativo (soglia 50 mm),True,6.02,2.57,0.0,82.8,False,5.1,42.1,14.5,50.8,143,143,0,3,95.0,80.0,0.847,0.0,0.6,0.3,0.0,0.78,0.51,7.8,6.8,42.2,258.8,
+lung_046,verde,,True,10.09,10.06,0.865,1.4,True,36.6,56.9,0.0,61.7,145,145,0,3,95.0,80.0,0.87,84.2,70.5,33.0,0.708,1.31,1.1,19.2,9.0,94.8,357.7,
+lung_051,verde,,True,12.17,8.7,0.814,1.6,True,26.1,76.3,0.4,49.2,146,146,0,3,95.0,80.0,0.833,71.0,61.4,34.8,0.641,1.04,0.77,11.7,3.6,72.7,331.6,
+lung_057,verde,,True,4.77,2.99,0.769,1.0,True,27.6,97.3,5.8,48.5,149,149,0,3,95.0,80.0,0.835,61.9,65.4,44.3,0.597,0.77,0.37,25.3,0.0,32.3,306.8,
+lung_062,verde,,True,5.0,5.71,0.883,0.1,True,48.9,103.6,3.3,48.9,145,145,0,3,95.0,80.0,0.86,94.4,79.3,56.6,0.732,0.69,0.46,4.6,0.9,37.3,291.1,
+lung_069,rosso,lesione sotto il volume minimo,False,0.83,0.0,,,,,,,,,,,,,,,,,,,,,,,,,nessuna lesione predetta
+lung_074,verde,,True,27.75,26.27,0.804,5.9,True,7.5,59.5,2.6,27.0,146,146,0,3,95.0,80.0,0.842,77.1,32.9,4.7,0.587,1.4,1.73,37.2,12.3,57.2,335.4,
+lung_080,rosso,lesione sotto il volume minimo,False,1.16,0.62,0.0,71.1,False,9.2,55.1,19.4,49.7,147,147,0,3,94.6,80.0,0.863,0.0,1.2,0.8,0.0,0.41,0.18,5.5,1.4,23.5,223.4,
+lung_086,verde,,True,31.27,19.83,0.759,1.1,True,22.5,82.6,0.0,57.0,144,144,0,3,95.0,80.0,0.755,68.2,39.2,3.4,0.615,1.51,1.95,10.0,6.8,34.7,263.5,
+lung_096,rosso,lesione sotto il volume minimo | in almeno una predizione perturbata il bersaglio salta di 307 mm: esiste un candidato alternativo (soglia 50 mm),False,0.74,0.85,0.0,66.5,False,36.8,117.8,26.0,68.6,126,126,0,3,94.7,80.0,0.673,0.0,0.0,0.0,0.0,0.39,0.2,3.6,0.0,28.9,196.3,

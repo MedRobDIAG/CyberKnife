@@ -1,0 +1,105 @@
+[INFO] [launch]: All log files can be found below /home/nikke/.ros/log/2026-10-07-13-12-00-663288-DESKTOP-AOMSSBH-509
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [robot_state_publisher-1]: process started with pid [510]
+[INFO] [treatment_node-2]: process started with pid [512]
+[robot_state_publisher-1] [INFO] [1791371520.855164276] [robot_state_publisher]: got segment base_link
+[robot_state_publisher-1] [INFO] [1791371520.855272721] [robot_state_publisher]: got segment bev
+[robot_state_publisher-1] [INFO] [1791371520.855281358] [robot_state_publisher]: got segment couch_arm1
+[robot_state_publisher-1] [INFO] [1791371520.855283862] [robot_state_publisher]: got segment couch_arm2
+[robot_state_publisher-1] [INFO] [1791371520.855285826] [robot_state_publisher]: got segment couch_base
+[robot_state_publisher-1] [INFO] [1791371520.855287650] [robot_state_publisher]: got segment couch_column
+[robot_state_publisher-1] [INFO] [1791371520.855289433] [robot_state_publisher]: got segment couch_piatto
+[robot_state_publisher-1] [INFO] [1791371520.855291266] [robot_state_publisher]: got segment couch_top
+[robot_state_publisher-1] [INFO] [1791371520.855292960] [robot_state_publisher]: got segment couch_wrist1
+[robot_state_publisher-1] [INFO] [1791371520.855294613] [robot_state_publisher]: got segment couch_wrist2
+[robot_state_publisher-1] [INFO] [1791371520.855296356] [robot_state_publisher]: got segment linac
+[robot_state_publisher-1] [INFO] [1791371520.855298009] [robot_state_publisher]: got segment link_1
+[robot_state_publisher-1] [INFO] [1791371520.855299552] [robot_state_publisher]: got segment link_2
+[robot_state_publisher-1] [INFO] [1791371520.855301195] [robot_state_publisher]: got segment link_3
+[robot_state_publisher-1] [INFO] [1791371520.855302828] [robot_state_publisher]: got segment link_4
+[robot_state_publisher-1] [INFO] [1791371520.855304371] [robot_state_publisher]: got segment link_5
+[robot_state_publisher-1] [INFO] [1791371520.855305944] [robot_state_publisher]: got segment link_6
+[robot_state_publisher-1] [INFO] [1791371520.855307477] [robot_state_publisher]: got segment polso_base
+[robot_state_publisher-1] [INFO] [1791371520.855309140] [robot_state_publisher]: got segment sorgente
+[treatment_node-2] [INFO] [1791371521.411483129] [cyberknife_treatment]: Piano: 144 fasci, isocentro [ 50.3 -20.3 -47.5] mm
+[treatment_node-2] [INFO] [1791371521.437516590] [cyberknife_treatment]: Ostacoli attivi: lettino, paziente
+[treatment_node-2] [INFO] [1791371521.457673434] [cyberknife_treatment]: Rotazioni del lettino: yaw -63, yaw 48, yaw 16
+[treatment_node-2] [INFO] [1791371547.531878591] [cyberknife_treatment]:   fasci_totali: 144
+[treatment_node-2] [INFO] [1791371547.551975677] [cyberknife_treatment]:   raggiungibili: 144
+[treatment_node-2] [INFO] [1791371547.572613983] [cyberknife_treatment]:   non_raggiungibili: 0
+[treatment_node-2] [INFO] [1791371547.592508976] [cyberknife_treatment]:   bloccati_da_ostacoli: 0
+[treatment_node-2] [INFO] [1791371547.613028041] [cyberknife_treatment]:   bloccati_nel_percorso: 0
+[treatment_node-2] [INFO] [1791371547.633293205] [cyberknife_treatment]:   trasferimenti_con_ritiro: 0
+[treatment_node-2] [INFO] [1791371547.653310806] [cyberknife_treatment]:   manovre_dal_parcheggio: 0
+[treatment_node-2] [INFO] [1791371547.673546650] [cyberknife_treatment]:   angoli_lettino: 3
+[treatment_node-2] [INFO] [1791371547.693494057] [cyberknife_treatment]:   riposizionamenti_lettino: 2
+[treatment_node-2] [INFO] [1791371547.713342528] [cyberknife_treatment]:   movimenti_lettino_simultanei: 2
+[treatment_node-2] [INFO] [1791371547.733512722] [cyberknife_treatment]:   fasci_per_gruppo: [63, 40, 41]
+[treatment_node-2] [INFO] [1791371547.753489561] [cyberknife_treatment]:   movimento_totale_deg: 5632.2
+[treatment_node-2] [INFO] [1791371547.773506891] [cyberknife_treatment]:   margine_minimo: 0.002
+[treatment_node-2] [INFO] [1791371547.794689953] [cyberknife_treatment]:   franco_minimo_mm: 7.1
+[treatment_node-2] [INFO] [1791371547.820915442] [cyberknife_treatment]:   chiusura FK/IK: posizione 1.60e-12 mm, angolo 1.21e-06 gradi
+[treatment_node-2] [INFO] [1791371547.841593674] [cyberknife_treatment]:   erogazione proporzionale al peso: 120 s di fascio acceso, da 0.3 a 4.0 s per fascio
+[treatment_node-2] [INFO] [1791371547.862370612] [cyberknife_treatment]:   2 rotazioni del lettino eseguite in movimento simultaneo col braccio (13s di manovra)
+[treatment_node-2] [INFO] [1791371547.883055241] [cyberknife_treatment]:   tempi: 87s di spostamenti su 153 tratti (2 con ritiro) + 125s di erogazione
+[treatment_node-2] [INFO] [1791371547.919027369] [cyberknife_treatment]: Respiro: escursione [ 0.5  1.2 -5.8] mm, periodo 4.0 s, predittore kalman, radiografie ogni 60 s, inseguimento ATTIVO
+[treatment_node-2] [INFO] [1791371547.945048251] [cyberknife_treatment]: Anatomia: 7 organi pubblicati
+[treatment_node-2] [INFO] [1791371548.035773556] [cyberknife_treatment]: Vista del tumore: 5802 voxel, a fine trattamento 95.2% del bersaglio alla dose prescritta
+[robot_state_publisher-1] [WARN] [1791371550.197056198] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-1] [WARN] [1791371555.203650948] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-1] [WARN] [1791371560.217293478] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-1] [WARN] [1791371563.131598192] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-1] [WARN] [1791371565.208379011] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-1] [WARN] [1791371570.218276415] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[treatment_node-2] [INFO] [1791371573.679817333] [cyberknife_treatment]:   avanzamento: 20/144 fasci
+[robot_state_publisher-1] [WARN] [1791371575.211812530] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-1] [WARN] [1791371580.231149507] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-1] [WARN] [1791371585.218655673] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-1] [WARN] [1791371587.169082524] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-1] [WARN] [1791371590.227172072] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-1] [WARN] [1791371595.244304259] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[treatment_node-2] [INFO] [1791371600.074692812] [cyberknife_treatment]:   avanzamento: 40/144 fasci
+[robot_state_publisher-1] [WARN] [1791371600.235401410] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-1] [WARN] [1791371605.254702301] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-1] [WARN] [1791371610.246777624] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-1] [WARN] [1791371615.250290707] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-1] [WARN] [1791371620.258122983] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-1] [WARN] [1791371625.274717269] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[treatment_node-2] [INFO] [1791371627.575655811] [cyberknife_treatment]:   avanzamento: 60/144 fasci
+[robot_state_publisher-1] [WARN] [1791371630.265088938] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-1] [WARN] [1791371635.294522403] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-1] [WARN] [1791371640.269203061] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-1] [WARN] [1791371645.277060536] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-1] [WARN] [1791371650.281893290] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-1] [WARN] [1791371655.297410998] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-1] [WARN] [1791371660.287204621] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[treatment_node-2] [INFO] [1791371664.977834540] [cyberknife_treatment]:   avanzamento: 80/144 fasci
+[robot_state_publisher-1] [WARN] [1791371665.283766525] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-1] [WARN] [1791371670.305564291] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-1] [WARN] [1791371675.309454834] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-1] [WARN] [1791371680.316926497] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-1] [WARN] [1791371685.311118577] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[treatment_node-2] [INFO] [1791371687.505497365] [cyberknife_treatment]:   avanzamento: 100/144 fasci
+[robot_state_publisher-1] [WARN] [1791371690.321326053] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-1] [WARN] [1791371695.323529966] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-1] [WARN] [1791371700.322899763] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-1] [WARN] [1791371705.336430234] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-1] [WARN] [1791371710.336831916] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-1] [WARN] [1791371715.332944859] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[treatment_node-2] [INFO] [1791371719.905847406] [cyberknife_treatment]:   avanzamento: 120/144 fasci
+[robot_state_publisher-1] [WARN] [1791371720.347463813] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-1] [WARN] [1791371725.346170774] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-1] [WARN] [1791371730.342832780] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-1] [WARN] [1791371735.362091053] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-1] [WARN] [1791371740.349225179] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-1] [WARN] [1791371745.367933213] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[treatment_node-2] [INFO] [1791371749.980348894] [cyberknife_treatment]:   avanzamento: 140/144 fasci
+[robot_state_publisher-1] [WARN] [1791371750.357804573] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[robot_state_publisher-1] [WARN] [1791371755.375464440] [robot_state_publisher]: Moved backwards in time, re-publishing joint transforms!
+[treatment_node-2] [INFO] [1791371755.493389725] [cyberknife_treatment]:   bersaglio alla dose prescritta: 92.6%
+[treatment_node-2] [INFO] [1791371755.798254418] [cyberknife_treatment]: Resoconto scritto: /mnt/c/Users/ilgra/Documents/Progetto Medical/outputs/eval/demo/ros/lung_009_resoconto.json
+[treatment_node-2] [INFO] [1791371755.818324357] [cyberknife_treatment]: TRATTAMENTO COMPLETATO: 144 FASCI EROGATI
+[INFO] [treatment_node-2]: process has finished cleanly [pid 512]
+[INFO] [robot_state_publisher-1]: sending signal 'SIGINT' to process[robot_state_publisher-1]
+[robot_state_publisher-1] [INFO] [1791371756.352121431] [rclcpp]: signal_handler(signum=2)
+[INFO] [robot_state_publisher-1]: process has finished cleanly [pid 510]

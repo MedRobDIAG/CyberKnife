@@ -1,0 +1,14 @@
+=== lung_070: preparazione del pacchetto 14:07:03 ===
+prep exit=0
+=== lung_070: simulazione ROS 14:11:33 ===
+-rwxrwxrwx 1 nikke nikke 264897 Oct 15 14:15 /mnt/c/Users/ilgra/Documents/Progetto Medical/outputs/eval/demo_finetune_all/ros/lung_070_resoconto.json
+ros exit=0 14:15:50
+lung_070 fasci 147/147 CTV@Rx 94.4% (pianif 95.0) D95 99.8 Dmin 85.3 durata 217s franco min 1.1mm margine 0.001 {'attivo': True, 'inseguimento': True, 'predittore': 'kalman', 'passi_erogazione': 6397, 'passi_sospesi': 105, 'sospensione_pct': 1.6413944036267, 'gating_mm': None, 'correzioni_lettino': 0, 'ricostruzioni_modello': 0, 'erogazioni_forzate': 0, 'radiografie': 3}
+=== lung_003: preparazione del pacchetto 14:15:50 ===
+prep exit=0
+=== lung_003: simulazione ROS 14:21:40 ===
+-rwxrwxrwx 1 nikke nikke 254950 Oct 15 14:26 /mnt/c/Users/ilgra/Documents/Progetto Medical/outputs/eval/demo_finetune_all/ros/lung_003_resoconto.json
+ros exit=0 14:26:26
+lung_003 fasci 139/139 CTV@Rx 92.3% (pianif 94.9) D95 97.9 Dmin 70.7 durata 235s franco min 0.2mm margine 0.0002 {'attivo': True, 'inseguimento': True, 'predittore': 'kalman', 'passi_erogazione': 6408, 'passi_sospesi': 63, 'sospensione_pct': 0.9831460674157303, 'gating_mm': None, 'correzioni_lettino': 0, 'ricostruzioni_modello': 0, 'erogazioni_forzate': 0, 'radiografie': 3}
+=== ripristino del pacchetto ROS originale 14:26:26 ===
+ripristinato

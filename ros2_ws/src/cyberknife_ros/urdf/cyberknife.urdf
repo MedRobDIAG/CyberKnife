@@ -1,0 +1,229 @@
+<?xml version="1.0"?><!-- GENERATO da urdf_gen.py: non modificare a mano.     Le quote derivano dalle costanti di kinematics.py. --><robot name="cyberknife">
+  <material name="acciaio"><color rgba="0.72 0.74 0.78 1"/></material>
+  <material name="arancio"><color rgba="1.0 0.54 0.0 1"/></material>
+  <material name="scuro"><color rgba="0.18 0.20 0.24 1"/></material>
+  <material name="ciano"><color rgba="0.0 0.90 1.0 1"/></material>
+  <material name="lettino"><color rgba="0.30 0.34 0.40 1"/></material>
+  <link name="base_link">
+    <visual>
+      <origin xyz="0 0 0.125" rpy="0 0 0"/>
+      <geometry><cylinder length="0.25" radius="0.30"/></geometry>
+      <material name="scuro"/>
+    </visual>
+  </link>
+  <link name="link_1">
+    <visual>
+      <origin xyz="0 0 0.337500" rpy="0 0 0"/>
+      <geometry><cylinder length="0.675000" radius="0.1840"/></geometry>
+      <material name="acciaio"/>
+    </visual>
+    <visual>
+      <origin xyz="0.175000 0 0.675000" rpy="0 1.5707963 0"/>
+      <geometry><cylinder length="0.350000" radius="0.1748"/></geometry>
+      <material name="acciaio"/>
+    </visual>
+  </link>
+  <joint name="a1" type="revolute">
+    <parent link="base_link"/>
+    <child link="link_1"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-3.228859" upper="3.228859" effort="1000.0" velocity="1.5"/>
+  </joint>
+  <link name="link_2">
+    <visual>
+      <origin xyz="0.575000 0 0" rpy="0 1.5707963 0"/>
+      <geometry><cylinder length="1.150000" radius="0.156400"/></geometry>
+      <material name="acciaio"/>
+    </visual>
+  </link>
+  <joint name="a2" type="revolute">
+    <parent link="link_1"/>
+    <child link="link_2"/>
+    <origin xyz="0.350000 0 0.675000" rpy="0 0 0"/>
+    <axis xyz="0 1 0"/>
+    <limit lower="-2.443461" upper="-0.087266" effort="1000.0" velocity="1.5"/>
+  </joint>
+  <link name="link_3">
+    <visual>
+      <origin xyz="0.500000 0 0" rpy="0 1.5707963 0"/>
+      <geometry><cylinder length="1.000000" radius="0.128800"/></geometry>
+      <material name="acciaio"/>
+    </visual>
+  </link>
+  <joint name="a3" type="revolute">
+    <parent link="link_2"/>
+    <child link="link_3"/>
+    <origin xyz="1.150000 0 0" rpy="0 0 0"/>
+    <axis xyz="0 1 0"/>
+    <limit lower="-2.094395" upper="2.705260" effort="1000.0" velocity="1.5"/>
+  </joint>
+  <link name="polso_base"/>
+  <joint name="offset_gomito" type="fixed">
+    <parent link="link_3"/>
+    <child link="polso_base"/>
+    <origin xyz="1.000000 0 -0.041000" rpy="0 0.040977 0"/>
+  </joint>
+  <link name="link_4">
+    <visual>
+      <origin xyz="0 0 0.060000" rpy="0 0 0"/>
+      <geometry><cylinder length="0.120000" radius="0.099820"/></geometry>
+      <material name="acciaio"/>
+    </visual>
+  </link>
+  <joint name="a4" type="revolute">
+    <parent link="polso_base"/>
+    <child link="link_4"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-6.108652" upper="6.108652" effort="1000.0" velocity="1.5"/>
+  </joint>
+  <link name="link_5">
+    <visual>
+      <origin xyz="0 0 0.060000" rpy="0 0 0"/>
+      <geometry><cylinder length="0.120000" radius="0.088550"/></geometry>
+      <material name="acciaio"/>
+    </visual>
+  </link>
+  <joint name="a5" type="revolute">
+    <parent link="link_4"/>
+    <child link="link_5"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <axis xyz="0 1 0"/>
+    <limit lower="-2.138028" upper="2.138028" effort="1000.0" velocity="1.5"/>
+  </joint>
+  <link name="link_6">
+    <visual>
+      <origin xyz="0 0 0.120000" rpy="0 0 0"/>
+      <geometry><cylinder length="0.240000" radius="0.077280"/></geometry>
+      <material name="acciaio"/>
+    </visual>
+  </link>
+  <joint name="a6" type="revolute">
+    <parent link="link_5"/>
+    <child link="link_6"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-6.108652" upper="6.108652" effort="1000.0" velocity="1.5"/>
+  </joint>
+  <link name="linac">
+    <visual>
+      <origin xyz="0 0 0.150000" rpy="0 0 0"/>
+      <geometry><cylinder length="0.300000" radius="0.1610"/></geometry>
+      <material name="arancio"/>
+    </visual>
+  </link>
+  <joint name="flangia" type="fixed">
+    <parent link="link_6"/>
+    <child link="linac"/>
+    <origin xyz="0 0 0.240000" rpy="0 0 0"/>
+  </joint>
+  <link name="sorgente"/>
+  <joint name="punto_focale" type="fixed">
+    <parent link="linac"/>
+    <child link="sorgente"/>
+    <origin xyz="0 0 0.300000" rpy="0 0 0"/>
+  </joint>
+  <link name="bev"/>
+  <joint name="asse_fascio" type="fixed">
+    <parent link="sorgente"/>
+    <child link="bev"/>
+    <origin xyz="0 0 0" rpy="0 -1.5707963 0"/>
+  </joint>
+  <joint name="ancoraggio_lettino" type="fixed">
+    <parent link="base_link"/>
+    <child link="couch_base"/>
+    <origin xyz="-1.049750 1.014900 0.000137" rpy="0 0 0"/>
+  </joint>
+  <link name="couch_base">
+    <visual>
+      <origin xyz="0 0 0.09" rpy="0 0 0"/>
+      <geometry><cylinder length="0.18" radius="0.26"/></geometry>
+      <material name="scuro"/>
+    </visual>
+  </link>
+  <link name="couch_column">
+    <visual>
+      <origin xyz="0 0 -0.35" rpy="0 0 0"/>
+      <geometry><cylinder length="0.70" radius="0.1564"/></geometry>
+      <material name="scuro"/>
+    </visual>
+  </link>
+  <joint name="couch_lift" type="prismatic">
+    <parent link="couch_base"/>
+    <child link="couch_column"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="0.5500" upper="1.1000" effort="8000.0" velocity="0.2"/>
+  </joint>
+  <link name="couch_arm1">
+    <visual>
+      <origin xyz="0.400000 0 0" rpy="0 1.5707963 0"/>
+      <geometry><cylinder length="0.800000" radius="0.138000"/></geometry>
+      <material name="acciaio"/>
+    </visual>
+  </link>
+  <joint name="couch_shoulder" type="revolute">
+    <parent link="couch_column"/>
+    <child link="couch_arm1"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-2.967060" upper="2.967060" effort="1000.0" velocity="1.5"/>
+  </joint>
+  <link name="couch_arm2">
+    <visual>
+      <origin xyz="0.350000 0 0" rpy="0 1.5707963 0"/>
+      <geometry><cylinder length="0.700000" radius="0.119600"/></geometry>
+      <material name="acciaio"/>
+    </visual>
+  </link>
+  <joint name="couch_elbow" type="revolute">
+    <parent link="couch_arm1"/>
+    <child link="couch_arm2"/>
+    <origin xyz="0.800000 0 0" rpy="0 0 0"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-2.705260" upper="2.705260" effort="1000.0" velocity="1.5"/>
+  </joint>
+  <link name="couch_wrist1"/>
+  <joint name="couch_roll" type="revolute">
+    <parent link="couch_arm2"/>
+    <child link="couch_wrist1"/>
+    <origin xyz="0.700000 0 0" rpy="0 0 0"/>
+    <axis xyz="1 0 0"/>
+    <limit lower="-0.174533" upper="0.174533" effort="1000.0" velocity="1.5"/>
+  </joint>
+  <link name="couch_wrist2"/>
+  <joint name="couch_pitch" type="revolute">
+    <parent link="couch_wrist1"/>
+    <child link="couch_wrist2"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <axis xyz="0 1 0"/>
+    <limit lower="-0.349066" upper="0.349066" effort="1000.0" velocity="1.5"/>
+  </joint>
+  <link name="couch_top">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry><box size="2.2000 0.5200 0.0700"/></geometry>
+      <material name="lettino"/>
+    </visual>
+  </link>
+  <joint name="couch_yaw" type="revolute">
+    <parent link="couch_wrist2"/>
+    <child link="couch_piatto"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-3.141593" upper="3.141593" effort="1000.0" velocity="1.5"/>
+  </joint>
+  <link name="couch_piatto">
+    <visual>
+      <origin xyz="0 0 0.0975" rpy="0 0 0"/>
+      <geometry><cylinder length="0.1950" radius="0.075"/></geometry>
+      <material name="scuro"/>
+    </visual>
+  </link>
+  <joint name="couch_sostegno" type="fixed">
+    <parent link="couch_piatto"/>
+    <child link="couch_top"/>
+    <origin xyz="0 0 0.195000" rpy="0 0 0"/>
+  </joint>
+</robot>

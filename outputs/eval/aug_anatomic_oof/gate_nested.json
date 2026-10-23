@@ -1,0 +1,39 @@
+{
+  "n_cases": 63,
+  "n_accepted": 50,
+  "n_rejected": 13,
+  "accept_frac": 0.7936507936507936,
+  "precision_accepted": 0.9,
+  "bad_rejected": 7,
+  "good_rejected": 6,
+  "baseline_precision_all": 0.8095238095238095,
+  "centroid_median_accepted_mm": 2.7019982450561786,
+  "centroid_p90_accepted_mm": 28.490602128952006,
+  "gates_per_fold": [
+    {
+      "fold": 0,
+      "min_volume_cm3": 0.5,
+      "min_prob_mean": 0.0
+    },
+    {
+      "fold": 1,
+      "min_volume_cm3": 0.0,
+      "min_prob_mean": 0.75
+    },
+    {
+      "fold": 2,
+      "min_volume_cm3": 0.8,
+      "min_prob_mean": 0.0
+    },
+    {
+      "fold": 3,
+      "min_volume_cm3": 0.0,
+      "min_prob_mean": 0.0
+    },
+    {
+      "fold": 4,
+      "min_volume_cm3": 0.0,
+      "min_prob_mean": 0.75
+    }
+  ]
+}

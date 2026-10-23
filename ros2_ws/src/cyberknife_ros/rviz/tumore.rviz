@@ -1,0 +1,86 @@
+### Vista del TUMORE: il bersaglio che si riempie di dose.
+###
+### Ogni cubetto e' un voxel del tumore (1.5 mm), colorato dalla dose che ha
+### ricevuto fin qui: rosso nessuna dose, verde dose prescritta. I fasci
+### lasciano tunnel colorati; dove si sovrappongono la dose si somma. Il
+### giallo del fascio acceso lo attraversa mentre eroga.
+###
+### Il frame fisso e' `vista_tumore`, centrato sull'isocentro e ruotato piano
+### attorno alla verticale: e' il mondo a girare attorno alla camera (lo
+### stesso trucco della BEV), cosi' i tunnel si vedono in tre dimensioni e non
+### da un lato solo.
+Panels:
+  - Class: rviz_common/Displays
+    Name: Displays
+    Property Tree Widget:
+      Expanded: ~
+      Splitter Ratio: 0.5
+    Tree Height: 240
+Visualization Manager:
+  Class: ""
+  Name: root
+  Displays:
+    - Class: rviz_default_plugins/MarkerArray
+      Name: DoseNelTumore
+      Enabled: true
+      Topic:
+        Value: /cyberknife/dose_tumore
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+      Namespaces:
+        {}
+    - Class: rviz_default_plugins/MarkerArray
+      Name: Involucro
+      Enabled: true
+      Topic:
+        Value: /cyberknife/tumore_involucro
+        Depth: 5
+        Durability Policy: Transient Local
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+      Namespaces:
+        {}
+    - Class: rviz_default_plugins/MarkerArray
+      Name: FascioAttivo
+      Enabled: true
+      Topic:
+        Value: /cyberknife/fasci
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+      # Solo il fascio acceso: le linee dei fasci gia' erogati, viste da
+      # dieci centimetri, diventerebbero una raggiera che copre il tumore.
+      Namespaces:
+        fascio_attivo: true
+        fasci_erogati: false
+  Global Options:
+    Background Color: 12; 14; 18
+    Fixed Frame: vista_tumore
+    Frame Rate: 30
+  Tools:
+    - Class: rviz_default_plugins/MoveCamera
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Name: SulTumore
+      Target Frame: vista_tumore
+      Focal Point:
+        X: 0
+        Y: 0
+        Z: 0
+      # Una lesione di ~17 mm deve riempire l'inquadratura, lasciando spazio
+      # alle scritte sopra e sotto.
+      Distance: 0.10
+      Pitch: 0.45
+      Yaw: 0.8
+      Near Clip Distance: 0.003
+Window Geometry:
+  Displays:
+    collapsed: true
+  Height: 700
+  Width: 760
+  Views:
+    collapsed: true

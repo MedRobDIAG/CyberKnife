@@ -1,0 +1,11 @@
+{
+  "threshold": 0.1,
+  "min_lesion_mm3": 1000.0,
+  "n_cases": 63,
+  "dice_mean": 0.4610482761356193,
+  "sensitivity": 0.8666666666666667,
+  "fp_per_scan": 0.9841269841269841,
+  "isocenter_inside_gt_rate": 0.7142857142857143,
+  "cases_no_detection": 7,
+  "centroid_dist_mm_median": 2.4096597845768244
+}

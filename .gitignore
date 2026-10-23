@@ -1,0 +1,41 @@
+# Dataset (esclusi: troppo grandi, vanno scaricati a parte - vedi README)
+Task06_Lung/
+TCIA_LIDC-IDRI_20200921/
+LIDC-XML-only/
+LIDC_nifti/
+nsclc_radiomics/
+NSCLC_nifti/
+
+# Archivio locale: documenti, presentazione, script una-tantum, backup
+archivio/
+
+# Presentazione, discorsi e report: restano locali, ovunque siano salvati
+*.pptx
+*.ppt
+*.docx
+*.doc
+~$*
+
+# Cache persistente di MONAI (~97 GB, si rigenera da sola)
+outputs/cache/
+
+# Ambiente virtuale
+.venv/
+venv/
+env/
+
+# Cache Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# File di sistema
+.DS_Store
+Thumbs.db
+
+# IDE / editor
+.idea/
+.vscode/
+*.swp

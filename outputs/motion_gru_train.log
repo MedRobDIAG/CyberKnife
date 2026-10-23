@@ -1,0 +1,50 @@
+dataset: 450000 finestre di training, 60000 di validazione (0.8 s)
+epoca  1  loss 0.1898  val RMSE (normalizzato) 0.4061
+epoca  2  loss 0.1634  val RMSE (normalizzato) 0.3881
+epoca  3  loss 0.1554  val RMSE (normalizzato) 0.3819
+epoca  4  loss 0.1514  val RMSE (normalizzato) 0.3770
+epoca  5  loss 0.1497  val RMSE (normalizzato) 0.3749
+epoca  6  loss 0.1484  val RMSE (normalizzato) 0.3734
+epoca  7  loss 0.1475  val RMSE (normalizzato) 0.3723
+epoca  8  loss 0.1467  val RMSE (normalizzato) 0.3742
+epoca  9  loss 0.1463  val RMSE (normalizzato) 0.3722
+epoca 10  loss 0.1456  val RMSE (normalizzato) 0.3717
+epoca 11  loss 0.1450  val RMSE (normalizzato) 0.3710
+epoca 12  loss 0.1447  val RMSE (normalizzato) 0.3705
+epoca 13  loss 0.1443  val RMSE (normalizzato) 0.3689
+epoca 14  loss 0.1438  val RMSE (normalizzato) 0.3694
+epoca 15  loss 0.1436  val RMSE (normalizzato) 0.3689
+epoca 16  loss 0.1432  val RMSE (normalizzato) 0.3699
+epoca 17  loss 0.1431  val RMSE (normalizzato) 0.3680
+epoca 18  loss 0.1427  val RMSE (normalizzato) 0.3696
+epoca 19  loss 0.1424  val RMSE (normalizzato) 0.3679
+epoca 20  loss 0.1423  val RMSE (normalizzato) 0.3679
+epoca 21  loss 0.1420  val RMSE (normalizzato) 0.3686
+epoca 22  loss 0.1418  val RMSE (normalizzato) 0.3686
+epoca 23  loss 0.1417  val RMSE (normalizzato) 0.3672
+epoca 24  loss 0.1414  val RMSE (normalizzato) 0.3682
+epoca 25  loss 0.1412  val RMSE (normalizzato) 0.3671
+epoca 26  loss 0.1411  val RMSE (normalizzato) 0.3670
+epoca 27  loss 0.1410  val RMSE (normalizzato) 0.3677
+epoca 28  loss 0.1409  val RMSE (normalizzato) 0.3669
+epoca 29  loss 0.1408  val RMSE (normalizzato) 0.3673
+epoca 30  loss 0.1408  val RMSE (normalizzato) 0.3671
+salvato C:\Users\ilgra\Documents\Progetto Medical\outputs\motion_gru.pth (32 s)
+
+--- pazienti riferimento (20 tracce da 300 s) ---
+predittore    RMSE pred. 115 ms   p95 inseguimento
+none                   0.607 mm            3.25 mm
+linear                 0.330 mm            3.26 mm
+kalman                 0.266 mm            3.22 mm
+nlms                   0.270 mm            3.21 mm
+gru                    0.224 mm            3.18 mm
+
+--- pazienti casuali (20 tracce da 300 s) ---
+predittore    RMSE pred. 115 ms   p95 inseguimento
+none                   0.696 mm            5.84 mm
+linear                 0.456 mm            5.71 mm
+kalman                 0.357 mm            5.48 mm
+nlms                   0.384 mm            5.52 mm
+gru                    0.281 mm            5.40 mm
+
+salvato C:\Users\ilgra\Documents\Progetto Medical\outputs\motion_benchmark.json

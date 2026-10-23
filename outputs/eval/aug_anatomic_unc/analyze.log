@@ -1,0 +1,31 @@
+
+63 casi, 11 con isocentro fuori dal tumore vero
+
+segnale                       AUROC   riusciti    falliti
+volume_cm3                    0.902      4.524      2.103
+prob_mean                     0.904      0.804      0.679
+std_lesione                   0.890      0.139      0.194
+mi_lesione                    0.879      0.079      0.109
+frac_ambigua                  0.906      0.964      1.906
+centroide_disp_mm             0.851      0.847      1.310
+centroide_disp_max_mm         0.934      1.991     90.536
+volume_cv                     0.874      0.196      0.409
+frac_campioni_con_lesione     0.851      1.000      0.250
+
+cancello annidato con centroide_disp_mm:
+  segnale                    centroide_disp_mm
+  solo_volume_accettati      53/63
+  solo_volume_corretti       0.943
+  con_dispersione_accettati  43/63
+  con_dispersione_corretti   0.953
+  soglie_scelte_mm           [1.5, 1.5, 1.5, 100.0, 1.5]
+
+cancello annidato con centroide_disp_max_mm:
+  segnale                    centroide_disp_max_mm
+  solo_volume_accettati      53/63
+  solo_volume_corretti       0.943
+  con_dispersione_accettati  43/63
+  con_dispersione_corretti   0.953
+  soglie_scelte_mm           [50.0, 50.0, 50.0, 100.0, 50.0]
+
+ECE (voxel del bounding box): 0.105

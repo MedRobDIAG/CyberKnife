@@ -1,0 +1,59 @@
+
+[1] Codifica e decodifica
+  OK   estensione aggiunta
+  OK   oggetto sconosciuto segnalato, non salvato
+  OK   array booleano identico
+  OK   probabilita' quantizzata entro 1e-5
+  OK   dose identica (non quantizzata: valori oltre 1)
+  OK   chiavi non stringa conservate
+  OK   NaN conservato
+  OK   fascio identico
+  OK   base del robot identica
+  OK   base del robot: stessa trasformazione
+  OK   lettino identico
+  OK   ostacolo identico
+  OK   configurazione del respiro identica
+  OK   traccia identica
+  OK   inseguimento identico
+  OK   mesh identica
+  OK   tupla resta tupla
+  OK   oggetto sconosciuto -> None
+
+[2] Pipeline reale, salvataggio e riapertura (lung_001)
+[infer] Pesi da 'model_final_anatomic.pth' (arch=unet, epoca=250, best=n/d (nessuna validazione: modello finale))
+C:\Users\ilgra\Documents\Progetto Medical\.venv\Lib\site-packages\monai\inferers\utils.py:223: UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\python_variable_indexing.cpp:353.)
+  win_data = torch.cat([inputs[win_slice] for win_slice in unravel_slice]).to(sw_device)
+C:\Users\ilgra\Documents\Progetto Medical\.venv\Lib\site-packages\monai\inferers\utils.py:361: UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\python_variable_indexing.cpp:353.)
+  out[idx_zm] += p
+   inferenza + incertezza: 25 s
+  OK   margine d'inseguimento pronto
+  OK   bersaglio dalla tecnica
+   pipeline fino alla dose: 160 s
+  OK   il progetto risulta da salvare
+   salvato in 0.5 s, 5.2 MB
+      a396      22.5 MB non compressi  uint16 (236, 236, 202)
+      a9        13.3 MB non compressi  uint8 (299, 234, 190)
+      a11       13.3 MB non compressi  uint8 (299, 234, 190)
+      a10       13.3 MB non compressi  uint8 (299, 234, 190)
+      a395      10.0 MB non compressi  uint8 (9961472,)
+  OK   progetto sotto 15 MB
+  OK   salvataggio riuscito
+   riaperto in 29.0 s
+  OK   stessa maschera
+  OK   stesso semaforo
+  OK   mappe di incertezza identiche (gia' compatte dal vivo)
+  OK   stessi centroidi delle predizioni perturbate
+  OK   stessa tecnica
+  OK   stesse mesh degli organi
+  OK   stessa dose (entro 0.005 punti percentuali)
+  OK   stesse metriche del piano
+  OK   stessi fasci
+  OK   griglia di densita' ricalcolata identica
+  OK   stessa etichetta del bersaglio
+  OK   il piano e' arrivato al Tab 4
+  OK   progetto riaperto non risulta modificato
+
+============================================================
+Tutti i controlli superati.
+============================================================
+FINE

@@ -1,0 +1,61 @@
+[INFO] [launch]: All log files can be found below /home/nikke/.ros/log/2026-10-15-14-11-39-997117-DESKTOP-AOMSSBH-503
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [robot_state_publisher-1]: process started with pid [504]
+[INFO] [treatment_node-2]: process started with pid [506]
+[robot_state_publisher-1] [INFO] [1792066300.183925336] [robot_state_publisher]: got segment base_link
+[robot_state_publisher-1] [INFO] [1792066300.184038828] [robot_state_publisher]: got segment bev
+[robot_state_publisher-1] [INFO] [1792066300.184047366] [robot_state_publisher]: got segment couch_arm1
+[robot_state_publisher-1] [INFO] [1792066300.184049768] [robot_state_publisher]: got segment couch_arm2
+[robot_state_publisher-1] [INFO] [1792066300.184051787] [robot_state_publisher]: got segment couch_base
+[robot_state_publisher-1] [INFO] [1792066300.184053658] [robot_state_publisher]: got segment couch_column
+[robot_state_publisher-1] [INFO] [1792066300.184055381] [robot_state_publisher]: got segment couch_piatto
+[robot_state_publisher-1] [INFO] [1792066300.184057213] [robot_state_publisher]: got segment couch_top
+[robot_state_publisher-1] [INFO] [1792066300.184059094] [robot_state_publisher]: got segment couch_wrist1
+[robot_state_publisher-1] [INFO] [1792066300.184060985] [robot_state_publisher]: got segment couch_wrist2
+[robot_state_publisher-1] [INFO] [1792066300.184062659] [robot_state_publisher]: got segment linac
+[robot_state_publisher-1] [INFO] [1792066300.184064569] [robot_state_publisher]: got segment link_1
+[robot_state_publisher-1] [INFO] [1792066300.184066361] [robot_state_publisher]: got segment link_2
+[robot_state_publisher-1] [INFO] [1792066300.184068380] [robot_state_publisher]: got segment link_3
+[robot_state_publisher-1] [INFO] [1792066300.184069897] [robot_state_publisher]: got segment link_4
+[robot_state_publisher-1] [INFO] [1792066300.184071590] [robot_state_publisher]: got segment link_5
+[robot_state_publisher-1] [INFO] [1792066300.184073511] [robot_state_publisher]: got segment link_6
+[robot_state_publisher-1] [INFO] [1792066300.184075214] [robot_state_publisher]: got segment polso_base
+[robot_state_publisher-1] [INFO] [1792066300.184076908] [robot_state_publisher]: got segment sorgente
+[treatment_node-2] [INFO] [1792066300.769268969] [cyberknife_treatment]: Piano: 147 fasci, isocentro [ 82.9 -63.  -60.6] mm
+[treatment_node-2] [INFO] [1792066300.795056001] [cyberknife_treatment]: Ostacoli attivi: lettino, paziente
+[treatment_node-2] [INFO] [1792066300.815627707] [cyberknife_treatment]: Rotazioni del lettino: yaw -79, yaw 32, yaw -16
+[treatment_node-2] [INFO] [1792066330.254114398] [cyberknife_treatment]:   fasci_totali: 147
+[treatment_node-2] [INFO] [1792066330.274406613] [cyberknife_treatment]:   raggiungibili: 147
+[treatment_node-2] [INFO] [1792066330.295097047] [cyberknife_treatment]:   non_raggiungibili: 0
+[treatment_node-2] [INFO] [1792066330.315461326] [cyberknife_treatment]:   bloccati_da_ostacoli: 0
+[treatment_node-2] [INFO] [1792066330.335702606] [cyberknife_treatment]:   bloccati_nel_percorso: 0
+[treatment_node-2] [INFO] [1792066330.356154871] [cyberknife_treatment]:   trasferimenti_con_ritiro: 0
+[treatment_node-2] [INFO] [1792066330.376399532] [cyberknife_treatment]:   manovre_dal_parcheggio: 0
+[treatment_node-2] [INFO] [1792066330.396671218] [cyberknife_treatment]:   angoli_lettino: 3
+[treatment_node-2] [INFO] [1792066330.417329196] [cyberknife_treatment]:   riposizionamenti_lettino: 2
+[treatment_node-2] [INFO] [1792066330.438297337] [cyberknife_treatment]:   movimenti_lettino_simultanei: 2
+[treatment_node-2] [INFO] [1792066330.458742720] [cyberknife_treatment]:   fasci_per_gruppo: [80, 31, 36]
+[treatment_node-2] [INFO] [1792066330.479160043] [cyberknife_treatment]:   movimento_totale_deg: 6949.0
+[treatment_node-2] [INFO] [1792066330.499726524] [cyberknife_treatment]:   margine_minimo: 0.001
+[treatment_node-2] [INFO] [1792066330.520026596] [cyberknife_treatment]:   franco_minimo_mm: 1.1
+[treatment_node-2] [INFO] [1792066330.545579768] [cyberknife_treatment]:   chiusura FK/IK: posizione 1.60e-12 mm, angolo 1.21e-06 gradi
+[treatment_node-2] [INFO] [1792066330.565975863] [cyberknife_treatment]:   erogazione proporzionale al peso: 120 s di fascio acceso, da 0.3 a 3.4 s per fascio
+[treatment_node-2] [INFO] [1792066330.586871142] [cyberknife_treatment]:   2 rotazioni del lettino eseguite in movimento simultaneo col braccio (11s di manovra)
+[treatment_node-2] [INFO] [1792066330.606950043] [cyberknife_treatment]:   tempi: 91s di spostamenti su 156 tratti (2 con ritiro) + 126s di erogazione
+[treatment_node-2] [INFO] [1792066330.645259985] [cyberknife_treatment]: Respiro: escursione [ 0.8  2.  -9.5] mm, periodo 4.0 s, predittore kalman, radiografie ogni 60 s, inseguimento ATTIVO
+[treatment_node-2] [INFO] [1792066330.671211417] [cyberknife_treatment]: Anatomia: 7 organi pubblicati
+[treatment_node-2] [INFO] [1792066330.706343709] [cyberknife_treatment]: Vista del tumore: 1395 voxel, a fine trattamento 95.0% del bersaglio alla dose prescritta
+[treatment_node-2] [INFO] [1792066356.678875896] [cyberknife_treatment]:   avanzamento: 20/147 fasci
+[treatment_node-2] [INFO] [1792066383.164299514] [cyberknife_treatment]:   avanzamento: 40/147 fasci
+[treatment_node-2] [INFO] [1792066408.509423067] [cyberknife_treatment]:   avanzamento: 60/147 fasci
+[treatment_node-2] [INFO] [1792066447.494347500] [cyberknife_treatment]:   avanzamento: 80/147 fasci
+[treatment_node-2] [INFO] [1792066475.538376489] [cyberknife_treatment]:   avanzamento: 100/147 fasci
+[treatment_node-2] [INFO] [1792066510.086896107] [cyberknife_treatment]:   avanzamento: 120/147 fasci
+[treatment_node-2] [INFO] [1792066542.091744138] [cyberknife_treatment]:   avanzamento: 140/147 fasci
+[treatment_node-2] [INFO] [1792066549.522464523] [cyberknife_treatment]:   bersaglio alla dose prescritta: 94.4%
+[treatment_node-2] [INFO] [1792066549.703882086] [cyberknife_treatment]: Resoconto scritto: /mnt/c/Users/ilgra/Documents/Progetto Medical/outputs/eval/demo_finetune_all/ros/lung_070_resoconto.json
+[treatment_node-2] [INFO] [1792066549.725508018] [cyberknife_treatment]: TRATTAMENTO COMPLETATO: 147 FASCI EROGATI
+[INFO] [treatment_node-2]: process has finished cleanly [pid 506]
+[INFO] [robot_state_publisher-1]: sending signal 'SIGINT' to process[robot_state_publisher-1]
+[robot_state_publisher-1] [INFO] [1792066550.264984067] [rclcpp]: signal_handler(signum=2)
+[INFO] [robot_state_publisher-1]: process has finished cleanly [pid 504]

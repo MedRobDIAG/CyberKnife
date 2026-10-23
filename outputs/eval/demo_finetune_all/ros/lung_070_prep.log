@@ -1,0 +1,6 @@
+respiro: spostamento in inspirazione [ 0.8  2.  -9.5] mm, margine [1.4 1.6 2.6] mm
+piano: 147 fasci, copertura PTV 95.0%, D95 80.0%
+{"case_id": "lung_070", "fasci": 147, "copertura_ptv_pct": 94.9820788530466, "d95_ptv_pct": 80.0, "margine_mm": [1.3975634241155648, 1.6081273277949384, 2.590475858516739], "respiro_mm": [0.7887939708042015, 1.9719849270105039, -9.465527649650419], "angoli_lettino": 3, "tempo_s": 321.2}
+respiro: spostamento in inspirazione [ 0.8  2.  -9.5] mm, margine [1.4 1.6 2.6] mm
+piano: 147 fasci, copertura PTV 95.0%, D95 80.0%
+{"case_id": "lung_070", "fermo": {"copertura_pct": 0.0, "d95_pct": -0.0, "d_min_pct": -0.0, "paddick_ci": 0.0, "polmone_dose_media_gy": 0.7, "polmone_v20_pct": 0.44}, "inseguimento": {"copertura_pct": 0.0, "d95_pct": -0.0, "d_min_pct": -0.0, "paddick_ci": 0.0, "polmone_dose_media_gy": 0.7, "polmone_v20_pct": 0.44}, "oar_dmax_pct": {"mediastinum": 10.5, "airways": 8.0, "bones": 28.6}, "piv_cm3": 5.2}

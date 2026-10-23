@@ -1,0 +1,847 @@
+{
+  "new": {
+    "n": 63,
+    "n_planned": 59,
+    "iso_ok": 55,
+    "dice_med_found": 0.769,
+    "semaforo": {
+      "verde": {
+        "n": 49,
+        "iso_ok": 49
+      },
+      "rosso": {
+        "n": 9,
+        "iso_ok": 3
+      },
+      "giallo": {
+        "n": 5,
+        "iso_ok": 3
+      }
+    },
+    "copertura_piano_pct": {
+      "med": 95.0,
+      "q1": 94.95,
+      "q3": 95.0,
+      "min": 94.6,
+      "max": 95.0
+    },
+    "copertura_gt_pct": {
+      "med": 71.0,
+      "q1": 52.5,
+      "q3": 85.85,
+      "min": 0.0,
+      "max": 97.8
+    },
+    "d95_gt_pct": {
+      "med": 63.0,
+      "q1": 29.25,
+      "q3": 73.05000000000001,
+      "min": 0.0,
+      "max": 82.2
+    },
+    "paddick_gt": {
+      "med": 0.586,
+      "q1": 0.432,
+      "q3": 0.6245,
+      "min": 0.0,
+      "max": 0.738
+    },
+    "polmone_v20_pct": {
+      "med": 0.54,
+      "q1": 0.32,
+      "q3": 1.435,
+      "min": 0.09,
+      "max": 11.76
+    },
+    "polmone_dmedia_gy": {
+      "med": 0.92,
+      "q1": 0.61,
+      "q3": 1.635,
+      "min": 0.27,
+      "max": 6.15
+    },
+    "mediastino_dmax_pct": {
+      "med": 18.0,
+      "q1": 10.3,
+      "q3": 37.55,
+      "min": 2.8,
+      "max": 116.8
+    },
+    "vie_aeree_dmax_pct": {
+      "med": 6.8,
+      "q1": 0.5,
+      "q3": 12.75,
+      "min": 0.0,
+      "max": 89.7
+    },
+    "ossa_dmax_pct": {
+      "med": 45.4,
+      "q1": 26.75,
+      "q3": 67.2,
+      "min": 11.1,
+      "max": 97.0
+    },
+    "tempo_s": {
+      "med": 294.1,
+      "q1": 240.75,
+      "q3": 343.1,
+      "min": 155.0,
+      "max": 463.0
+    },
+    "fasci_erogabili": {
+      "med": 144.0,
+      "q1": 142.0,
+      "q3": 145.5,
+      "min": 126.0,
+      "max": 149.0
+    },
+    "fasci_candidati": {
+      "med": 144.0,
+      "q1": 142.0,
+      "q3": 146.0,
+      "min": 126.0,
+      "max": 149.0
+    },
+    "piano_cov_range": [
+      94.6,
+      95.0
+    ],
+    "robot_100pct": 59,
+    "scartati_cases": 3,
+    "scartati_tot": 8,
+    "scartati_worst": [
+      "lung_003",
+      4
+    ],
+    "angoli": [
+      3
+    ],
+    "mediastino": [
+      {
+        "lab": "Lontano (>= 20 mm)",
+        "n": 37,
+        "vol": 4.77,
+        "dice": 0.786,
+        "cov": 76.2,
+        "dmax_med": 13.5,
+        "dmax_max": 62.0
+      },
+      {
+        "lab": "Vicino (2-20 mm)",
+        "n": 10,
+        "vol": 6.3,
+        "dice": 0.677,
+        "cov": 58.6,
+        "dmax_med": 17.05,
+        "dmax_max": 51.4
+      },
+      {
+        "lab": "A contatto (< 2 mm)",
+        "n": 12,
+        "vol": 30.669999999999998,
+        "dice": 0.6975,
+        "cov": 58.05,
+        "dmax_med": 69.85,
+        "dmax_max": 116.8
+      }
+    ],
+    "mediastino_over_rx": [
+      "lung_006",
+      "lung_009",
+      "lung_084",
+      "lung_026",
+      "lung_053"
+    ],
+    "vie_aeree_vicine": [
+      [
+        "lung_022",
+        8.0,
+        36.6
+      ],
+      [
+        "lung_033",
+        4.1,
+        27.6
+      ],
+      [
+        "lung_009",
+        1.2,
+        62.5
+      ],
+      [
+        "lung_053",
+        0.2,
+        89.7
+      ]
+    ],
+    "ossa_vicine": 21,
+    "ossa_alte": [
+      [
+        "lung_073",
+        97.0
+      ],
+      [
+        "lung_022",
+        96.0
+      ],
+      [
+        "lung_046",
+        94.8
+      ],
+      [
+        "lung_041",
+        92.6
+      ],
+      [
+        "lung_084",
+        91.5
+      ],
+      [
+        "lung_064",
+        86.0
+      ],
+      [
+        "lung_010",
+        85.9
+      ],
+      [
+        "lung_053",
+        82.3
+      ]
+    ],
+    "volume": [
+      {
+        "lab": "Sotto 2 cm3",
+        "n": 10,
+        "not_found": 3,
+        "dice": 0.7135,
+        "cov": 79.0
+      },
+      {
+        "lab": "2-10 cm3",
+        "n": 27,
+        "not_found": 1,
+        "dice": 0.782,
+        "cov": 69.7
+      },
+      {
+        "lab": "10-50 cm3",
+        "n": 15,
+        "not_found": 0,
+        "dice": 0.804,
+        "cov": 71.0
+      },
+      {
+        "lab": "Oltre 50 cm3",
+        "n": 7,
+        "not_found": 0,
+        "dice": 0.686,
+        "cov": 58.0
+      }
+    ],
+    "non_trovati": [
+      [
+        "lung_004",
+        1.32,
+        "rosso"
+      ],
+      [
+        "lung_036",
+        8.13,
+        "rosso"
+      ],
+      [
+        "lung_069",
+        0.83,
+        "rosso"
+      ],
+      [
+        "lung_037",
+        1.15,
+        "rosso"
+      ]
+    ],
+    "iso_sbagliato": [
+      [
+        "lung_042",
+        82.8,
+        "giallo"
+      ],
+      [
+        "lung_080",
+        71.1,
+        "rosso"
+      ],
+      [
+        "lung_096",
+        66.5,
+        "rosso"
+      ],
+      [
+        "lung_070",
+        216.6,
+        "giallo"
+      ]
+    ],
+    "grandi_parziali": [
+      [
+        "lung_022",
+        59.1,
+        0.488,
+        "verde"
+      ],
+      [
+        "lung_009",
+        89.46,
+        0.769,
+        "verde"
+      ],
+      [
+        "lung_028",
+        151.33,
+        0.322,
+        "verde"
+      ],
+      [
+        "lung_041",
+        63.35,
+        0.878,
+        "verde"
+      ],
+      [
+        "lung_031",
+        70.78,
+        0.497,
+        "verde"
+      ],
+      [
+        "lung_053",
+        370.38,
+        0.686,
+        "verde"
+      ],
+      [
+        "lung_064",
+        90.83,
+        0.816,
+        "verde"
+      ]
+    ],
+    "contatto_verdi": [
+      "lung_006",
+      "lung_033",
+      "lung_038",
+      "lung_065",
+      "lung_009",
+      "lung_028",
+      "lung_055",
+      "lung_084",
+      "lung_026",
+      "lung_053",
+      "lung_064"
+    ],
+    "spearman_dice_cov": [
+      0.8168423249555681,
+      3.071974781761264e-15,
+      59
+    ]
+  },
+  "best": {
+    "case_id": "lung_003",
+    "semaforo": "verde",
+    "motivi": "",
+    "accettato": "True",
+    "gt_cm3": "1.45",
+    "pred_cm3": "2.41",
+    "dice": "0.747",
+    "centroide_err_mm": "0.6",
+    "iso_nel_tumore": "True",
+    "dist_mediastino_mm": "36.0",
+    "dist_vie_aeree_mm": "101.8",
+    "dist_ossa_mm": "8.1",
+    "profondita_mm": "68.9",
+    "fasci_candidati": "146",
+    "fasci_erogabili": "142",
+    "fasci_scartati": "4",
+    "angoli_lettino": "3",
+    "copertura_piano_pct": "94.9",
+    "d95_piano_pct": "80.0",
+    "conformita": "0.861",
+    "copertura_gt_pct": "97.8",
+    "d95_gt_pct": "81.7",
+    "dmin_gt_pct": "72.9",
+    "paddick_gt": "0.589",
+    "polmone_dmedia_gy": "0.55",
+    "polmone_v20_pct": "0.25",
+    "mediastino_dmax_pct": "10.5",
+    "vie_aeree_dmax_pct": "0.0",
+    "ossa_dmax_pct": "25.7",
+    "tempo_s": "424.1",
+    "errore": ""
+  },
+  "worst": {
+    "case_id": "lung_070",
+    "semaforo": "giallo",
+    "motivi": "in almeno una predizione perturbata il bersaglio salta di 58 mm: esiste un candidato alternativo (soglia 50 mm)",
+    "accettato": "True",
+    "gt_cm3": "2.23",
+    "pred_cm3": "2.68",
+    "dice": "0.0",
+    "centroide_err_mm": "216.6",
+    "iso_nel_tumore": "False",
+    "dist_mediastino_mm": "58.3",
+    "dist_vie_aeree_mm": "151.0",
+    "dist_ossa_mm": "1.8",
+    "profondita_mm": "25.7",
+    "fasci_candidati": "147",
+    "fasci_erogabili": "147",
+    "fasci_scartati": "0",
+    "angoli_lettino": "3",
+    "copertura_piano_pct": "95.0",
+    "d95_piano_pct": "80.0",
+    "conformita": "0.759",
+    "copertura_gt_pct": "0.0",
+    "d95_gt_pct": "-0.0",
+    "dmin_gt_pct": "-0.0",
+    "paddick_gt": "0.0",
+    "polmone_dmedia_gy": "0.56",
+    "polmone_v20_pct": "0.32",
+    "mediastino_dmax_pct": "13.5",
+    "vie_aeree_dmax_pct": "2.7",
+    "ossa_dmax_pct": "22.4",
+    "tempo_s": "219.7",
+    "errore": ""
+  },
+  "old": {
+    "n": 63,
+    "n_planned": 56,
+    "iso_ok": 52,
+    "dice_med_found": 0.6,
+    "semaforo": {
+      "verde": {
+        "n": 41,
+        "iso_ok": 40
+      },
+      "rosso": {
+        "n": 10,
+        "iso_ok": 2
+      },
+      "giallo": {
+        "n": 12,
+        "iso_ok": 10
+      }
+    },
+    "copertura_piano_pct": {
+      "med": 95.0,
+      "q1": 94.9,
+      "q3": 95.0,
+      "min": 92.9,
+      "max": 95.0
+    },
+    "copertura_gt_pct": {
+      "med": 48.75,
+      "q1": 23.325,
+      "q3": 69.3,
+      "min": 0.0,
+      "max": 97.6
+    },
+    "d95_gt_pct": {
+      "med": 38.900000000000006,
+      "q1": 14.674999999999999,
+      "q3": 60.75,
+      "min": 0.0,
+      "max": 81.7
+    },
+    "paddick_gt": {
+      "med": 0.387,
+      "q1": 0.2205,
+      "q3": 0.5607500000000001,
+      "min": 0.0,
+      "max": 0.731
+    },
+    "polmone_v20_pct": {
+      "med": 0.485,
+      "q1": 0.225,
+      "q3": 1.045,
+      "min": 0.0,
+      "max": 6.57
+    },
+    "polmone_dmedia_gy": {
+      "med": 0.815,
+      "q1": 0.485,
+      "q3": 1.35,
+      "min": 0.04,
+      "max": 5.07
+    },
+    "mediastino_dmax_pct": {
+      "med": 14.65,
+      "q1": 7.775,
+      "q3": 24.95,
+      "min": 1.4,
+      "max": 124.4
+    },
+    "vie_aeree_dmax_pct": {
+      "med": 5.35,
+      "q1": 1.6,
+      "q3": 12.925,
+      "min": 0.0,
+      "max": 71.4
+    },
+    "ossa_dmax_pct": {
+      "med": 37.650000000000006,
+      "q1": 25.125,
+      "q3": 53.375,
+      "min": 3.2,
+      "max": 101.4
+    },
+    "tempo_s": {
+      "med": 263.04999999999995,
+      "q1": 202.5,
+      "q3": 305.075,
+      "min": 119.1,
+      "max": 401.6
+    },
+    "fasci_erogabili": {
+      "med": 141.0,
+      "q1": 132.75,
+      "q3": 145.0,
+      "min": 41.0,
+      "max": 150.0
+    },
+    "fasci_candidati": {
+      "med": 142.0,
+      "q1": 133.75,
+      "q3": 145.25,
+      "min": 41.0,
+      "max": 150.0
+    },
+    "piano_cov_range": [
+      92.9,
+      95.0
+    ],
+    "robot_100pct": 56,
+    "scartati_cases": 5,
+    "scartati_tot": 52,
+    "scartati_worst": [
+      "lung_045",
+      30
+    ],
+    "angoli": [
+      3
+    ],
+    "mediastino": [
+      {
+        "lab": "Lontano (>= 20 mm)",
+        "n": 35,
+        "vol": 4.85,
+        "dice": 0.676,
+        "cov": 57.4,
+        "dmax_med": 10.1,
+        "dmax_max": 56.9
+      },
+      {
+        "lab": "Vicino (2-20 mm)",
+        "n": 9,
+        "vol": 6.58,
+        "dice": 0.582,
+        "cov": 51.3,
+        "dmax_med": 20.9,
+        "dmax_max": 29.2
+      },
+      {
+        "lab": "A contatto (< 2 mm)",
+        "n": 12,
+        "vol": 30.669999999999998,
+        "dice": 0.4435,
+        "cov": 30.0,
+        "dmax_med": 54.15,
+        "dmax_max": 124.4
+      }
+    ],
+    "mediastino_over_rx": [
+      "lung_006",
+      "lung_009",
+      "lung_084",
+      "lung_026",
+      "lung_053"
+    ],
+    "vie_aeree_vicine": [
+      [
+        "lung_022",
+        8.0,
+        26.9
+      ],
+      [
+        "lung_033",
+        4.1,
+        33.9
+      ],
+      [
+        "lung_009",
+        1.2,
+        32.2
+      ],
+      [
+        "lung_053",
+        0.2,
+        71.4
+      ]
+    ],
+    "ossa_vicine": 20,
+    "ossa_alte": [
+      [
+        "lung_073",
+        101.4
+      ],
+      [
+        "lung_046",
+        96.0
+      ],
+      [
+        "lung_022",
+        91.3
+      ],
+      [
+        "lung_084",
+        90.0
+      ],
+      [
+        "lung_041",
+        88.4
+      ],
+      [
+        "lung_010",
+        75.5
+      ]
+    ],
+    "volume": [
+      {
+        "lab": "Sotto 2 cm3",
+        "n": 7,
+        "not_found": 6,
+        "dice": 0.517,
+        "cov": 37.4
+      },
+      {
+        "lab": "2-10 cm3",
+        "n": 27,
+        "not_found": 1,
+        "dice": 0.676,
+        "cov": 55.5
+      },
+      {
+        "lab": "10-50 cm3",
+        "n": 15,
+        "not_found": 0,
+        "dice": 0.759,
+        "cov": 64.7
+      },
+      {
+        "lab": "Oltre 50 cm3",
+        "n": 7,
+        "not_found": 0,
+        "dice": 0.272,
+        "cov": 16.9
+      }
+    ],
+    "non_trovati": [
+      [
+        "lung_015",
+        1.12,
+        "rosso"
+      ],
+      [
+        "lung_083",
+        1.39,
+        "rosso"
+      ],
+      [
+        "lung_004",
+        1.32,
+        "rosso"
+      ],
+      [
+        "lung_036",
+        8.13,
+        "rosso"
+      ],
+      [
+        "lung_069",
+        0.83,
+        "rosso"
+      ],
+      [
+        "lung_080",
+        1.16,
+        "rosso"
+      ],
+      [
+        "lung_037",
+        1.15,
+        "rosso"
+      ]
+    ],
+    "iso_sbagliato": [
+      [
+        "lung_059",
+        125.6,
+        "giallo"
+      ],
+      [
+        "lung_042",
+        82.5,
+        "giallo"
+      ],
+      [
+        "lung_096",
+        66.8,
+        "rosso"
+      ],
+      [
+        "lung_070",
+        219.9,
+        "verde"
+      ]
+    ],
+    "grandi_parziali": [
+      [
+        "lung_022",
+        59.1,
+        0.274,
+        "giallo"
+      ],
+      [
+        "lung_009",
+        89.46,
+        0.496,
+        "verde"
+      ],
+      [
+        "lung_028",
+        151.33,
+        0.009,
+        "giallo"
+      ],
+      [
+        "lung_041",
+        63.35,
+        0.871,
+        "verde"
+      ],
+      [
+        "lung_031",
+        70.78,
+        0.272,
+        "giallo"
+      ],
+      [
+        "lung_053",
+        370.38,
+        0.165,
+        "verde"
+      ],
+      [
+        "lung_064",
+        90.83,
+        0.052,
+        "giallo"
+      ]
+    ],
+    "contatto_verdi": [
+      "lung_006",
+      "lung_033",
+      "lung_038",
+      "lung_065",
+      "lung_009",
+      "lung_055",
+      "lung_084",
+      "lung_095",
+      "lung_026",
+      "lung_053"
+    ],
+    "spearman_dice_cov": [
+      0.9562705164589201,
+      1.6669295694655522e-30,
+      56
+    ]
+  },
+  "paired": {
+    "dice": {
+      "n": 56,
+      "med_old": 0.6,
+      "med_new": 0.769,
+      "better": 46,
+      "worse": 7,
+      "higher_is_better": true,
+      "p": 1.1287991969167467e-08
+    },
+    "copertura_gt_pct": {
+      "n": 56,
+      "med_old": 48.75,
+      "med_new": 72.2,
+      "better": 45,
+      "worse": 8,
+      "higher_is_better": true,
+      "p": 3.850086210196712e-08
+    },
+    "d95_gt_pct": {
+      "n": 56,
+      "med_old": 38.900000000000006,
+      "med_new": 63.35,
+      "better": 45,
+      "worse": 9,
+      "higher_is_better": true,
+      "p": 3.6882722333191027e-07
+    },
+    "paddick_gt": {
+      "n": 56,
+      "med_old": 0.387,
+      "med_new": 0.5865,
+      "better": 45,
+      "worse": 8,
+      "higher_is_better": true,
+      "p": 5.3265468327807836e-08
+    },
+    "mediastino_dmax_pct": {
+      "n": 56,
+      "med_old": 14.65,
+      "med_new": 18.55,
+      "better": 9,
+      "worse": 47,
+      "higher_is_better": false,
+      "p": 4.380564554979197e-06
+    },
+    "polmone_v20_pct": {
+      "n": 56,
+      "med_old": 0.485,
+      "med_new": 0.5700000000000001,
+      "better": 13,
+      "worse": 42,
+      "higher_is_better": false,
+      "p": 1.1304328715282096e-05
+    },
+    "centroide_err_mm": {
+      "n": 56,
+      "med_old": 2.05,
+      "med_new": 1.6,
+      "better": 37,
+      "worse": 14,
+      "higher_is_better": false,
+      "p": 1.8711198580144262e-05
+    }
+  },
+  "iso_changes": [
+    [
+      "lung_015",
+      "recuperato"
+    ],
+    [
+      "lung_059",
+      "recuperato"
+    ],
+    [
+      "lung_083",
+      "recuperato"
+    ]
+  ]
+}

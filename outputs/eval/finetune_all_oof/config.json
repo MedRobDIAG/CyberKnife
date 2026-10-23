@@ -1,0 +1,30 @@
+{
+  "exp": "finetune_all_oof",
+  "checkpoints": [],
+  "cases": "splits:all",
+  "oof_exp": "finetune_all",
+  "ckpt_name": "final.pth",
+  "target_spacing": [
+    1.5,
+    1.5,
+    2.0
+  ],
+  "hu_window": [
+    -1000.0,
+    400.0
+  ],
+  "sw_roi_size": [
+    96,
+    96,
+    96
+  ],
+  "sw_overlap": 0.5,
+  "tta_axes": [],
+  "blend_mode": "constant",
+  "postproc": {
+    "prob_threshold": 0.5,
+    "min_lesion_mm3": 100.0
+  },
+  "git_commit": "35d5f96",
+  "torch": "2.11.0+cu128"
+}

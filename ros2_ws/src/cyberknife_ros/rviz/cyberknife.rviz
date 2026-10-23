@@ -1,0 +1,149 @@
+Panels:
+  - Class: rviz_common/Displays
+    Name: Displays
+    Property Tree Widget:
+      Expanded:
+        - /Anatomia1
+        - /FasciDelPiano1
+      Splitter Ratio: 0.5
+    Tree Height: 700
+  - Class: rviz_common/Views
+    Name: Views
+Visualization Manager:
+  Class: ""
+  Name: root
+  Displays:
+    - Class: rviz_default_plugins/Grid
+      Name: Griglia
+      Enabled: true
+      Cell Size: 0.5
+      Plane Cell Count: 20
+      Color: 60; 60; 70
+      Alpha: 0.35
+      Reference Frame: world
+    - Class: rviz_default_plugins/RobotModel
+      Name: Manipolatore
+      Enabled: true
+      Description Topic:
+        Value: /robot_description
+        Depth: 5
+        Durability Policy: Transient Local
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+      Visual Enabled: true
+      Collision Enabled: false
+      Alpha: 1
+    - Class: rviz_default_plugins/TF
+      Name: TF
+      Enabled: false
+      Show Names: true
+      Marker Scale: 0.4
+    - Class: rviz_default_plugins/MarkerArray
+      Name: Anatomia
+      Enabled: true
+      Topic:
+        Value: /cyberknife/anatomia
+        Depth: 5
+        Durability Policy: Transient Local
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+      Namespaces:
+        {}
+    - Class: rviz_default_plugins/MarkerArray
+      Name: FasciDelPiano
+      Enabled: true
+      Topic:
+        Value: /cyberknife/piano
+        Depth: 5
+        Durability Policy: Transient Local
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+      Namespaces:
+        {}
+    - Class: rviz_default_plugins/MarkerArray
+      Name: FascioAttivo
+      Enabled: true
+      Topic:
+        Value: /cyberknife/fasci
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+      Namespaces:
+        {}
+  Global Options:
+    Background Color: 20; 22; 28
+    Fixed Frame: world
+    Frame Rate: 30
+  Tools:
+    - Class: rviz_default_plugins/MoveCamera
+    - Class: rviz_default_plugins/FocusCamera
+    - Class: rviz_default_plugins/Measure
+      Line color: 128; 128; 0
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Name: Orbita
+      Target Frame: isocentro
+      Distance: 3.4
+      Focal Point:
+        X: 0
+        Y: 0
+        Z: 0
+      Pitch: 0.32
+      Yaw: 2.1
+      Near Clip Distance: 0.01
+    Saved:
+      # Viste pronte, selezionabili dal pannello "Views". Ciascuna e' agganciata
+      # a un FRAME, non a coordinate: cosi' restano corrette anche spostando la
+      # base del robot o cambiando paziente.
+      - Class: rviz_default_plugins/Orbit
+        Name: SulTumore
+        Target Frame: isocentro
+        Distance: 1.1
+        Focal Point:
+          X: 0
+          Y: 0
+          Z: 0
+        Pitch: 0.25
+        Yaw: 1.2
+        Near Clip Distance: 0.005
+      - Class: rviz_default_plugins/ThirdPersonFollower
+        Name: SeguiLaTestata
+        Target Frame: linac
+        Distance: 1.8
+        Focal Point:
+          X: 0
+          Y: 0
+          Z: 0
+        Pitch: 0.45
+        Yaw: 3.0
+        Near Clip Distance: 0.01
+      - Class: rviz_default_plugins/FPS
+        Name: DalFascio
+        Target Frame: bev
+        Position:
+          X: 0
+          Y: 0
+          Z: 0
+        Yaw: 0
+        Pitch: 0
+        Near Clip Distance: 0.02
+      - Class: rviz_default_plugins/Orbit
+        Name: LatoLettino
+        Target Frame: isocentro
+        Distance: 2.6
+        Focal Point:
+          X: 0
+          Y: 0
+          Z: 0
+        Pitch: 0.05
+        Yaw: 1.5707
+        Near Clip Distance: 0.01
+Window Geometry:
+  Displays:
+    collapsed: false
+  Height: 1000
+  Width: 1720
+  Views:
+    collapsed: false

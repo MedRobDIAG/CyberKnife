@@ -1,0 +1,160 @@
+[train] exp=pretrain_lidc fold=-1 arch=unet device=cuda
+[train] GPU: NVIDIA GeForce RTX 5070 (11.9 GiB)
+[dataset] LIDC: 221 casi per il pretraining
+Loading dataset:   0%|          | 0/221 [00:00<?, ?it/s]Loading dataset:   0%|          | 1/221 [00:01<04:43,  1.29s/it]Loading dataset:   1%|          | 2/221 [00:02<04:31,  1.24s/it]Loading dataset:   1%|1         | 3/221 [00:03<04:10,  1.15s/it]Loading dataset:   2%|1         | 4/221 [00:04<03:45,  1.04s/it]Loading dataset:   2%|2         | 5/221 [00:05<04:23,  1.22s/it]Loading dataset:   3%|2         | 6/221 [00:06<04:08,  1.16s/it]Loading dataset:   3%|3         | 7/221 [00:07<03:55,  1.10s/it]Loading dataset:   4%|3         | 8/221 [00:09<04:07,  1.16s/it]Loading dataset:   4%|4         | 9/221 [00:10<04:15,  1.21s/it]Loading dataset:   5%|4         | 10/221 [00:12<05:11,  1.48s/it]Loading dataset:   5%|4         | 11/221 [00:13<04:42,  1.35s/it]Loading dataset:   5%|5         | 12/221 [00:15<04:44,  1.36s/it]Loading dataset:   6%|5         | 13/221 [00:16<04:17,  1.24s/it]Loading dataset:   6%|6         | 14/221 [00:17<04:14,  1.23s/it]Loading dataset:   7%|6         | 15/221 [00:18<04:02,  1.18s/it]Loading dataset:   7%|7         | 16/221 [00:19<04:04,  1.19s/it]Loading dataset:   8%|7         | 17/221 [00:22<05:29,  1.61s/it]Loading dataset:   8%|8         | 18/221 [00:23<04:56,  1.46s/it]Loading dataset:   9%|8         | 19/221 [00:24<04:49,  1.43s/it]Loading dataset:   9%|9         | 20/221 [00:26<04:53,  1.46s/it]Loading dataset:  10%|9         | 21/221 [00:28<05:35,  1.68s/it]Loading dataset:  10%|9         | 22/221 [00:29<04:47,  1.44s/it]Loading dataset:  10%|#         | 23/221 [00:30<04:34,  1.39s/it]Loading dataset:  11%|#         | 24/221 [00:31<04:27,  1.36s/it]Loading dataset:  11%|#1        | 25/221 [00:33<05:05,  1.56s/it]Loading dataset:  12%|#1        | 26/221 [00:35<04:43,  1.46s/it]Loading dataset:  12%|#2        | 27/221 [00:36<04:20,  1.34s/it]Loading dataset:  13%|#2        | 28/221 [00:37<03:56,  1.23s/it]Loading dataset:  13%|#3        | 29/221 [00:38<03:54,  1.22s/it]Loading dataset:  14%|#3        | 30/221 [00:39<03:58,  1.25s/it]Loading dataset:  14%|#4        | 31/221 [00:44<07:53,  2.49s/it]Loading dataset:  14%|#4        | 32/221 [00:47<07:32,  2.39s/it]Loading dataset:  15%|#4        | 33/221 [00:48<06:19,  2.02s/it]Loading dataset:  15%|#5        | 34/221 [00:49<05:26,  1.75s/it]Loading dataset:  16%|#5        | 35/221 [00:50<04:43,  1.52s/it]Loading dataset:  16%|#6        | 36/221 [00:52<05:32,  1.80s/it]Loading dataset:  17%|#6        | 37/221 [00:53<04:49,  1.57s/it]Loading dataset:  17%|#7        | 38/221 [00:56<05:23,  1.77s/it]Loading dataset:  18%|#7        | 39/221 [00:57<04:57,  1.63s/it]Loading dataset:  18%|#8        | 40/221 [00:59<05:08,  1.70s/it]Loading dataset:  19%|#8        | 41/221 [01:00<04:38,  1.54s/it]Loading dataset:  19%|#9        | 42/221 [01:01<04:29,  1.50s/it]Loading dataset:  19%|#9        | 43/221 [01:02<04:01,  1.36s/it]Loading dataset:  20%|#9        | 44/221 [01:06<05:39,  1.92s/it]Loading dataset:  20%|##        | 45/221 [01:08<06:09,  2.10s/it]Loading dataset:  21%|##        | 46/221 [01:09<05:21,  1.84s/it]Loading dataset:  21%|##1       | 47/221 [01:11<04:51,  1.67s/it]Loading dataset:  22%|##1       | 48/221 [01:12<04:20,  1.50s/it]Loading dataset:  22%|##2       | 49/221 [01:13<03:54,  1.37s/it]Loading dataset:  23%|##2       | 50/221 [01:15<04:18,  1.51s/it]Loading dataset:  23%|##3       | 51/221 [01:16<04:20,  1.53s/it]Loading dataset:  24%|##3       | 52/221 [01:18<04:36,  1.63s/it]Loading dataset:  24%|##3       | 53/221 [01:21<05:15,  1.88s/it]Loading dataset:  24%|##4       | 54/221 [01:23<05:27,  1.96s/it]Loading dataset:  25%|##4       | 55/221 [01:25<05:26,  1.97s/it]Loading dataset:  25%|##5       | 56/221 [01:27<05:53,  2.14s/it]Loading dataset:  26%|##5       | 57/221 [01:28<04:54,  1.80s/it]Loading dataset:  26%|##6       | 58/221 [01:29<04:24,  1.62s/it]Loading dataset:  27%|##6       | 59/221 [01:31<04:06,  1.52s/it]Loading dataset:  27%|##7       | 60/221 [01:32<04:04,  1.52s/it]Loading dataset:  28%|##7       | 61/221 [01:34<04:35,  1.72s/it]Loading dataset:  28%|##8       | 62/221 [01:36<04:37,  1.75s/it]Loading dataset:  29%|##8       | 63/221 [01:38<04:35,  1.74s/it]Loading dataset:  29%|##8       | 64/221 [01:39<04:04,  1.56s/it]Loading dataset:  29%|##9       | 65/221 [01:40<03:40,  1.41s/it]Loading dataset:  30%|##9       | 66/221 [01:42<03:43,  1.44s/it]Loading dataset:  30%|###       | 67/221 [01:43<03:45,  1.46s/it]Loading dataset:  31%|###       | 68/221 [01:44<03:29,  1.37s/it]Loading dataset:  31%|###1      | 69/221 [01:45<03:13,  1.27s/it]Loading dataset:  32%|###1      | 70/221 [01:47<03:07,  1.24s/it]Loading dataset:  32%|###2      | 71/221 [01:49<04:05,  1.64s/it]Loading dataset:  33%|###2      | 72/221 [01:50<03:29,  1.40s/it]Loading dataset:  33%|###3      | 73/221 [01:51<03:23,  1.38s/it]Loading dataset:  33%|###3      | 74/221 [01:53<03:44,  1.53s/it]Loading dataset:  34%|###3      | 75/221 [01:54<03:29,  1.43s/it]Loading dataset:  34%|###4      | 76/221 [01:56<03:50,  1.59s/it]Loading dataset:  35%|###4      | 77/221 [01:58<03:42,  1.54s/it]Loading dataset:  35%|###5      | 78/221 [02:00<04:01,  1.69s/it]Loading dataset:  36%|###5      | 79/221 [02:01<03:36,  1.52s/it]Loading dataset:  36%|###6      | 80/221 [02:02<03:22,  1.44s/it]Loading dataset:  37%|###6      | 81/221 [02:04<03:17,  1.41s/it]Loading dataset:  37%|###7      | 82/221 [02:05<03:01,  1.30s/it]Loading dataset:  38%|###7      | 83/221 [02:06<03:05,  1.34s/it]Loading dataset:  38%|###8      | 84/221 [02:07<03:08,  1.38s/it]Loading dataset:  38%|###8      | 85/221 [02:09<03:06,  1.37s/it]Loading dataset:  39%|###8      | 86/221 [02:10<03:11,  1.42s/it]Loading dataset:  39%|###9      | 87/221 [02:12<03:06,  1.39s/it]Loading dataset:  40%|###9      | 88/221 [02:13<02:58,  1.34s/it]Loading dataset:  40%|####      | 89/221 [02:14<03:01,  1.37s/it]Loading dataset:  41%|####      | 90/221 [02:16<02:57,  1.35s/it]Loading dataset:  41%|####1     | 91/221 [02:17<02:51,  1.32s/it]Loading dataset:  42%|####1     | 92/221 [02:19<03:07,  1.45s/it]Loading dataset:  42%|####2     | 93/221 [02:21<03:26,  1.61s/it]Loading dataset:  43%|####2     | 94/221 [02:23<03:40,  1.73s/it]Loading dataset:  43%|####2     | 95/221 [02:25<03:44,  1.78s/it]Loading dataset:  43%|####3     | 96/221 [02:26<03:45,  1.81s/it]Loading dataset:  44%|####3     | 97/221 [02:28<03:47,  1.84s/it]Loading dataset:  44%|####4     | 98/221 [02:31<04:02,  1.97s/it]Loading dataset:  45%|####4     | 99/221 [02:33<04:11,  2.06s/it]Loading dataset:  45%|####5     | 100/221 [02:34<03:45,  1.86s/it]Loading dataset:  46%|####5     | 101/221 [02:36<03:50,  1.92s/it]Loading dataset:  46%|####6     | 102/221 [02:38<03:39,  1.85s/it]Loading dataset:  47%|####6     | 103/221 [02:40<03:45,  1.91s/it]Loading dataset:  47%|####7     | 104/221 [02:42<03:37,  1.86s/it]Loading dataset:  48%|####7     | 105/221 [02:44<03:40,  1.90s/it]Loading dataset:  48%|####7     | 106/221 [02:46<03:38,  1.90s/it]Loading dataset:  48%|####8     | 107/221 [02:48<03:49,  2.01s/it]Loading dataset:  49%|####8     | 108/221 [02:50<03:48,  2.03s/it]Loading dataset:  49%|####9     | 109/221 [02:52<03:32,  1.90s/it]Loading dataset:  50%|####9     | 110/221 [02:53<03:16,  1.77s/it]Loading dataset:  50%|#####     | 111/221 [02:55<03:08,  1.71s/it]Loading dataset:  51%|#####     | 112/221 [02:57<03:23,  1.86s/it]Loading dataset:  51%|#####1    | 113/221 [02:58<02:57,  1.65s/it]Loading dataset:  52%|#####1    | 114/221 [03:00<02:56,  1.65s/it]Loading dataset:  52%|#####2    | 115/221 [03:01<02:40,  1.51s/it]Loading dataset:  52%|#####2    | 116/221 [03:03<03:00,  1.72s/it]Loading dataset:  53%|#####2    | 117/221 [03:05<02:57,  1.71s/it]Loading dataset:  53%|#####3    | 118/221 [03:07<02:58,  1.74s/it]Loading dataset:  54%|#####3    | 119/221 [03:08<02:51,  1.68s/it]Loading dataset:  54%|#####4    | 120/221 [03:10<02:56,  1.75s/it]Loading dataset:  55%|#####4    | 121/221 [03:12<03:06,  1.86s/it]Loading dataset:  55%|#####5    | 122/221 [03:14<03:07,  1.90s/it]Loading dataset:  56%|#####5    | 123/221 [03:16<02:50,  1.74s/it]Loading dataset:  56%|#####6    | 124/221 [03:20<04:08,  2.56s/it]Loading dataset:  57%|#####6    | 125/221 [03:22<03:57,  2.48s/it]Loading dataset:  57%|#####7    | 126/221 [03:24<03:41,  2.33s/it]Loading dataset:  57%|#####7    | 127/221 [03:27<03:45,  2.40s/it]Loading dataset:  58%|#####7    | 128/221 [03:29<03:39,  2.36s/it]Loading dataset:  58%|#####8    | 129/221 [03:31<03:35,  2.34s/it]Loading dataset:  59%|#####8    | 130/221 [03:34<03:36,  2.38s/it]Loading dataset:  59%|#####9    | 131/221 [03:37<03:54,  2.61s/it]Loading dataset:  60%|#####9    | 132/221 [03:39<03:35,  2.42s/it]Loading dataset:  60%|######    | 133/221 [03:43<04:19,  2.95s/it]Loading dataset:  61%|######    | 134/221 [03:46<04:09,  2.86s/it]Loading dataset:  61%|######1   | 135/221 [03:47<03:18,  2.31s/it]Loading dataset:  62%|######1   | 136/221 [03:49<03:11,  2.26s/it]Loading dataset:  62%|######1   | 137/221 [03:52<03:40,  2.63s/it]Loading dataset:  62%|######2   | 138/221 [03:54<03:22,  2.44s/it]Loading dataset:  63%|######2   | 139/221 [03:56<02:58,  2.17s/it]Loading dataset:  63%|######3   | 140/221 [03:58<02:50,  2.11s/it]Loading dataset:  64%|######3   | 141/221 [04:00<02:47,  2.10s/it]Loading dataset:  64%|######4   | 142/221 [04:02<02:41,  2.04s/it]Loading dataset:  65%|######4   | 143/221 [04:06<03:15,  2.50s/it]Loading dataset:  65%|######5   | 144/221 [04:08<03:05,  2.41s/it]Loading dataset:  66%|######5   | 145/221 [04:12<03:52,  3.06s/it]Loading dataset:  66%|######6   | 146/221 [04:15<03:33,  2.85s/it]Loading dataset:  67%|######6   | 147/221 [04:16<02:59,  2.43s/it]Loading dataset:  67%|######6   | 148/221 [04:19<02:56,  2.42s/it]Loading dataset:  67%|######7   | 149/221 [04:20<02:35,  2.16s/it]Loading dataset:  68%|######7   | 150/221 [04:22<02:23,  2.02s/it]Loading dataset:  68%|######8   | 151/221 [04:24<02:22,  2.04s/it]Loading dataset:  69%|######8   | 152/221 [04:28<03:00,  2.61s/it]Loading dataset:  69%|######9   | 153/221 [04:30<02:52,  2.53s/it]Loading dataset:  70%|######9   | 154/221 [04:33<02:55,  2.62s/it]Loading dataset:  70%|#######   | 155/221 [04:35<02:34,  2.34s/it]Loading dataset:  71%|#######   | 156/221 [04:39<03:06,  2.87s/it]Loading dataset:  71%|#######1  | 157/221 [04:40<02:41,  2.52s/it]Loading dataset:  71%|#######1  | 158/221 [04:44<02:54,  2.76s/it]Loading dataset:  72%|#######1  | 159/221 [04:46<02:34,  2.50s/it]Loading dataset:  72%|#######2  | 160/221 [04:47<02:07,  2.09s/it]Loading dataset:  73%|#######2  | 161/221 [04:49<02:00,  2.00s/it]Loading dataset:  73%|#######3  | 162/221 [04:50<01:52,  1.91s/it]Loading dataset:  74%|#######3  | 163/221 [04:52<01:49,  1.89s/it]Loading dataset:  74%|#######4  | 164/221 [04:55<02:09,  2.28s/it]Loading dataset:  75%|#######4  | 165/221 [04:59<02:25,  2.59s/it]Loading dataset:  75%|#######5  | 166/221 [05:00<01:59,  2.16s/it]Loading dataset:  76%|#######5  | 167/221 [05:03<02:19,  2.58s/it]Loading dataset:  76%|#######6  | 168/221 [05:05<02:08,  2.42s/it]Loading dataset:  76%|#######6  | 169/221 [05:07<01:53,  2.18s/it]Loading dataset:  77%|#######6  | 170/221 [05:08<01:37,  1.92s/it]Loading dataset:  77%|#######7  | 171/221 [05:12<01:57,  2.36s/it]Loading dataset:  78%|#######7  | 172/221 [05:13<01:44,  2.13s/it]Loading dataset:  78%|#######8  | 173/221 [05:16<01:52,  2.35s/it]Loading dataset:  79%|#######8  | 174/221 [05:18<01:43,  2.20s/it]Loading dataset:  79%|#######9  | 175/221 [05:22<02:08,  2.80s/it]Loading dataset:  80%|#######9  | 176/221 [05:23<01:44,  2.33s/it]Loading dataset:  80%|########  | 177/221 [05:25<01:34,  2.15s/it]Loading dataset:  81%|########  | 178/221 [05:28<01:38,  2.29s/it]Loading dataset:  81%|########  | 179/221 [05:29<01:25,  2.03s/it]Loading dataset:  81%|########1 | 180/221 [05:32<01:27,  2.14s/it]Loading dataset:  82%|########1 | 181/221 [05:34<01:29,  2.23s/it]Loading dataset:  82%|########2 | 182/221 [05:36<01:19,  2.05s/it]Loading dataset:  83%|########2 | 183/221 [05:37<01:11,  1.89s/it]Loading dataset:  83%|########3 | 184/221 [05:39<01:10,  1.91s/it]Loading dataset:  84%|########3 | 185/221 [05:41<01:06,  1.85s/it]Loading dataset:  84%|########4 | 186/221 [05:44<01:15,  2.15s/it]Loading dataset:  85%|########4 | 187/221 [05:46<01:09,  2.05s/it]Loading dataset:  85%|########5 | 188/221 [05:49<01:23,  2.54s/it]Loading dataset:  86%|########5 | 189/221 [05:51<01:17,  2.42s/it]Loading dataset:  86%|########5 | 190/221 [05:53<01:10,  2.28s/it]Loading dataset:  86%|########6 | 191/221 [05:57<01:19,  2.63s/it]Loading dataset:  87%|########6 | 192/221 [06:00<01:25,  2.93s/it]Loading dataset:  87%|########7 | 193/221 [06:02<01:11,  2.56s/it]Loading dataset:  88%|########7 | 194/221 [06:03<00:57,  2.15s/it]Loading dataset:  88%|########8 | 195/221 [06:05<00:54,  2.11s/it]Loading dataset:  89%|########8 | 196/221 [06:07<00:51,  2.05s/it]Loading dataset:  89%|########9 | 197/221 [06:09<00:47,  1.97s/it]Loading dataset:  90%|########9 | 198/221 [06:11<00:45,  1.97s/it]Loading dataset:  90%|######### | 199/221 [06:13<00:42,  1.91s/it]Loading dataset:  90%|######### | 200/221 [06:15<00:41,  1.97s/it]Loading dataset:  91%|######### | 201/221 [06:19<00:50,  2.51s/it]Loading dataset:  91%|#########1| 202/221 [06:20<00:40,  2.14s/it]Loading dataset:  92%|#########1| 203/221 [06:22<00:37,  2.11s/it]Loading dataset:  92%|#########2| 204/221 [06:24<00:34,  2.00s/it]Loading dataset:  93%|#########2| 205/221 [06:26<00:34,  2.16s/it]Loading dataset:  93%|#########3| 206/221 [06:29<00:35,  2.37s/it]Loading dataset:  94%|#########3| 207/221 [06:31<00:30,  2.19s/it]Loading dataset:  94%|#########4| 208/221 [06:33<00:29,  2.30s/it]Loading dataset:  95%|#########4| 209/221 [06:36<00:27,  2.27s/it]Loading dataset:  95%|#########5| 210/221 [06:37<00:22,  2.06s/it]Loading dataset:  95%|#########5| 211/221 [06:39<00:19,  1.99s/it]Loading dataset:  96%|#########5| 212/221 [06:42<00:21,  2.39s/it]Loading dataset:  96%|#########6| 213/221 [06:44<00:18,  2.26s/it]Loading dataset:  97%|#########6| 214/221 [06:47<00:16,  2.33s/it]Loading dataset:  97%|#########7| 215/221 [06:48<00:12,  2.02s/it]Loading dataset:  98%|#########7| 216/221 [06:51<00:11,  2.20s/it]Loading dataset:  98%|#########8| 217/221 [06:52<00:08,  2.04s/it]Loading dataset:  99%|#########8| 218/221 [06:54<00:05,  1.98s/it]Loading dataset:  99%|#########9| 219/221 [06:57<00:04,  2.16s/it]Loading dataset: 100%|#########9| 220/221 [06:59<00:02,  2.22s/it]Loading dataset: 100%|##########| 221/221 [07:01<00:00,  2.03s/it]Loading dataset: 100%|##########| 221/221 [07:01<00:00,  1.91s/it]
+[train] fold -1: 221 train | 0 val
+[train] unet: 4.8M parametri | deep supervision: False
+[epoca 1/150] loss 1.2559 | lr 1.00e-04 | 36.6s
+[epoca 2/150] loss 1.0386 | lr 1.00e-04 | 29.5s
+[epoca 3/150] loss 0.9202 | lr 9.99e-05 | 27.3s
+[epoca 4/150] loss 0.8385 | lr 9.98e-05 | 28.4s
+[epoca 5/150] loss 0.7778 | lr 9.97e-05 | 27.4s
+[epoca 6/150] loss 0.7303 | lr 9.96e-05 | 27.3s
+[epoca 7/150] loss 0.6852 | lr 9.95e-05 | 27.5s
+[epoca 8/150] loss 0.6194 | lr 9.93e-05 | 27.1s
+[epoca 9/150] loss 0.5807 | lr 9.91e-05 | 25.3s
+[epoca 10/150] loss 0.5586 | lr 9.89e-05 | 26.5s
+[epoca 11/150] loss 0.5435 | lr 9.87e-05 | 25.9s
+[epoca 12/150] loss 0.5320 | lr 9.84e-05 | 26.9s
+[epoca 13/150] loss 0.5218 | lr 9.82e-05 | 26.5s
+[epoca 14/150] loss 0.5154 | lr 9.79e-05 | 25.9s
+[epoca 15/150] loss 0.5076 | lr 9.76e-05 | 26.8s
+[epoca 16/150] loss 0.5015 | lr 9.72e-05 | 26.7s
+[epoca 17/150] loss 0.4963 | lr 9.69e-05 | 28.3s
+[epoca 18/150] loss 0.4898 | lr 9.65e-05 | 26.5s
+[epoca 19/150] loss 0.4799 | lr 9.61e-05 | 26.8s
+[epoca 20/150] loss 0.4759 | lr 9.57e-05 | 25.1s
+[epoca 21/150] loss 0.4690 | lr 9.52e-05 | 26.4s
+[epoca 22/150] loss 0.4592 | lr 9.48e-05 | 26.8s
+[epoca 23/150] loss 0.4508 | lr 9.43e-05 | 26.2s
+[epoca 24/150] loss 0.4392 | lr 9.38e-05 | 27.1s
+[epoca 25/150] loss 0.4297 | lr 9.33e-05 | 27.2s
+[epoca 26/150] loss 0.4233 | lr 9.28e-05 | 27.3s
+[epoca 27/150] loss 0.4039 | lr 9.22e-05 | 27.9s
+[epoca 28/150] loss 0.3955 | lr 9.16e-05 | 26.7s
+[epoca 29/150] loss 0.3920 | lr 9.11e-05 | 26.2s
+[epoca 30/150] loss 0.3740 | lr 9.05e-05 | 26.8s
+[epoca 31/150] loss 0.3770 | lr 8.98e-05 | 26.4s
+[epoca 32/150] loss 0.3681 | lr 8.92e-05 | 26.3s
+[epoca 33/150] loss 0.3638 | lr 8.85e-05 | 26.3s
+[epoca 34/150] loss 0.3453 | lr 8.78e-05 | 26.9s
+[epoca 35/150] loss 0.3491 | lr 8.72e-05 | 27.2s
+[epoca 36/150] loss 0.3486 | lr 8.64e-05 | 26.8s
+[epoca 37/150] loss 0.3472 | lr 8.57e-05 | 26.5s
+[epoca 38/150] loss 0.3368 | lr 8.50e-05 | 26.6s
+[epoca 39/150] loss 0.3284 | lr 8.42e-05 | 27.6s
+[epoca 40/150] loss 0.3367 | lr 8.35e-05 | 27.1s
+[epoca 41/150] loss 0.3308 | lr 8.27e-05 | 27.0s
+[epoca 42/150] loss 0.3277 | lr 8.19e-05 | 26.7s
+[epoca 43/150] loss 0.3218 | lr 8.11e-05 | 25.9s
+[epoca 44/150] loss 0.3205 | lr 8.02e-05 | 26.7s
+[epoca 45/150] loss 0.3217 | lr 7.94e-05 | 25.9s
+[epoca 46/150] loss 0.3135 | lr 7.85e-05 | 26.7s
+[epoca 47/150] loss 0.3130 | lr 7.77e-05 | 26.3s
+[epoca 48/150] loss 0.3151 | lr 7.68e-05 | 26.2s
+[epoca 49/150] loss 0.3174 | lr 7.59e-05 | 26.2s
+[epoca 50/150] loss 0.3065 | lr 7.50e-05 | 26.2s
+[epoca 51/150] loss 0.3157 | lr 7.41e-05 | 26.9s
+[epoca 52/150] loss 0.3113 | lr 7.32e-05 | 26.5s
+[epoca 53/150] loss 0.3092 | lr 7.22e-05 | 27.5s
+[epoca 54/150] loss 0.3051 | lr 7.13e-05 | 25.9s
+[epoca 55/150] loss 0.3100 | lr 7.03e-05 | 26.8s
+[epoca 56/150] loss 0.2996 | lr 6.94e-05 | 26.3s
+[epoca 57/150] loss 0.3035 | lr 6.84e-05 | 26.4s
+[epoca 58/150] loss 0.3062 | lr 6.74e-05 | 26.4s
+[epoca 59/150] loss 0.3042 | lr 6.64e-05 | 27.2s
+[epoca 60/150] loss 0.3133 | lr 6.55e-05 | 26.2s
+[epoca 61/150] loss 0.3000 | lr 6.45e-05 | 26.1s
+[epoca 62/150] loss 0.2996 | lr 6.34e-05 | 25.7s
+[epoca 63/150] loss 0.2968 | lr 6.24e-05 | 26.5s
+[epoca 64/150] loss 0.2967 | lr 6.14e-05 | 26.7s
+[epoca 65/150] loss 0.2921 | lr 6.04e-05 | 26.3s
+[epoca 66/150] loss 0.2959 | lr 5.94e-05 | 27.0s
+[epoca 67/150] loss 0.3065 | lr 5.83e-05 | 26.6s
+[epoca 68/150] loss 0.2977 | lr 5.73e-05 | 27.1s
+[epoca 69/150] loss 0.2959 | lr 5.63e-05 | 27.5s
+[epoca 70/150] loss 0.2881 | lr 5.52e-05 | 25.4s
+[epoca 71/150] loss 0.3015 | lr 5.42e-05 | 26.9s
+[epoca 72/150] loss 0.2969 | lr 5.31e-05 | 27.4s
+[epoca 73/150] loss 0.2996 | lr 5.21e-05 | 27.0s
+[epoca 74/150] loss 0.2943 | lr 5.10e-05 | 27.6s
+[epoca 75/150] loss 0.2950 | lr 5.00e-05 | 27.4s
+[epoca 76/150] loss 0.2935 | lr 4.90e-05 | 27.6s
+[epoca 77/150] loss 0.2861 | lr 4.79e-05 | 26.9s
+[epoca 78/150] loss 0.2923 | lr 4.69e-05 | 27.3s
+[epoca 79/150] loss 0.2943 | lr 4.58e-05 | 27.1s
+[epoca 80/150] loss 0.2830 | lr 4.48e-05 | 26.5s
+[epoca 81/150] loss 0.2950 | lr 4.37e-05 | 26.1s
+[epoca 82/150] loss 0.2942 | lr 4.27e-05 | 26.7s
+[epoca 83/150] loss 0.2893 | lr 4.17e-05 | 26.6s
+[epoca 84/150] loss 0.2825 | lr 4.06e-05 | 26.8s
+[epoca 85/150] loss 0.2858 | lr 3.96e-05 | 27.5s
+[epoca 86/150] loss 0.2860 | lr 3.86e-05 | 29.1s
+[epoca 87/150] loss 0.2844 | lr 3.76e-05 | 27.8s
+[epoca 88/150] loss 0.2900 | lr 3.66e-05 | 26.3s
+[epoca 89/150] loss 0.2796 | lr 3.55e-05 | 28.2s
+[epoca 90/150] loss 0.2786 | lr 3.45e-05 | 26.8s
+[epoca 91/150] loss 0.2768 | lr 3.36e-05 | 26.2s
+[epoca 92/150] loss 0.2959 | lr 3.26e-05 | 27.2s
+[epoca 93/150] loss 0.2844 | lr 3.16e-05 | 26.1s
+[epoca 94/150] loss 0.2772 | lr 3.06e-05 | 26.5s
+[epoca 95/150] loss 0.2857 | lr 2.97e-05 | 26.1s
+[epoca 96/150] loss 0.2957 | lr 2.87e-05 | 26.3s
+[epoca 97/150] loss 0.2864 | lr 2.78e-05 | 27.3s
+[epoca 98/150] loss 0.2753 | lr 2.68e-05 | 27.8s
+[epoca 99/150] loss 0.2758 | lr 2.59e-05 | 26.1s
+[epoca 100/150] loss 0.2837 | lr 2.50e-05 | 26.2s
+[epoca 101/150] loss 0.2884 | lr 2.41e-05 | 27.2s
+[epoca 102/150] loss 0.2946 | lr 2.32e-05 | 26.7s
+[epoca 103/150] loss 0.2876 | lr 2.23e-05 | 27.0s
+[epoca 104/150] loss 0.2805 | lr 2.15e-05 | 26.5s
+[epoca 105/150] loss 0.2866 | lr 2.06e-05 | 27.3s
+[epoca 106/150] loss 0.2910 | lr 1.98e-05 | 26.7s
+[epoca 107/150] loss 0.2772 | lr 1.89e-05 | 27.1s
+[epoca 108/150] loss 0.2826 | lr 1.81e-05 | 26.9s
+[epoca 109/150] loss 0.2924 | lr 1.73e-05 | 27.9s
+[epoca 110/150] loss 0.2869 | lr 1.65e-05 | 27.0s
+[epoca 111/150] loss 0.2958 | lr 1.58e-05 | 26.8s
+[epoca 112/150] loss 0.2712 | lr 1.50e-05 | 27.8s
+[epoca 113/150] loss 0.2741 | lr 1.43e-05 | 26.3s
+[epoca 114/150] loss 0.2924 | lr 1.36e-05 | 27.2s
+[epoca 115/150] loss 0.2798 | lr 1.28e-05 | 28.0s
+[epoca 116/150] loss 0.2824 | lr 1.22e-05 | 28.0s
+[epoca 117/150] loss 0.2677 | lr 1.15e-05 | 27.1s
+[epoca 118/150] loss 0.2826 | lr 1.08e-05 | 26.0s
+[epoca 119/150] loss 0.2808 | lr 1.02e-05 | 26.5s
+[epoca 120/150] loss 0.2875 | lr 9.55e-06 | 26.0s
+[epoca 121/150] loss 0.2866 | lr 8.94e-06 | 27.3s
+[epoca 122/150] loss 0.2856 | lr 8.35e-06 | 27.0s
+[epoca 123/150] loss 0.2749 | lr 7.78e-06 | 26.5s
+[epoca 124/150] loss 0.2852 | lr 7.23e-06 | 25.9s
+[epoca 125/150] loss 0.2709 | lr 6.70e-06 | 25.9s
+[epoca 126/150] loss 0.2846 | lr 6.18e-06 | 27.2s
+[epoca 127/150] loss 0.2696 | lr 5.69e-06 | 28.9s
+[epoca 128/150] loss 0.2785 | lr 5.21e-06 | 28.4s
+[epoca 129/150] loss 0.2759 | lr 4.76e-06 | 29.2s
+[epoca 130/150] loss 0.2817 | lr 4.32e-06 | 28.8s
+[epoca 131/150] loss 0.2747 | lr 3.91e-06 | 30.1s
+[epoca 132/150] loss 0.2817 | lr 3.51e-06 | 29.5s
+[epoca 133/150] loss 0.2833 | lr 3.14e-06 | 29.0s
+[epoca 134/150] loss 0.2790 | lr 2.78e-06 | 28.9s
+[epoca 135/150] loss 0.2808 | lr 2.45e-06 | 29.1s
+[epoca 136/150] loss 0.2806 | lr 2.13e-06 | 27.6s
+[epoca 137/150] loss 0.2698 | lr 1.84e-06 | 28.2s
+[epoca 138/150] loss 0.2741 | lr 1.57e-06 | 28.6s
+[epoca 139/150] loss 0.2664 | lr 1.32e-06 | 27.8s
+[epoca 140/150] loss 0.2734 | lr 1.09e-06 | 28.2s
+[epoca 141/150] loss 0.2751 | lr 8.86e-07 | 29.8s
+[epoca 142/150] loss 0.2784 | lr 7.00e-07 | 29.8s
+[epoca 143/150] loss 0.2755 | lr 5.36e-07 | 29.5s
+[epoca 144/150] loss 0.2850 | lr 3.94e-07 | 30.1s
+[epoca 145/150] loss 0.2743 | lr 2.74e-07 | 28.7s
+[epoca 146/150] loss 0.2635 | lr 1.75e-07 | 30.2s
+[epoca 147/150] loss 0.2764 | lr 9.87e-08 | 28.7s
+[epoca 148/150] loss 0.2800 | lr 4.39e-08 | 29.6s
+[epoca 149/150] loss 0.2726 | lr 1.10e-08 | 28.1s
+[epoca 150/150] loss 0.2751 | lr 0.00e+00 | 30.0s
+
+[train] MODELLO FINALE completo: 221 casi, 150 epoche, nessuna validazione.
+[train] La stima onesta delle sue prestazioni e' quella della cross-validation con la stessa ricetta, NON un numero misurato
+[train] qui: questo modello ha visto in addestramento tutti i casi.

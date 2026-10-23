@@ -1,0 +1,28 @@
+[train] exp=pretrain_all fold=-1 arch=unet device=cuda
+[train] GPU: NVIDIA GeForce RTX 5070 (11.9 GiB)
+[dataset] LIDC: 221 casi
+[dataset] NSCLC: 415 casi
+[dataset] pretraining su 636 casi totali
+[dataset] 636 casi: cache su DISCO in C:\Users\ilgra\Documents\Progetto Medical\outputs\cache\lidc+nsclc_train
+[train] fold -1: 636 train | 0 val
+[train] unet: 4.8M parametri | deep supervision: False
+[train] RIPRESO da C:\Users\ilgra\Documents\Progetto Medical\outputs\runs\pretrain_all\fold-1\last.pth: epoca 1/120, best_score=-inf @ -1, gia' addestrato 0.45 h
+[epoca 2/120] loss 0.7912 | lr 9.99e-05 | 122.5s
+[epoca 3/120] loss 0.6205 | lr 9.98e-05 | 146.0s
+[epoca 4/120] loss 0.5291 | lr 9.97e-05 | 152.2s
+[epoca 5/120] loss 0.4944 | lr 9.96e-05 | 131.0s
+[epoca 6/120] loss 0.4713 | lr 9.94e-05 | 130.4s
+[epoca 7/120] loss 0.4545 | lr 9.92e-05 | 150.8s
+[epoca 8/120] loss 0.4343 | lr 9.89e-05 | 145.6s
+[epoca 9/120] loss 0.4255 | lr 9.86e-05 | 161.9s
+[epoca 10/120] loss 0.4121 | lr 9.83e-05 | 151.0s
+[epoca 11/120] loss 0.3935 | lr 9.79e-05 | 152.7s
+[epoca 12/120] loss 0.3924 | lr 9.76e-05 | 155.8s
+[epoca 13/120] loss 0.3813 | lr 9.71e-05 | 144.2s
+[epoca 14/120] loss 0.3754 | lr 9.67e-05 | 150.4s
+[epoca 15/120] loss 0.3701 | lr 9.62e-05 | 144.5s
+[epoca 16/120] loss 0.3562 | lr 9.57e-05 | 171.4s
+[epoca 17/120] loss 0.3614 | lr 9.51e-05 | 182.1s
+[epoca 18/120] loss 0.3592 | lr 9.46e-05 | 151.3s
+[epoca 19/120] loss 0.3552 | lr 9.39e-05 | 149.8s
+[epoca 20/120] loss 0.3476 | lr 9.33e-05 | 162.7s

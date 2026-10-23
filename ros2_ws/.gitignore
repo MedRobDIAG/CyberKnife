@@ -1,0 +1,5 @@
+# La compilazione avviene in ~/ck_ws (percorso senza spazi: vedi build.sh).
+# Queste cartelle compaiono solo se si compila a mano senza --build-base.
+build/
+install/
+log/

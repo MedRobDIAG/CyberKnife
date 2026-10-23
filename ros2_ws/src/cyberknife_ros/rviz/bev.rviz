@@ -1,0 +1,127 @@
+### Beam's Eye View: la camera sta nel punto focale della sorgente e guarda
+### lungo l'asse del fascio. E' cio' che "vede" il fascio mentre viene erogato,
+### ed e' la vista che dice se il bersaglio e' davvero centrato e che cosa il
+### raggio attraversa prima di arrivarci.
+###
+### Il bersaglio della camera e' il frame `bev`, che nell'URDF e' la sorgente
+### ruotata di -90 gradi attorno a Y: RViz guarda lungo +X del frame bersaglio,
+### il fascio esce lungo +Z della sorgente.
+Panels:
+  - Class: rviz_common/Displays
+    Name: Displays
+    Property Tree Widget:
+      Expanded: ~
+      Splitter Ratio: 0.5
+    Tree Height: 240
+Visualization Manager:
+  Class: ""
+  Name: root
+  Displays:
+    - Class: rviz_default_plugins/RobotModel
+      Name: Manipolatore
+      Enabled: true
+      Description Topic:
+        Value: /robot_description
+        Depth: 5
+        Durability Policy: Transient Local
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+      Visual Enabled: true
+      Collision Enabled: false
+      Alpha: 1
+    - Class: rviz_default_plugins/MarkerArray
+      Name: Anatomia
+      Enabled: true
+      Topic:
+        Value: /cyberknife/anatomia
+        Depth: 5
+        Durability Policy: Transient Local
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+      # Nella BEV si tengono i riferimenti utili e si spegne cio' che copre il
+      # bersaglio: il profilo corporeo e il mediastino sono masse opache
+      # proprio davanti al tumore, mentre le coste dicono dove si sta
+      # guardando. Sono comunque riaccendibili dal pannello Displays.
+      Namespaces:
+        body: false
+        mediastinum: false
+        bones: true
+        lung_r: true
+        lung_l: true
+        airways: false
+        tumor: true
+    - Class: rviz_default_plugins/MarkerArray
+      Name: FasciDelPiano
+      Enabled: true
+      Topic:
+        Value: /cyberknife/piano
+        Depth: 5
+        Durability Policy: Transient Local
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+      Namespaces:
+        {}
+    - Class: rviz_default_plugins/MarkerArray
+      Name: FascioAttivo
+      Enabled: true
+      Topic:
+        Value: /cyberknife/fasci
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+      Namespaces:
+        {}
+  Global Options:
+    Background Color: 12; 14; 18
+    # Il frame FISSO e' `bev`, non la stanza. E' il punto chiave di questa
+    # finestra: il controller FPS di RViz segue solo la POSIZIONE del frame
+    # bersaglio, non il suo orientamento, quindi agganciandolo alla sorgente la
+    # camera restava puntata in una direzione fissa del mondo e inquadrava di
+    # traverso. Rendendo `bev` il frame fisso, e' il mondo a ruotare attorno
+    # alla camera: guardare lungo +X diventa per costruzione guardare lungo
+    # l'asse del fascio.
+    Fixed Frame: bev
+    Frame Rate: 30
+  Tools:
+    - Class: rviz_default_plugins/MoveCamera
+  Views:
+    Current:
+      Class: rviz_default_plugins/FPS
+      Name: DalFascio
+      Target Frame: bev
+      # Leggermente ARRETRATA rispetto al punto focale: messa esattamente li'
+      # la camera finisce dentro la testata dell'acceleratore, che riempie
+      # l'inquadratura. Da 25 cm dietro si vede il collimatore in primo piano e
+      # il bersaglio in fondo, che e' come si guarda una vera BEV.
+      # Appena OLTRE il punto focale: dietro c'e' la testata, che riempirebbe
+      # l'inquadratura. Da qui si guarda quello che guarda il fascio.
+      # A meta' strada verso il bersaglio. Dal punto focale il tumore, largo
+      # 17 mm a 800 mm di distanza, occupa una decina di pixel: si vede che i
+      # fasci convergono ma non su che cosa. Da 45 cm il torace entra ancora
+      # nell'inquadratura e la lesione si distingue.
+      Position:
+        X: 0.35
+        Y: 0
+        Z: 0
+      Yaw: 0
+      Pitch: 0
+      Near Clip Distance: 0.02
+    Saved:
+      - Class: rviz_default_plugins/FPS
+        Name: DalPuntoFocale
+        Target Frame: bev
+        Position:
+          X: 0.06
+          Y: 0
+          Z: 0
+        Yaw: 0
+        Pitch: 0
+        Near Clip Distance: 0.05
+Window Geometry:
+  Displays:
+    collapsed: true
+  Height: 760
+  Width: 900
+  Views:
+    collapsed: true

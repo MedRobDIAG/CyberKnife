@@ -1,0 +1,128 @@
+# ============================================================================
+#  Progetto Medical Robotics - Fase 1: Segmentazione Neoplasie Polmonari
+#  Stack: PyTorch + MONAI  |  Target HW: NVIDIA RTX 5070 Ti (Blackwell, sm_120)
+# ============================================================================
+#
+#  IMPORTANTE (HARDWARE):
+#  La RTX 5070 Ti usa l'architettura Blackwell (compute capability sm_120).
+#  Richiede OBBLIGATORIAMENTE i binari PyTorch compilati per CUDA 12.8 (cu128).
+#  Le build cu121 / cu124 daranno l'errore:
+#     "CUDA error: no kernel image is available for execution on the device"
+#
+#  INSTALLAZIONE (esegui in questo ordine, in un venv pulito):
+#
+#  1) Installa PyTorch dal loro index CUDA 12.8:
+#     pip install torch torchvision --index-url https://download.pytorch.org/whl/cu128
+#
+#  2) Installa il resto:
+#     pip install -r requirements.txt
+#
+#  VERIFICA post-install:
+#     python -c "import torch; print(torch.__version__, torch.cuda.is_available(), torch.cuda.get_device_name(0))"
+#     Deve stampare True e 'NVIDIA GeForce RTX 5070 Ti'.
+# ============================================================================
+
+# --- Deep Learning core (NON installare da qui: usa l'index cu128 al punto 1) ---
+# torch>=2.7.0          # installato manualmente via --index-url cu128
+# torchvision>=0.22.0   # installato manualmente via --index-url cu128
+
+# --- Framework Medical Imaging ---
+monai==1.4.0
+
+# --- I/O immagini mediche NIfTI (.nii.gz) ---
+nibabel>=5.2.0
+
+# --- I/O DICOM (dataset LIDC-IDRI) ---
+# Serve solo a lidc.py, per convertire le 1018 serie DICOM di LIDC-IDRI in
+# NIfTI e per agganciare i contorni XML alle slice tramite SOPInstanceUID.
+# La pipeline MSD Task06 non ne ha bisogno: se non si usa LIDC, e' opzionale.
+pydicom>=3.0.0
+
+# --- Numerica / scientifica ---
+# NB: su Python 3.14 esistono solo wheel numpy 2.x (la 1.26 non li ha). MONAI 1.4
+# dichiara numpy<2.0 ma in pratica funziona con numpy 2.x: verificato in uso.
+numpy>=2.1.0
+scipy>=1.13.0           # per scipy.ndimage.center_of_mass
+
+# --- Visualizzazione ---
+matplotlib>=3.8.0
+
+# --- Ricostruzione 3D (volume + mesh STL del tumore) ---
+scikit-image>=0.25.0    # Marching Cubes per estrarre la superficie 3D
+trimesh>=4.0.0          # gestione mesh + export STL
+fast_simplification>=0.1  # decimazione mesh (busto 344k -> 6k facce)
+
+# --- Dosimetria (dosimetry.py) e segmentazione organi (organs.py) ---
+# Nessuna dipendenza aggiuntiva: usano scipy (ndimage, signal.fftconvolve,
+# special.erfc, optimize.lsq_linear), numpy, scikit-image e trimesh, gia'
+# elencati sopra. In particolare la segmentazione degli organi e' fatta per
+# soglia HU e morfologia, senza alcun modello di machine learning.
+
+# --- GUI: CyberKnife Control Center (main.py) ---
+PyQt6>=6.6.0            # framework interfaccia desktop
+
+# --- Ricostruzione degli organi (organ_mesh.py) ---
+# Usa VTK (via pyvista, elencato sotto) per DUE operazioni di geometria, non
+# solo per disegnare:
+#   - vtkQuadricDecimation: decima senza aprire la superficie. Il decimatore
+#     di fast_simplification rompeva la chiusura (misurato: mesh watertight da
+#     1.24 milioni di facce che ne uscivano aperte).
+#   - vtkWindowedSincPolyDataFilter: lisciatura che taglia le alte frequenze
+#     spaziali senza ritirare il volume. Il Taubin di trimesh, sulla mesh
+#     densa, non lisciava nulla (asprezza da 43.9 a 44.5 gradi in 20 iterazioni).
+# Senza pyvista la ricostruzione funziona ma peggiora, e il programma lo
+# SCRIVE nella barra di stato invece di tacere.
+
+# --- Vista 3D accelerata su GPU (mesh_view_gpu.py) ---
+# VTK rasterizza in OpenGL: sulla scena reale del progetto (28k facce, 112
+# fasci, superficie isodose) passa da ~7 fps a oltre 200. Se l'installazione
+# fallisce o OpenGL non e' disponibile, viewer3d ricade automaticamente sulla
+# vista Matplotlib e l'applicazione resta utilizzabile.
+pyvista>=0.44
+pyvistaqt>=0.11
+# matplotlib usa il backend QtAgg per incorporare le viste nella GUI
+
+# --- Utility usate da MONAI (barre di avanzamento, metriche, ecc.) ---
+tqdm>=4.66.0
+tensorboard>=2.16.0     # opzionale: logging delle curve di training
+einops>=0.7.0           # richiesto da alcune reti MONAI (es. UNETR/SwinUNETR)
+
+# ============================================================================
+#  ANELLO CHIUSO - respiro e incertezza (set 2026)
+# ============================================================================
+#
+# NESSUNA nuova dipendenza pip. motion_model.py, motion_dose.py,
+# tracking_session.py e robust_target.py usano numpy e scipy; uncertainty.py e
+# il predittore GRU (motion_predictor.py) usano torch e MONAI, gia' installati
+# per la Fase 1. Nel nodo ROS entrano solo motion_model.py e
+# tracking_session.py, che richiedono unicamente numpy.
+#
+# SE MANCANO I PESI DELLA GRU (outputs/motion_gru.pth): il Tab 4 non la
+# elenca e usa Kalman/nLMS. Si rigenerano con
+#     python motion_predictor.py --train
+
+# ============================================================================
+#  FASE 3 - Cinematica e ROS 2
+# ============================================================================
+#
+# NESSUNA nuova dipendenza pip. La cinematica (kinematics.py), la generazione
+# dell'URDF (urdf_gen.py), l'esportazione del piano (plan_export.py) e della
+# scena (export_scene.py) usano solo numpy, scipy, scikit-image e trimesh,
+# gia' elencati sopra. Il Tab 3 aggiunge solo PyQt6 e matplotlib.
+#
+# La SIMULAZIONE del robot richiede invece un ambiente separato, che NON si
+# installa con pip:
+#
+#     ROS 2 Humble in WSL2 / Ubuntu 22.04
+#         wsl --install -d Ubuntu-22.04
+#         (dentro WSL) sudo apt install ros-humble-desktop \
+#                                       python3-colcon-common-extensions
+#
+# Serve perche' rclpy non esiste per la versione di Python usata qui: i due
+# mondi comunicano con un file JSON (plan_export.py), non condividendo un
+# processo. Il pacchetto ROS porta con se' una copia di kinematics.py, cosi'
+# in WSL bastano rclpy e numpy.
+#
+# SE MANCA: il Tab 3 resta utilizzabile - risolve la cinematica inversa,
+# mostra traiettorie e margini dai fine corsa, esporta il piano - ma il
+# pulsante "Lancia simulazione ROS 2 / RViz" non apre nulla.

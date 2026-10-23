@@ -1,0 +1,103 @@
+﻿[preprocess] 95 volumi da processare (spacing 3.0 mm)
+  [  1/95] lung_001  box 249x168x288 mm  margine GT:  -30.35 mm
+  [  2/95] lung_003  box 321x240x336 mm  margine GT:  -23.06 mm
+  [  3/95] lung_004  box 324x243x339 mm  margine GT:  -51.30 mm
+  [  4/95] lung_005  box 270x186x297 mm  margine GT:  -35.86 mm
+  [  5/95] lung_006  box 330x243x318 mm  margine GT:  -17.25 mm
+  [  6/95] lung_009  box 297x210x345 mm  margine GT:  -15.00 mm
+  [  7/95] lung_010  box 222x162x285 mm  margine GT:   -8.12 mm
+  [  8/95] lung_014  box 300x207x345 mm  margine GT:  -21.39 mm
+  [  9/95] lung_015  box 273x198x342 mm  margine GT:  -12.52 mm
+  [ 10/95] lung_016  box 258x225x279 mm  margine GT:  -34.16 mm
+  [ 11/95] lung_018  box 318x234x255 mm  margine GT:  -37.34 mm
+  [ 12/95] lung_020  box 264x165x252 mm  margine GT:  -51.43 mm
+  [ 13/95] lung_022  box 267x225x270 mm  margine GT:   -3.12 mm
+  [ 14/95] lung_023  box 297x216x306 mm  margine GT:  -24.66 mm
+  [ 15/95] lung_025  box 312x192x339 mm  margine GT:  -33.91 mm
+  [ 16/95] lung_026  box 273x198x276 mm  margine GT:  -41.66 mm
+  [ 17/95] lung_027  box 318x228x300 mm  margine GT:   -4.12 mm
+  [ 18/95] lung_028  box 321x234x228 mm  margine GT:   +3.87 mm
+  [ 19/95] lung_029  box 309x246x306 mm  margine GT:  -32.08 mm
+  [ 20/95] lung_031  box 282x183x342 mm  margine GT:   -4.92 mm
+  [ 21/95] lung_033  box 270x219x300 mm  margine GT:  -12.28 mm
+  [ 22/95] lung_034  box 345x246x363 mm  margine GT:  -15.66 mm
+  [ 23/95] lung_036  box 306x231x318 mm  margine GT:  -45.41 mm
+  [ 24/95] lung_037  box 318x219x300 mm  margine GT:  -20.00 mm
+  [ 25/95] lung_038  box 327x243x300 mm  margine GT:  -82.50 mm
+  [ 26/95] lung_041  box 279x225x282 mm  margine GT:   -3.84 mm
+  [ 27/95] lung_042  box 273x174x294 mm  margine GT:  -50.07 mm
+  [ 28/95] lung_043  box 297x192x300 mm  margine GT:  -47.50 mm
+  [ 29/95] lung_044  box 303x177x297 mm  margine GT:   -2.48 mm
+  [ 30/95] lung_045  box 297x192x288 mm  margine GT:   -2.03 mm
+  [ 31/95] lung_046  box 300x216x270 mm  margine GT:  -43.59 mm
+  [ 32/95] lung_047  box 264x207x489 mm  margine GT:  -23.09 mm
+  [ 33/95] lung_048  box 270x198x315 mm  margine GT:   -4.99 mm
+  [ 34/95] lung_049  box 261x174x330 mm  margine GT:  -51.75 mm
+  [ 35/95] lung_051  box 303x237x366 mm  margine GT:  -16.75 mm
+  [ 36/95] lung_053  box 279x201x279 mm  margine GT:   -0.62 mm
+  [ 37/95] lung_054  box 291x210x264 mm  margine GT:  -59.91 mm
+  [ 38/95] lung_055  box 300x210x294 mm  margine GT:  -39.26 mm
+  [ 39/95] lung_057  box 291x195x261 mm  margine GT:  -36.16 mm
+  [ 40/95] lung_058  box 303x183x270 mm  margine GT:  -36.84 mm
+  [ 41/95] lung_059  box 276x183x267 mm  margine GT:  -25.10 mm
+  [ 42/95] lung_061  box 291x210x243 mm  margine GT:   -7.17 mm
+  [ 43/95] lung_062  box 321x222x279 mm  margine GT:  -37.03 mm
+  [ 44/95] lung_064  box 276x240x297 mm  margine GT:  -25.50 mm
+  [ 45/95] lung_065  box 273x237x294 mm  margine GT:  -30.66 mm
+  [ 46/95] lung_066  box 297x222x279 mm  margine GT:   -3.46 mm
+  [ 47/95] lung_069  box 261x198x285 mm  margine GT:  -77.59 mm
+  [ 48/95] lung_070  box 303x201x315 mm  margine GT:  -31.92 mm
+  [ 49/95] lung_071  box 294x186x345 mm  margine GT:  -56.39 mm
+  [ 50/95] lung_073  box 261x183x303 mm  margine GT:  -33.91 mm
+  [ 51/95] lung_074  box 267x201x342 mm  margine GT:   -7.00 mm
+  [ 52/95] lung_075  box 312x222x420 mm  margine GT:  -67.24 mm
+  [ 53/95] lung_078  box 261x189x267 mm  margine GT:  -14.87 mm
+  [ 54/95] lung_079  box 321x261x303 mm  margine GT:  -18.23 mm
+  [ 55/95] lung_080  box 246x159x270 mm  margine GT:  -31.16 mm
+  [ 56/95] lung_081  box 291x243x285 mm  margine GT:  -36.51 mm
+  [ 57/95] lung_083  box 282x234x297 mm  margine GT:  -19.44 mm
+  [ 58/95] lung_084  box 270x201x291 mm  margine GT:  -33.41 mm
+  [ 59/95] lung_086  box 318x246x300 mm  margine GT:  -27.28 mm
+  [ 60/95] lung_092  box 306x243x300 mm  margine GT:  -51.28 mm
+  [ 61/95] lung_093  box 300x246x261 mm  margine GT:  -21.22 mm
+  [ 62/95] lung_095  box 300x237x261 mm  margine GT:  -54.84 mm
+  [ 63/95] lung_096  box 300x216x279 mm  margine GT:  -38.80 mm
+  [ 64/95] lung_002  box 285x189x321 mm
+  [ 65/95] lung_007  box 294x201x378 mm
+  [ 66/95] lung_008  box 294x231x294 mm
+  [ 67/95] lung_011  box 270x171x348 mm
+  [ 68/95] lung_012  box 252x195x255 mm
+  [ 69/95] lung_013  box 255x162x321 mm
+  [ 70/95] lung_017  box 315x225x357 mm
+  [ 71/95] lung_019  box 225x204x315 mm
+  [ 72/95] lung_021  box 276x213x261 mm
+  [ 73/95] lung_024  box 294x183x330 mm
+  [ 74/95] lung_030  box 276x201x153 mm
+  [ 75/95] lung_032  box 288x252x366 mm
+  [ 76/95] lung_035  box 312x267x375 mm
+  [ 77/95] lung_039  box 336x231x363 mm
+  [ 78/95] lung_040  box 306x246x312 mm
+  [ 79/95] lung_050  box 249x198x183 mm
+  [ 80/95] lung_052  box 246x168x279 mm
+  [ 81/95] lung_056  box 270x204x267 mm
+  [ 82/95] lung_060  box 261x213x276 mm
+  [ 83/95] lung_063  box 279x195x282 mm
+  [ 84/95] lung_067  box 303x195x366 mm
+  [ 85/95] lung_068  box 315x204x303 mm
+  [ 86/95] lung_072  box 291x219x252 mm
+  [ 87/95] lung_076  box 285x171x300 mm
+  [ 88/95] lung_077  box 225x168x207 mm
+  [ 89/95] lung_082  box 261x246x324 mm
+  [ 90/95] lung_085  box 261x183x285 mm
+  [ 91/95] lung_087  box 249x177x285 mm
+  [ 92/95] lung_088  box 240x186x249 mm
+  [ 93/95] lung_089  box 267x171x297 mm
+  [ 94/95] lung_090  box 282x201x282 mm
+  [ 95/95] lung_091  box 324x246x279 mm
+
+[preprocess] Scritto C:\Users\ilgra\Documents\Progetto Medical\outputs\lung_rois.json in 2.9 min (1.8 s/caso)
+
+[preprocess] VERIFICA DI CONTENIMENTO su 63 casi etichettati
+  margine necessario: max +3.87 mm  (caso lung_028)
+                      mediana -30.35 mm
+  OK: tutti i tumori stanno nel box + 20.0 mm.

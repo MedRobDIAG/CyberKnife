@@ -1,0 +1,13 @@
+{
+  "-1": {
+    "done": true,
+    "epoch": 120,
+    "epochs": 120,
+    "best_score": -Infinity,
+    "best_epoch": -1,
+    "updated": "2026-10-13T21:26:09",
+    "last_val_dice": null,
+    "last_train_loss": null,
+    "secs_per_epoch": null
+  }
+}
