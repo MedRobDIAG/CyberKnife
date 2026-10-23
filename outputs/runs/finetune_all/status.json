@@ -1,0 +1,57 @@
+{
+  "0": {
+    "done": true,
+    "epoch": 250,
+    "epochs": 250,
+    "best_score": 0.7385918892346895,
+    "best_epoch": 190,
+    "updated": "2026-10-14T09:28:49",
+    "last_val_dice": null,
+    "last_train_loss": null,
+    "secs_per_epoch": null
+  },
+  "1": {
+    "done": true,
+    "epoch": 250,
+    "epochs": 250,
+    "best_score": 0.7182651852950072,
+    "best_epoch": 240,
+    "updated": "2026-10-14T10:03:39",
+    "last_val_dice": null,
+    "last_train_loss": null,
+    "secs_per_epoch": null
+  },
+  "2": {
+    "done": true,
+    "epoch": 250,
+    "epochs": 250,
+    "best_score": 0.7681082453483189,
+    "best_epoch": 220,
+    "updated": "2026-10-14T10:37:40",
+    "last_val_dice": null,
+    "last_train_loss": null,
+    "secs_per_epoch": null
+  },
+  "3": {
+    "done": true,
+    "epoch": 250,
+    "epochs": 250,
+    "best_score": 0.7547752479712168,
+    "best_epoch": 210,
+    "updated": "2026-10-14T11:12:04",
+    "last_val_dice": null,
+    "last_train_loss": null,
+    "secs_per_epoch": null
+  },
+  "4": {
+    "done": true,
+    "epoch": 250,
+    "epochs": 250,
+    "best_score": 0.6752414491441515,
+    "best_epoch": 160,
+    "updated": "2026-10-14T11:45:06",
+    "last_val_dice": null,
+    "last_train_loss": null,
+    "secs_per_epoch": null
+  }
+}
